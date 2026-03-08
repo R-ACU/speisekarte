@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impressum – Ristorante Giovanni R</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="giovanni_menu.css">
+<style>
+  .impressum-wrap {
+    max-width: 680px;
+    margin: 60px auto 80px;
+    padding: 0 24px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .impressum-wrap h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: var(--gold);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .impressum-wrap .divider-line {
+    width: 48px;
+    height: 2px;
+    background: var(--gold);
+    margin-bottom: 40px;
+  }
+
+  .impressum-block {
+    margin-bottom: 36px;
+  }
+
+  .impressum-block h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    margin-bottom: 10px;
+  }
+
+  .impressum-block p,
+  .impressum-block address {
+    font-family: 'EB Garamond', serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--ink-soft);
+    font-style: normal;
+  }
+
+  .impressum-block a {
+    color: var(--ink-soft);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.2s;
+  }
+
+  .impressum-block a:hover {
+    color: var(--gold);
+  }
+
+  .back-link {
+    display: inline-block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-bottom: 1px solid var(--divider);
+    padding-bottom: 2px;
+    margin-bottom: 48px;
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .back-link:hover {
+    color: var(--gold);
+    border-color: var(--gold);
+  }
+
+  .back-link::before {
+    content: '← ';
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="giovanni_menu.html" class="header-logo-link">
+    <img src="extra/Logo.svg" alt="Ristorante Giovanni R" class="header-logo">
+  </a>
+  <div class="header-ornament">
+    <span></span>
+    <i>✦</i>
+    <span></span>
+  </div>
+</header>
+
+<main>
+  <div class="impressum-wrap">
+    <a href="giovanni_menu.html" class="back-link">Zurück zur Speisekarte</a>
+
+    <h1>Impressum</h1>
+    <div class="divider-line"></div>
+
+    <div class="impressum-block">
+      <h2>Angaben gemäß § 5 TMG</h2>
+      <address>
+        Ristorante Giovanni R<br>
+        Inhaber: Giovanni Ricottone<br>
+        Hildesheimer Str. 30<br>
+        30880 Laatzen
+      </address>
+    </div>
+
+    <div class="impressum-block">
+      <h2>Kontakt</h2>
+      <p>
+        Telefon: +49 (0)511 – 84901140<br>
+        E-Mail: <a href="mailto:restaurantgiovannir@gmail.com">restaurantgiovannir@gmail.com</a>
+      </p>
+    </div>
+
+    <div class="impressum-block">
+      <h2>Öffnungszeiten</h2>
+      <p>Dienstag – Samstag: 11:00 – 22:00 Uhr</p>
+    </div>
+
+    <div class="impressum-block">
+      <h2>Verantwortlich für den Inhalt (§ 55 Abs. 2 RStV)</h2>
+      <p>
+        Giovanni Ricottone<br>
+        Hildesheimer Str. 30<br>
+        30880 Laatzen
+      </p>
+    </div>
+
+    <div class="impressum-block">
+      <h2>Haftungsausschluss</h2>
+      <p>
+        Die Inhalte dieser Seite wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit
+        und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.
+      </p>
+    </div>
+  </div>
+</main>
+
+
+<footer>
+  <a href="giovanni_menu.html" class="header-logo-link">
+    <img src="extra/Logo.svg" alt="Ristorante Giovanni R" class="header-logo">
+  </a>
+  <p>Cucine Italiane · Tutte le paste sono fatte in casa</p>
+  <p style="margin-top: 12px; opacity: 0.4; font-family: 'Cormorant Garamond', serif; font-size: 13px; letter-spacing: 0.15em; text-transform: uppercase;">
+    <a href="impressum.html" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">Impressum</a>
+  </p>
+</footer>
+
+
+</body>
+</html>

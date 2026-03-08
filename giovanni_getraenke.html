@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giovanni R – Getränkekarte</title>
+<link rel="icon" href="extra/favicon.png" type="image/png">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="giovanni_menu.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <a href="giovanni_menu.html" class="header-logo-link">
+    <img src="extra/Logo.svg" alt="Ristorante Giovanni R" class="header-logo">
+  </a>
+  <div class="header-ornament">
+    <span></span>
+    <i>✦</i>
+    <span></span>
+  </div>
+  <div class="page-tabs">
+    <a href="giovanni_menu.html" class="page-tab" data-tab="speisekarte">Speisekarte</a>
+    <a href="giovanni_getraenke.html" class="page-tab page-tab--active" data-tab="getraenke">Getränke</a>
+  </div>
+  <select class="lang-select" id="langSelect">
+    <option value="de">DE</option>
+    <option value="en">EN</option>
+    <option value="it">IT</option>
+    <option value="zh">中文</option>
+  </select>
+</header>
+
+<!-- NAV -->
+<nav>
+  <a href="#heissgetraenke" data-nav="heissgetraenke">Heiße Getränke</a>
+  <a href="#softdrinks" data-nav="softdrinks">Softdrinks</a>
+  <a href="#saefte" data-nav="saefte">Säfte</a>
+  <a href="#bier" data-nav="bier">Bier</a>
+  <a href="#aperitifs" data-nav="aperitifs">Aperitifs</a>
+  <a href="#spirituosen" data-nav="spirituosen">Spirituosen</a>
+  <a href="#wein" data-nav="wein">Wein</a>
+  <a href="#prosecco" data-nav="prosecco">Prosecco</a>
+</nav>
+
+<main class="getraenke-main">
+
+  <section id="heissgetraenke">
+    <div class="section-header">
+      <h2 data-nav-heading="heissgetraenke">Heiße Getränke</h2>
+      <div class="line"></div>
+    </div>
+    <div class="getraenke-content" data-drink="heissgetraenke"></div>
+  </section>
+
+  <section id="softdrinks">
+    <div class="section-header">
+      <h2 data-nav-heading="softdrinks">Softdrinks</h2>
+      <div class="line"></div>
+    </div>
+    <div class="getraenke-content" data-drink="softdrinks"></div>
+  </section>
+
+  <section id="saefte">
+    <div class="section-header">
+      <h2 data-nav-heading="saefte">Säfte</h2>
+      <div class="line"></div>
+    </div>
+    <div class="getraenke-content" data-drink="saefte"></div>
+  </section>
+
+  <section id="bier">
+    <div class="section-header">
+      <h2 data-nav-heading="bier">Bier</h2>
+      <div class="line"></div>
+    </div>
+    <div class="getraenke-content" data-drink="bier"></div>
+  </section>
+
+  <section id="aperitifs">
+    <div class="section-header">
+      <h2 data-nav-heading="aperitifs">Aperitifs &amp; Cocktails</h2>
+      <div class="line"></div>
+    </div>
+    <div class="getraenke-content" data-drink="aperitifs"></div>
+  </section>
+
+  <section id="spirituosen">
+    <div class="section-header">
+      <h2 data-nav-heading="spirituosen">Spirituosen</h2>
+      <div class="line"></div>
+    </div>
+    <div class="getraenke-content" data-drink="spirituosen"></div>
+  </section>
+
+  <section id="wein" class="getraenke-full">
+    <div class="section-header">
+      <h2 data-nav-heading="wein">Wein</h2>
+      <div class="line"></div>
+    </div>
+    <div data-drink="wein"></div>
+  </section>
+
+  <section id="prosecco" class="getraenke-full">
+    <div class="section-header">
+      <h2 data-nav-heading="prosecco">Prosecco</h2>
+      <div class="line"></div>
+    </div>
+    <div class="getraenke-content" data-drink="prosecco_flasche"></div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+  <a href="giovanni_menu.html" class="header-logo-link">
+    <img src="extra/Logo.svg" alt="Ristorante Giovanni R" class="header-logo">
+  </a>
+  <p>Cucine Italiane · Tutte le paste sono fatte in casa</p>
+  <p style="margin-top: 12px; opacity: 0.4; font-family: 'Cormorant Garamond', serif; font-size: 13px; letter-spacing: 0.15em; text-transform: uppercase;">
+    <a href="impressum.html" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">Impressum</a>
+  </p>
+</footer>
+
+
+<script>
+(function() {
+  let menuData = null;
+  let currentLang = 'de';
+
+  const UI = {
+    de: {
+      nav: {
+        heissgetraenke: 'Heiße Getränke', softdrinks: 'Softdrinks', saefte: 'Säfte',
+        bier: 'Bier', aperitifs: 'Aperitifs', spirituosen: 'Spirituosen',
+        wein: 'Wein', prosecco: 'Prosecco'
+      },
+      headings: {
+        heissgetraenke: 'Heiße Getränke', softdrinks: 'Softdrinks', saefte: 'Säfte',
+        bier: 'Bier', aperitifs: 'Aperitifs & Cocktails', spirituosen: 'Spirituosen',
+        wein: 'Wein', prosecco: 'Prosecco'
+      },
+      drink_labels: {
+        heissgetraenke: 'Heiße Getränke', softdrinks: 'Softdrinks', saefte: 'Säfte',
+        bier: 'Bier', aperitifs: 'Aperitifs & Cocktails', spirituosen: 'Spirituosen',
+        weisswein: 'Weißwein', rotwein: 'Rotwein', rosewein: 'Roséwein',
+        prosecco_flasche: 'Prosecco (Flasche)', offen: 'Offen', flasche: 'Flasche'
+      },
+      back: '← Zur Speisekarte',
+      tabs: { speisekarte: 'Speisekarte', getraenke: 'Getränke' }
+    },
+    en: {
+      nav: {
+        heissgetraenke: 'Hot Drinks', softdrinks: 'Soft Drinks', saefte: 'Juices',
+        bier: 'Beer', aperitifs: 'Aperitifs', spirituosen: 'Spirits',
+        wein: 'Wine', prosecco: 'Prosecco'
+      },
+      headings: {
+        heissgetraenke: 'Hot Drinks', softdrinks: 'Soft Drinks', saefte: 'Juices',
+        bier: 'Beer', aperitifs: 'Aperitifs & Cocktails', spirituosen: 'Spirits',
+        wein: 'Wine', prosecco: 'Prosecco'
+      },
+      drink_labels: {
+        heissgetraenke: 'Hot Drinks', softdrinks: 'Soft Drinks', saefte: 'Juices',
+        bier: 'Beer', aperitifs: 'Aperitifs & Cocktails', spirituosen: 'Spirits',
+        weisswein: 'White Wine', rotwein: 'Red Wine', rosewein: 'Rosé Wine',
+        prosecco_flasche: 'Prosecco (Bottle)', offen: 'By the Glass', flasche: 'Bottle'
+      },
+      back: '← Back to Menu',
+      tabs: { speisekarte: 'Food Menu', getraenke: 'Drinks' }
+    },
+    it: {
+      nav: {
+        heissgetraenke: 'Bevande Calde', softdrinks: 'Soft Drink', saefte: 'Succhi',
+        bier: 'Birra', aperitifs: 'Aperitivi', spirituosen: 'Superalcolici',
+        wein: 'Vino', prosecco: 'Prosecco'
+      },
+      headings: {
+        heissgetraenke: 'Bevande Calde', softdrinks: 'Soft Drink', saefte: 'Succhi',
+        bier: 'Birra', aperitifs: 'Aperitivi & Cocktail', spirituosen: 'Superalcolici',
+        wein: 'Vino', prosecco: 'Prosecco'
+      },
+      drink_labels: {
+        heissgetraenke: 'Bevande Calde', softdrinks: 'Soft Drink', saefte: 'Succhi',
+        bier: 'Birra', aperitifs: 'Aperitivi & Cocktail', spirituosen: 'Superalcolici',
+        weisswein: 'Vino Bianco', rotwein: 'Vino Rosso', rosewein: 'Vino Rosato',
+        prosecco_flasche: 'Prosecco (Bottiglia)', offen: 'Al Bicchiere', flasche: 'Bottiglia'
+      },
+      back: '← Torna al Menu',
+      tabs: { speisekarte: 'Menu', getraenke: 'Bevande' }
+    },
+    zh: {
+      nav: {
+        heissgetraenke: '热饮', softdrinks: '软饮', saefte: '果汁',
+        bier: '啤酒', aperitifs: '开胃酒', spirituosen: '烈酒',
+        wein: '葡萄酒', prosecco: '普罗塞克'
+      },
+      headings: {
+        heissgetraenke: '热饮', softdrinks: '软饮', saefte: '果汁',
+        bier: '啤酒', aperitifs: '开胃酒 & 鸡尾酒', spirituosen: '烈酒',
+        wein: '葡萄酒', prosecco: '普罗塞克'
+      },
+      drink_labels: {
+        heissgetraenke: '热饮', softdrinks: '软饮', saefte: '果汁',
+        bier: '啤酒', aperitifs: '开胃酒 & 鸡尾酒', spirituosen: '烈酒',
+        weisswein: '白葡萄酒', rotwein: '红葡萄酒', rosewein: '玫瑰葡萄酒',
+        prosecco_flasche: '普罗塞克（瓶装）', offen: '散杯', flasche: '整瓶'
+      },
+      back: '← 返回菜单',
+      tabs: { speisekarte: '菜单', getraenke: '饮品' }
+    }
+  };
+
+  function renderDrinkPrices(item) {
+    if (item.preis) return `<span class="drink-price">${item.preis}</span>`;
+    if (item.preise) {
+      return Object.entries(item.preise)
+        .map(([size, price]) => `<span class="drink-price">${size} <b>${price}</b></span>`)
+        .join('');
+    }
+    return '';
+  }
+
+  function renderDrinkItem(item) {
+    return `
+      <div class="drink-item">
+        <span class="drink-name">${item.name}</span>
+        <div class="drink-prices">${renderDrinkPrices(item)}</div>
+      </div>`;
+  }
+
+  function renderDrinkSubsection(items) {
+    return `<div class="drink-list">${items.map(renderDrinkItem).join('')}</div>`;
+  }
+
+  function renderWeinSection(g) {
+    const ui = UI[currentLang];
+    const dl = ui.drink_labels;
+    return `
+      <div class="drink-subsection" style="margin-bottom:24px">
+        <h3 class="drink-subheading">${dl.weisswein}</h3>
+        <div class="drink-wine-sub">${dl.offen}</div>
+        <div class="drink-list">${g.weisswein.offen.map(renderDrinkItem).join('')}</div>
+        <div class="drink-wine-sub">${dl.flasche}</div>
+        <div class="drink-list">${g.weisswein.flasche.map(renderDrinkItem).join('')}</div>
+      </div>
+      <div class="drink-subsection" style="margin-bottom:24px">
+        <h3 class="drink-subheading">${dl.rotwein}</h3>
+        <div class="drink-wine-sub">${dl.offen}</div>
+        <div class="drink-list">${g.rotwein.offen.map(renderDrinkItem).join('')}</div>
+        <div class="drink-wine-sub">${dl.flasche}</div>
+        <div class="drink-list">${g.rotwein.flasche.map(renderDrinkItem).join('')}</div>
+      </div>
+      <div class="drink-subsection">
+        <h3 class="drink-subheading">${dl.rosewein}</h3>
+        <div class="drink-wine-sub">${dl.offen}</div>
+        <div class="drink-list">${g.rosewein.offen.map(renderDrinkItem).join('')}</div>
+        <div class="drink-wine-sub">${dl.flasche}</div>
+        <div class="drink-list">${g.rosewein.flasche.map(renderDrinkItem).join('')}</div>
+      </div>`;
+  }
+
+  function render() {
+    const g = menuData.getraenke;
+    const ui = UI[currentLang];
+
+    // Nav labels
+    document.querySelectorAll('[data-nav]').forEach(el => {
+      const key = el.dataset.nav;
+      if (ui.nav[key]) el.textContent = ui.nav[key];
+    });
+
+    // Section headings
+    document.querySelectorAll('[data-nav-heading]').forEach(el => {
+      const key = el.dataset.navHeading;
+      if (ui.headings[key]) el.textContent = ui.headings[key];
+    });
+
+    // Back link
+    const backEl = document.querySelector('[data-back-link]');
+    if (backEl) backEl.textContent = ui.back;
+
+    // Tabs
+    document.querySelectorAll('[data-tab]').forEach(el => {
+      const key = el.dataset.tab;
+      if (ui.tabs[key]) el.textContent = ui.tabs[key];
+    });
+
+    // Drinks
+    const map = {
+      heissgetraenke: g.heissgetraenke,
+      softdrinks: g.softdrinks,
+      saefte: g.saefte,
+      bier: g.bier,
+      aperitifs: g.aperitifs,
+      spirituosen: g.spirituosen,
+      prosecco_flasche: g.prosecco_flasche,
+    };
+    document.querySelectorAll('[data-drink]').forEach(el => {
+      const key = el.dataset.drink;
+      if (key === 'wein') {
+        el.innerHTML = renderWeinSection(g);
+      } else if (map[key]) {
+        el.innerHTML = renderDrinkSubsection(map[key]);
+      }
+    });
+  }
+
+  // Scroll-based nav highlight
+  const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const id = entry.target.id;
+      const link = document.querySelector(`nav a[href="#${id}"]`);
+      if (!link) return;
+      if (entry.isIntersecting) {
+        document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+        link.classList.add('active');
+        link.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
+      }
+    });
+  }, { rootMargin: '-10% 0px -80% 0px', threshold: 0 });
+
+  document.querySelectorAll('main section[id]').forEach(sec => navObserver.observe(sec));
+
+  fetch('giovanni_r_menu.json')
+    .then(r => r.json())
+    .then(data => {
+      menuData = data;
+      render();
+      document.getElementById('langSelect').addEventListener('change', function() {
+        currentLang = this.value;
+        document.documentElement.lang = this.value;
+        render();
+      });
+    });
+})();
+</script>
+
+</body>
+</html>

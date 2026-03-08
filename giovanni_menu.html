@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giovanni R – Cucine Italiane</title>
+<link rel="icon" href="extra/favicon.png" type="image/png">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="giovanni_menu.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <a href="giovanni_menu.html" class="header-logo-link">
+    <img src="extra/Logo.svg" alt="Ristorante Giovanni R" class="header-logo">
+  </a>
+  <div class="header-ornament">
+    <span></span>
+    <i>✦</i>
+    <span></span>
+  </div>
+  <div class="page-tabs">
+    <a href="giovanni_menu.html" class="page-tab page-tab--active" data-tab="speisekarte">Speisekarte</a>
+    <a href="giovanni_getraenke.html" class="page-tab" data-tab="getraenke">Getränke</a>
+  </div>
+  <select class="lang-select" id="langSelect">
+    <option value="de">DE</option>
+    <option value="en">EN</option>
+    <option value="it">IT</option>
+    <option value="zh">中文</option>
+  </select>
+</header>
+
+<!-- NAV -->
+<nav>
+  <a href="#antipasti" data-nav="antipasti">Antipasti</a>
+  <a href="#insalata" data-nav="insalata">Insalata</a>
+  <a href="#zuppe" data-nav="zuppe">Zuppe</a>
+  <a href="#bruschette" data-nav="bruschette">Bruschette</a>
+  <a href="#pizze" data-nav="pizze">Pizze</a>
+  <a href="#fisch" data-nav="fisch">Fisch</a>
+  <a href="#fleisch" data-nav="fleisch">Fleisch</a>
+  <a href="#empfehlungen" data-nav="empfehlungen">Empfehlungen</a>
+  <a href="#mittagstisch" data-nav="mittagstisch">Mittagstisch</a>
+  <a href="#dessert" data-nav="dessert">Dessert</a>
+</nav>
+
+<main>
+  <!-- ── ANTIPASTI ── -->
+  <section id="antipasti">
+    <p class="section-sub" data-sub="antipasti">Vorspeisen</p>
+    <div class="section-header">
+      <h2 data-heading="antipasti">Antipasti</h2>
+      <div class="line"></div>
+    </div>
+    <div class="menu-list" data-category="antipasti"></div>
+  </section>
+
+  <!-- ── INSALATA ── -->
+  <section id="insalata">
+    <p class="section-sub" data-sub="insalata">Salate</p>
+    <div class="section-header">
+      <h2 data-heading="insalata">Insalata</h2>
+      <div class="line"></div>
+    </div>
+    <p class="section-note" data-note="insalata"></p>
+    <div class="menu-list" data-category="insalata"></div>
+  </section>
+
+  <!-- ── ZUPPE ── -->
+  <section id="zuppe">
+    <p class="section-sub" data-sub="zuppe">Suppen</p>
+    <div class="section-header">
+      <h2 data-heading="zuppe">Zuppe</h2>
+      <div class="line"></div>
+    </div>
+    <div class="menu-list" data-category="zuppe"></div>
+  </section>
+
+  <!-- ── BRUSCHETTE ── -->
+  <section id="bruschette">
+    <p class="section-sub" data-sub="bruschette">Geröstetes Brot</p>
+    <div class="section-header">
+      <h2 data-heading="bruschette">Bruschette</h2>
+      <div class="line"></div>
+    </div>
+    <p class="section-note" data-note="bruschette"></p>
+    <div class="menu-list" data-category="bruschette"></div>
+  </section>
+
+  <!-- ── PIZZE ── -->
+  <section id="pizze">
+    <p class="section-sub" data-sub="pizze">Aus dem Steinofen</p>
+    <div class="section-header">
+      <h2 data-heading="pizze">Pizze</h2>
+      <div class="line"></div>
+    </div>
+    <p class="pizza-note" data-note="pizze"></p>
+    <div class="pizza-grid" data-category="pizze"></div>
+  </section>
+
+  <!-- ── FISCH ── -->
+  <section id="fisch">
+    <p class="section-sub" data-sub="fisch">Vom Meer</p>
+    <div class="section-header">
+      <h2 data-heading="fisch">Fisch</h2>
+      <div class="line"></div>
+    </div>
+    <div class="menu-list" data-category="fisch"></div>
+  </section>
+
+  <!-- ── FLEISCHGERICHTE ── -->
+  <section id="fleisch">
+    <p class="section-sub" data-sub="fleisch">Secondi Piatti</p>
+    <div class="section-header">
+      <h2 data-heading="fleisch">Fleischgerichte</h2>
+      <div class="line"></div>
+    </div>
+    <p class="section-note" data-note="fleischgerichte"></p>
+    <div class="menu-list" data-category="fleischgerichte"></div>
+  </section>
+
+  <!-- ── EMPFEHLUNGEN ── -->
+  <section id="empfehlungen">
+    <p class="section-sub" data-sub="empfehlungen">Hausgemachte Pasta &amp; Küchenchefempfehlungen</p>
+    <div class="section-header">
+      <h2 data-heading="empfehlungen">Empfehlungen</h2>
+      <div class="line"></div>
+    </div>
+    <p class="section-note" data-note="empfehlungen"></p>
+    <div class="empfehlung-list" data-category="empfehlungen"></div>
+  </section>
+
+  <!-- ── MITTAGSTISCH ── -->
+  <section id="mittagstisch">
+    <p class="section-sub" data-sub="mittagstisch"></p>
+    <div class="section-header">
+      <h2 data-heading="mittagstisch">Mittagstisch</h2>
+      <div class="line"></div>
+    </div>
+    <p class="section-note" data-note="mittag-senior">Auch als Seniorenportion erhältlich</p>
+    <div class="mittag-grid" data-category="mittagstisch"></div>
+  </section>
+
+  <!-- ── DESSERT ── -->
+  <section id="dessert">
+    <p class="section-sub" data-sub="dessert">Dolci</p>
+    <div class="section-header">
+      <h2 data-heading="dessert">Dessert</h2>
+      <div class="line"></div>
+    </div>
+    <div class="menu-list" data-category="dessert"></div>
+  </section>
+
+  <!-- ── GETRÄNKE CTA ── -->
+  <div class="getraenke-cta">
+    <a href="giovanni_getraenke.html" class="getraenke-cta-btn" data-cta-btn>Zur Getränkekarte</a>
+  </div>
+
+  <!-- ── ALLERGEN LEGENDE ── -->
+  <div class="allergen-legende-section">
+    <div data-category="allergen-legend"></div>
+  </div>
+</main>
+
+<footer>
+  <a href="giovanni_menu.html" class="header-logo-link">
+    <img src="extra/Logo.svg" alt="Ristorante Giovanni R" class="header-logo">
+  </a>
+  <p>Cucine Italiane · Tutte le paste sono fatte in casa</p>
+  <p style="margin-top: 12px; opacity: 0.4; font-family: 'Cormorant Garamond', serif; font-size: 13px; letter-spacing: 0.15em; text-transform: uppercase;">
+    <a href="impressum.html" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">Impressum</a>
+  </p>
+</footer>
+
+<script>
+(function() {
+  let menuData = null;
+  let currentLang = 'de';
+
+  const UI = {
+    de: {
+      sub: {
+        antipasti: 'Vorspeisen', insalata: 'Salate', zuppe: 'Suppen',
+        bruschette: 'Geröstetes Brot', pizze: 'Aus dem Steinofen',
+        fisch: 'Vom Meer', fleisch: 'Secondi Piatti',
+        empfehlungen: 'Hausgemachte Pasta & Küchenchefempfehlungen',
+        dessert: 'Dolci', getraenke: 'Getränke'
+      },
+      headings: {
+        antipasti: 'Antipasti', insalata: 'Insalata', zuppe: 'Zuppe',
+        bruschette: 'Bruschette', pizze: 'Pizze', fisch: 'Fisch',
+        fleisch: 'Fleischgerichte', empfehlungen: 'Empfehlungen',
+        mittagstisch: 'Mittagstisch', dessert: 'Dessert', getraenke: 'Getränke'
+      },
+      nav: {
+        antipasti: 'Antipasti', insalata: 'Insalata', zuppe: 'Zuppe',
+        bruschette: 'Bruschette', pizze: 'Pizze', fisch: 'Fisch',
+        fleisch: 'Fleisch', empfehlungen: 'Empfehlungen',
+        mittagstisch: 'Mittagstisch', dessert: 'Dessert', getraenke: 'Getränke'
+      },
+      drink_labels: {
+        heissgetraenke: 'Heiße Getränke', softdrinks: 'Softdrinks', saefte: 'Säfte',
+        bier: 'Bier', aperitifs: 'Aperitifs & Cocktails', spirituosen: 'Spirituosen',
+        weisswein: 'Weißwein', rotwein: 'Rotwein', rosewein: 'Roséwein',
+        prosecco_flasche: 'Prosecco (Flasche)', offen: 'Offen', flasche: 'Flasche'
+      },
+      notes: {
+        insalata: 'Mit original italienischem Olivenöl, Balsamico & selbstgebackenem Brot',
+        bruschette: 'Hausgemachtes geröstetes Brot mit Knoblauch',
+        fleischgerichte: 'Zu jedem Fleischgericht Kartoffeln',
+        empfehlungen: 'Alle Nudeln aus eigener Nudelproduktion, frisch hergestellt',
+        mittagstisch: '11:00–14:00 Uhr'
+      },
+      pizza_note: 'Jede Pizza auch in klein für 9,90 € · Pizza Margherita klein: 5,80 €',
+      mittag_senior: 'Auch als Seniorenportion erhältlich',
+      klein: 'klein',
+      tags: { vegan: 'Vegan', vegetarisch: 'Vegetarisch', neu: 'NEU' },
+      legend: { allergens: 'Allergene', additives: 'Zusatzstoffe' },
+      cta_label: 'Getränkekarte', cta_btn: 'Zur Getränkekarte',
+      tabs: { speisekarte: 'Speisekarte', getraenke: 'Getränke' }
+    },
+    en: {
+      sub: {
+        antipasti: 'Starters', insalata: 'Salads', zuppe: 'Soups',
+        bruschette: 'Toasted Bread', pizze: 'From the Stone Oven',
+        fisch: 'From the Sea', fleisch: 'Main Courses',
+        empfehlungen: 'Homemade Pasta & Chef\'s Recommendations',
+        dessert: 'Sweets', getraenke: 'Beverages'
+      },
+      headings: {
+        antipasti: 'Antipasti', insalata: 'Salads', zuppe: 'Soups',
+        bruschette: 'Bruschette', pizze: 'Pizzas', fisch: 'Fish',
+        fleisch: 'Meat Dishes', empfehlungen: 'Chef\'s Recommendations',
+        mittagstisch: 'Lunch Menu', dessert: 'Dessert', getraenke: 'Drinks'
+      },
+      nav: {
+        antipasti: 'Antipasti', insalata: 'Salads', zuppe: 'Soups',
+        bruschette: 'Bruschette', pizze: 'Pizzas', fisch: 'Fish',
+        fleisch: 'Meat', empfehlungen: 'Recommendations',
+        mittagstisch: 'Lunch', dessert: 'Dessert', getraenke: 'Drinks'
+      },
+      drink_labels: {
+        heissgetraenke: 'Hot Drinks', softdrinks: 'Soft Drinks', saefte: 'Juices',
+        bier: 'Beer', aperitifs: 'Aperitifs & Cocktails', spirituosen: 'Spirits',
+        weisswein: 'White Wine', rotwein: 'Red Wine', rosewein: 'Rosé Wine',
+        prosecco_flasche: 'Prosecco (Bottle)', offen: 'By the Glass', flasche: 'Bottle'
+      },
+      notes: {
+        insalata: 'With original Italian olive oil, balsamic & homemade bread',
+        bruschette: 'Homemade toasted bread with garlic',
+        fleischgerichte: 'All meat dishes served with potatoes',
+        empfehlungen: 'All pasta freshly made in-house',
+        mittagstisch: 'Monday–Friday, 11:00–14:00'
+      },
+      pizza_note: 'Every pizza also available small for 9.90 € · Margherita small: 5.80 €',
+      mittag_senior: 'Also available as senior portion',
+      klein: 'small',
+      tags: { vegan: 'Vegan', vegetarisch: 'Vegetarian', neu: 'NEW' },
+      legend: { allergens: 'Allergens', additives: 'Additives' },
+      cta_label: 'Drinks Menu', cta_btn: 'View Drinks Menu',
+      tabs: { speisekarte: 'Food Menu', getraenke: 'Drinks' }
+    },
+    it: {
+      sub: {
+        antipasti: 'Antipasti', insalata: 'Insalate', zuppe: 'Zuppe',
+        bruschette: 'Pane Tostato', pizze: 'Dal Forno a Pietra',
+        fisch: 'Dal Mare', fleisch: 'Secondi Piatti',
+        empfehlungen: 'Pasta Fatta in Casa & Specialità dello Chef',
+        dessert: 'Dolci', getraenke: 'Bevande'
+      },
+      headings: {
+        antipasti: 'Antipasti', insalata: 'Insalata', zuppe: 'Zuppe',
+        bruschette: 'Bruschette', pizze: 'Pizze', fisch: 'Pesce',
+        fleisch: 'Piatti di Carne', empfehlungen: 'Raccomandazioni dello Chef',
+        mittagstisch: 'Pranzo', dessert: 'Dolci', getraenke: 'Bevande'
+      },
+      nav: {
+        antipasti: 'Antipasti', insalata: 'Insalata', zuppe: 'Zuppe',
+        bruschette: 'Bruschette', pizze: 'Pizze', fisch: 'Pesce',
+        fleisch: 'Carne', empfehlungen: 'Raccomandazioni',
+        mittagstisch: 'Pranzo', dessert: 'Dolci', getraenke: 'Bevande'
+      },
+      drink_labels: {
+        heissgetraenke: 'Bevande Calde', softdrinks: 'Soft Drink', saefte: 'Succhi',
+        bier: 'Birra', aperitifs: 'Aperitivi & Cocktail', spirituosen: 'Superalcolici',
+        weisswein: 'Vino Bianco', rotwein: 'Vino Rosso', rosewein: 'Vino Rosato',
+        prosecco_flasche: 'Prosecco (Bottiglia)', offen: 'Al Bicchiere', flasche: 'Bottiglia'
+      },
+      notes: {
+        insalata: 'Con olio d\'oliva italiano originale, aceto balsamico e pane fatto in casa',
+        bruschette: 'Pane tostato fatto in casa con aglio',
+        fleischgerichte: 'Tutte le pietanze di carne servite con patate',
+        empfehlungen: 'Tutta la pasta è fatta in casa, fresca di giornata',
+        mittagstisch: 'Lunedì–Venerdì, 11:00–14:00'
+      },
+      pizza_note: 'Ogni pizza anche in piccolo per 9,90 € · Margherita piccola: 5,80 €',
+      mittag_senior: 'Disponibile anche come porzione senior',
+      klein: 'piccolo',
+      tags: { vegan: 'Vegano', vegetarisch: 'Vegetariano', neu: 'NUOVO' },
+      legend: { allergens: 'Allergeni', additives: 'Additivi' },
+      cta_label: 'Carta delle Bevande', cta_btn: 'Vai alla Carta delle Bevande',
+      tabs: { speisekarte: 'Menu', getraenke: 'Bevande' }
+    },
+    zh: {
+      sub: {
+        antipasti: '前菜', insalata: '沙拉', zuppe: '汤品',
+        bruschette: '烤面包', pizze: '石窑比萨',
+        fisch: '鱼类菜肴', fleisch: '主菜',
+        empfehlungen: '自制意面 & 主厨推荐',
+        dessert: '甜点', getraenke: '饮品'
+      },
+      headings: {
+        antipasti: '前菜', insalata: '沙拉', zuppe: '汤品',
+        bruschette: '烤面包', pizze: '比萨', fisch: '鱼类',
+        fleisch: '肉类菜肴', empfehlungen: '主厨推荐',
+        mittagstisch: '午市套餐', dessert: '甜点', getraenke: '饮品'
+      },
+      nav: {
+        antipasti: '前菜', insalata: '沙拉', zuppe: '汤品',
+        bruschette: '烤面包', pizze: '比萨', fisch: '鱼类',
+        fleisch: '肉类', empfehlungen: '推荐',
+        mittagstisch: '午市', dessert: '甜点', getraenke: '饮品'
+      },
+      drink_labels: {
+        heissgetraenke: '热饮', softdrinks: '软饮', saefte: '果汁',
+        bier: '啤酒', aperitifs: '开胃酒 & 鸡尾酒', spirituosen: '烈酒',
+        weisswein: '白葡萄酒', rotwein: '红葡萄酒', rosewein: '玫瑰葡萄酒',
+        prosecco_flasche: '普罗塞克（瓶装）', offen: '散杯', flasche: '整瓶'
+      },
+      notes: {
+        insalata: '配正宗意大利橄榄油、香醋和自制面包',
+        bruschette: '自制蒜香烤面包',
+        fleischgerichte: '所有肉类菜肴均附土豆',
+        empfehlungen: '全部意面均为店内新鲜现制',
+        mittagstisch: '周一至周五，11:00–14:00'
+      },
+      pizza_note: '每款比萨均可点小份 9,90 € · 玛格丽特小份：5,80 €',
+      mittag_senior: '亦提供老年人份量',
+      klein: '小份',
+      tags: { vegan: '纯素', vegetarisch: '素食', neu: '新品' },
+      legend: { allergens: '过敏原', additives: '添加剂' },
+      cta_label: '饮品单', cta_btn: '查看饮品单',
+      tabs: { speisekarte: '菜单', getraenke: '饮品' }
+    }
+  };
+
+  function getName(item) {
+    return item.name;
+  }
+
+  function renderAllergenCodes(codes) {
+    if (!codes || codes.length === 0) return '';
+    return `<sup class="allergen-codes">${codes.join(', ')}</sup>`;
+  }
+
+  function getDesc(item) {
+    if (currentLang === 'de') return item.beschreibung;
+    return (item.translations && item.translations[currentLang] && item.translations[currentLang].beschreibung) || item.beschreibung;
+  }
+
+  function formatPrice(price) {
+    return price.toFixed(2).replace('.', ',') + ' €';
+  }
+
+  function renderTags(tags) {
+    if (!tags || tags.length === 0) return '';
+    const t = UI[currentLang].tags;
+    return '<div class="item-tags">' + tags.map(tag => {
+      const k = tag.toLowerCase();
+      if (k === 'vegan') return `<span class="tag tag-vegan">${t.vegan}</span>`;
+      if (k === 'vegetarisch') return `<span class="tag tag-vegeta">${t.vegetarisch}</span>`;
+      if (k === 'neu') return `<span class="tag tag-neu">${t.neu}</span>`;
+      return '';
+    }).join('') + '</div>';
+  }
+
+  function renderMenuItem(item) {
+    const ui = UI[currentLang];
+    const priceAlt = item.preis_klein ? `<span class="price-alt">${ui.klein} ${formatPrice(item.preis_klein)}</span>` : '';
+    const kategorie = item.kategorie ? `<div class="kategorie-label">${item.kategorie}</div>` : '';
+    return `
+      <div class="menu-item">
+        <div class="item-left">
+          <div class="item-name-row">
+            <span class="item-nr">${item.nr}</span>
+            <span class="item-name">${getName(item)}${renderAllergenCodes(item.allergen_codes)}</span>
+            ${renderTags(item.tags)}
+          </div>
+          ${kategorie}
+          <div class="item-desc">${getDesc(item)}</div>
+        </div>
+        <div class="item-price">${formatPrice(item.preis)}${priceAlt}</div>
+      </div>
+    `;
+  }
+
+  function renderPizzaCard(item) {
+    const t = UI[currentLang].tags;
+    const tags = item.tags && item.tags.length > 0
+      ? `<div class="item-tags" style="margin-top:8px">${item.tags.map(tag => {
+          const k = tag.toLowerCase();
+          if (k === 'vegetarisch') return `<span class="tag tag-vegeta">${t.vegetarisch}</span>`;
+          return '';
+        }).join('')}</div>`
+      : '';
+    return `
+      <div class="pizza-card">
+        <span class="item-nr">${item.nr}</span>
+        <div class="item-name">${getName(item)}${renderAllergenCodes(item.allergen_codes)}</div>
+        <div class="item-desc">${getDesc(item)}</div>
+        <div class="item-price">${formatPrice(item.preis)}</div>
+        ${tags}
+      </div>
+    `;
+  }
+
+  function renderEmpfehlungItem(item) {
+    return `
+      <div class="empfehlung-item">
+        <div class="empfehlung-id">${item.id}</div>
+        <div class="item-left">
+          <div class="item-name-row">
+            <span class="item-name">${getName(item)}${renderAllergenCodes(item.allergen_codes)}</span>
+            ${renderTags(item.tags)}
+          </div>
+          <div class="item-desc">${getDesc(item)}</div>
+        </div>
+        <div class="item-price">${formatPrice(item.preis)}</div>
+      </div>
+    `;
+  }
+
+  function renderMittagCard(item) {
+    const t = UI[currentLang].tags;
+    const hasTags = item.tags && item.tags.length > 0;
+    const tagsHtml = hasTags
+      ? `<div class="item-tags" style="margin-bottom:6px">${item.tags.map(tag => {
+          const k = tag.toLowerCase();
+          if (k === 'neu') return `<span class="tag tag-neu">${t.neu}</span>`;
+          if (k === 'vegetarisch') return `<span class="tag tag-vegeta">${t.vegetarisch}</span>`;
+          return '';
+        }).join(' ')}</div>`
+      : '<div style="margin-bottom:6px; height:16px;"></div>';
+    return `
+      <div class="mittag-card">
+        <div class="mittag-id">${item.id}</div>
+        ${tagsHtml}
+        <div class="mittag-name">${getName(item)}${renderAllergenCodes(item.allergen_codes)}</div>
+        <div class="mittag-desc">${getDesc(item) || '&nbsp;'}</div>
+        <div class="mittag-price">${formatPrice(item.preis)}</div>
+      </div>
+    `;
+  }
+
+  function renderAllergenLegend() {
+    const legende = menuData.allergen_legende;
+    const lang = currentLang;
+    const ui = UI[lang].legend;
+    const allergenItems = Object.entries(legende.allergen)
+      .map(([code, desc]) => `<div class="allergen-legend-item"><span class="allergen-code">${code}</span>${desc[lang]}</div>`)
+      .join('');
+    const additiveItems = Object.entries(legende.additive)
+      .map(([code, desc]) => `<div class="allergen-legend-item"><span class="allergen-code">${code}</span>${desc[lang]}</div>`)
+      .join('');
+    return `
+      <div class="allergen-legend-group">
+        <h4 class="allergen-legend-heading">${ui.allergens}</h4>
+        <div class="allergen-legend-grid">${allergenItems}</div>
+      </div>
+      <div class="allergen-legend-group">
+        <h4 class="allergen-legend-heading">${ui.additives}</h4>
+        <div class="allergen-legend-grid">${additiveItems}</div>
+      </div>`;
+  }
+
+  function renderDessertCard(item) {
+    return `
+      <div class="menu-item">
+        <div class="item-left">
+          <div class="item-name-row">
+            <span class="item-name">${getName(item)}${renderAllergenCodes(item.allergen_codes)}</span>
+            ${renderTags(item.tags)}
+          </div>
+          <div class="item-desc">${getDesc(item)}</div>
+        </div>
+        <div class="item-price">${formatPrice(item.preis)}</div>
+      </div>
+    `;
+  }
+
+  function render() {
+    const kat = menuData.kategorien;
+    const ui = UI[currentLang];
+
+    // Section subtitles
+    document.querySelectorAll('[data-sub]').forEach(el => {
+      const key = el.dataset.sub;
+      if (ui.sub[key]) el.textContent = ui.sub[key];
+    });
+
+    // Section headings
+    document.querySelectorAll('[data-heading]').forEach(el => {
+      const key = el.dataset.heading;
+      if (ui.headings[key]) el.textContent = ui.headings[key];
+    });
+
+    // Nav links
+    document.querySelectorAll('[data-nav]').forEach(el => {
+      const key = el.dataset.nav;
+      if (ui.nav[key]) el.textContent = ui.nav[key];
+    });
+
+    // Static notes
+    const seniorEl = document.querySelector('[data-note="mittag-senior"]');
+    if (seniorEl) seniorEl.textContent = ui.mittag_senior;
+
+    // Antipasti
+    document.querySelector('[data-category="antipasti"]').innerHTML =
+      kat.antipasti.map(renderMenuItem).join('');
+
+    // Insalata
+    document.querySelector('[data-note="insalata"]').textContent = ui.notes.insalata;
+    document.querySelector('[data-category="insalata"]').innerHTML =
+      kat.insalata.gerichte.map(renderMenuItem).join('');
+
+    // Zuppe
+    document.querySelector('[data-category="zuppe"]').innerHTML =
+      kat.zuppe.map(renderMenuItem).join('');
+
+    // Bruschette
+    document.querySelector('[data-note="bruschette"]').textContent = ui.notes.bruschette;
+    document.querySelector('[data-category="bruschette"]').innerHTML =
+      kat.bruschette.gerichte.map(renderMenuItem).join('');
+
+    // Pizze
+    document.querySelector('[data-note="pizze"]').textContent = ui.pizza_note;
+    document.querySelector('[data-category="pizze"]').innerHTML =
+      kat.pizze.gerichte.map(renderPizzaCard).join('');
+
+    // Fisch
+    document.querySelector('[data-category="fisch"]').innerHTML =
+      kat.fisch.map(renderMenuItem).join('');
+
+    // Fleischgerichte
+    document.querySelector('[data-note="fleischgerichte"]').textContent = ui.notes.fleischgerichte;
+    document.querySelector('[data-category="fleischgerichte"]').innerHTML =
+      kat.fleischgerichte.gerichte.map(renderMenuItem).join('');
+
+    // Empfehlungen
+    document.querySelector('[data-note="empfehlungen"]').textContent = ui.notes.empfehlungen;
+    document.querySelector('[data-category="empfehlungen"]').innerHTML =
+      kat.empfehlungen.gerichte.map(renderEmpfehlungItem).join('');
+
+    // Mittagstisch
+    document.querySelector('[data-sub="mittagstisch"]').textContent = ui.notes.mittagstisch;
+    document.querySelector('[data-category="mittagstisch"]').innerHTML =
+      kat.mittagstisch.gerichte.map(renderMittagCard).join('');
+
+    // Dessert
+    document.querySelector('[data-category="dessert"]').innerHTML =
+      kat.dessert.map(renderDessertCard).join('');
+
+    // CTA
+    const ctaLabel = document.querySelector('[data-cta-label]');
+    const ctaBtn = document.querySelector('[data-cta-btn]');
+    if (ctaLabel) ctaLabel.textContent = ui.cta_label;
+    if (ctaBtn) ctaBtn.textContent = ui.cta_btn;
+
+    // Tabs
+    document.querySelectorAll('[data-tab]').forEach(el => {
+      const key = el.dataset.tab;
+      if (ui.tabs[key]) el.textContent = ui.tabs[key];
+    });
+
+    // Allergen legend
+    document.querySelector('[data-category="allergen-legend"]').innerHTML =
+      renderAllergenLegend();
+  }
+
+  function setLanguage(lang) {
+    currentLang = lang;
+    document.documentElement.lang = lang;
+    render();
+  }
+
+  // Scroll-based nav highlight
+  const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const id = entry.target.id;
+      const link = document.querySelector(`nav a[href="#${id}"]`);
+      if (!link) return;
+      if (entry.isIntersecting) {
+        document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+        link.classList.add('active');
+        link.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
+      }
+    });
+  }, { rootMargin: '-10% 0px -80% 0px', threshold: 0 });
+
+  document.querySelectorAll('main section[id]').forEach(sec => navObserver.observe(sec));
+
+  fetch('giovanni_r_menu.json')
+    .then(response => response.json())
+    .then(data => {
+      menuData = data;
+      render();
+      document.getElementById('langSelect').addEventListener('change', function() {
+        setLanguage(this.value);
+      });
+    });
+})();
+</script>
+
+</body>
+</html>

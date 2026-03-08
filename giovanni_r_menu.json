@@ -1,0 +1,3247 @@
+{
+  "restaurant": "Giovanni R – Cucine Italiane",
+  "allergen_legende": {
+    "additive": {
+      "1": {
+        "de": "mit Farbstoff",
+        "en": "with coloring",
+        "it": "con colorante",
+        "zh": "含色素"
+      },
+      "2": {
+        "de": "mit Konservierungsstoff",
+        "en": "with preservative",
+        "it": "con conservante",
+        "zh": "含防腐剂"
+      },
+      "6": {
+        "de": "mit Antioxidationsmittel",
+        "en": "with antioxidant",
+        "it": "con antiossidante",
+        "zh": "含抗氧化剂"
+      },
+      "13": {
+        "de": "mit Phosphat",
+        "en": "with phosphate",
+        "it": "con fosfato",
+        "zh": "含磷酸盐"
+      },
+      "14": {
+        "de": "mit Milcheiweiß",
+        "en": "with milk protein",
+        "it": "con proteine del latte",
+        "zh": "含乳蛋白"
+      },
+      "15": {
+        "de": "koffeinhaltig",
+        "en": "caffeine-containing",
+        "it": "contenente caffeina",
+        "zh": "含咖啡因"
+      }
+    },
+    "allergen": {
+      "A1": {
+        "de": "Gluten (Weizen)",
+        "en": "gluten (wheat)",
+        "it": "glutine (grano)",
+        "zh": "麸质（小麦）"
+      },
+      "B": {
+        "de": "Krebstiere",
+        "en": "shellfish",
+        "it": "crostacei",
+        "zh": "甲壳类动物"
+      },
+      "C": {
+        "de": "Eier",
+        "en": "eggs",
+        "it": "uova",
+        "zh": "鸡蛋"
+      },
+      "D": {
+        "de": "Fische",
+        "en": "fish",
+        "it": "pesce",
+        "zh": "鱼类"
+      },
+      "E": {
+        "de": "Erdnüsse",
+        "en": "peanuts",
+        "it": "arachidi",
+        "zh": "花生"
+      },
+      "G": {
+        "de": "Milch (Laktose)",
+        "en": "milk (lactose)",
+        "it": "latte (lattosio)",
+        "zh": "牛奶（乳糖）"
+      },
+      "H1": {
+        "de": "Mandeln",
+        "en": "almonds",
+        "it": "mandorle",
+        "zh": "杏仁"
+      },
+      "H3": {
+        "de": "Walnüsse",
+        "en": "walnuts",
+        "it": "noci",
+        "zh": "核桃"
+      },
+      "I": {
+        "de": "Sellerie",
+        "en": "celery",
+        "it": "sedano",
+        "zh": "芹菜"
+      },
+      "J": {
+        "de": "Senf",
+        "en": "mustard",
+        "it": "senape",
+        "zh": "芥末"
+      }
+    }
+  },
+  "kategorien": {
+    "antipasti": [
+      {
+        "nr": 1,
+        "name": "Carpaccio di Manzo",
+        "beschreibung": "Rindercarpaccio mit Rucola & Parmesan",
+        "preis": 13.8,
+        "tags": [],
+        "allergen_codes": [
+          "G"
+        ],
+        "translations": {
+          "en": {
+            "name": "Carpaccio di Manzo",
+            "beschreibung": "Thinly sliced raw beef with fresh arugula and shaved Parmesan cheese"
+          },
+          "it": {
+            "name": "Carpaccio di Manzo",
+            "beschreibung": "Sottili fette di manzo crudo con rucola fresca e scaglie di parmigiano"
+          },
+          "zh": {
+            "name": "Carpaccio di Manzo",
+            "beschreibung": "牛肉薄片配芝麻菜与帕玛森干酪"
+          }
+        }
+      },
+      {
+        "nr": 2,
+        "name": "Antipasto di Scampi",
+        "beschreibung": "Garnelen mit Parmaschinken in Salbeisoße",
+        "preis": 14.9,
+        "tags": [],
+        "allergen_codes": [
+          "B",
+          "2",
+          "G"
+        ],
+        "translations": {
+          "en": {
+            "name": "Antipasto di Scampi",
+            "beschreibung": "Prawns with Parma ham in sage sauce"
+          },
+          "it": {
+            "name": "Antipasto di Scampi",
+            "beschreibung": "Gamberi con prosciutto di Parma in salsa alla salvia"
+          },
+          "zh": {
+            "name": "Antipasto di Scampi",
+            "beschreibung": "帕尔马火腿大虾配鼠尾草黄油"
+          }
+        }
+      },
+      {
+        "nr": 3,
+        "name": "Antipasto Misto",
+        "beschreibung": "Gemischter Vorspeisenteller",
+        "preis": 12.9,
+        "preis_klein": 9.8,
+        "tags": [],
+        "allergen_codes": [
+          "G"
+        ],
+        "translations": {
+          "en": {
+            "name": "Antipasto Misto",
+            "beschreibung": "Mixed appetizer plate · small portion 9,80 €"
+          },
+          "it": {
+            "name": "Antipasto Misto",
+            "beschreibung": "Piatto misto di antipasti · porzione piccola 9,80 €"
+          },
+          "zh": {
+            "name": "Antipasto Misto",
+            "beschreibung": "混合开胃菜拼盘 · 小份 9,80 €"
+          }
+        }
+      },
+      {
+        "nr": 4,
+        "name": "Caprese",
+        "beschreibung": "Tomaten- und Mozzarellascheiben & Basilikum",
+        "preis": 11.6,
+        "tags": [
+          "vegetarisch"
+        ],
+        "allergen_codes": [
+          "G"
+        ],
+        "translations": {
+          "en": {
+            "name": "Caprese",
+            "beschreibung": "Slices of tomato and mozzarella & basil"
+          },
+          "it": {
+            "name": "Caprese",
+            "beschreibung": "Fette di pomodoro e mozzarella & basilico"
+          },
+          "zh": {
+            "name": "Caprese",
+            "beschreibung": "番茄芝士沙拉（配罗勒）"
+          }
+        }
+      },
+      {
+        "nr": 5,
+        "name": "Antipasto Italiano",
+        "beschreibung": "Rindercarpaccio – Caprese – Vitello Tonnato",
+        "preis": 14.9,
+        "tags": [],
+        "allergen_codes": [
+          "C",
+          "D",
+          "G",
+          "6"
+        ],
+        "translations": {
+          "en": {
+            "name": "Antipasto Italiano",
+            "beschreibung": "Beef carpaccio – caprese – vitello tonnato"
+          },
+          "it": {
+            "name": "Antipasto Italiano",
+            "beschreibung": "Carpaccio di manzo – caprese – vitello tonnato"
+          },
+          "zh": {
+            "name": "Antipasto Italiano",
+            "beschreibung": "意大利拼盘（牛肉薄片、卡普雷塞沙拉、金枪鱼酱小牛肉）"
+          }
+        }
+      },
+      {
+        "nr": 6,
+        "name": "Vitello Tonnato",
+        "beschreibung": "Thunfischcreme auf Kalbsfleisch",
+        "preis": 14.8,
+        "tags": [],
+        "allergen_codes": [
+          "6",
+          "D",
+          "C",
+          "G"
+        ],
+        "translations": {
+          "en": {
+            "name": "Vitello Tonnato",
+            "beschreibung": "Veal with tuna cream"
+          },
+          "it": {
+            "name": "Vitello Tonnato",
+            "beschreibung": "Vitello con crema di tonno"
+          },
+          "zh": {
+            "name": "Vitello Tonnato",
+            "beschreibung": "金枪鱼酱小牛肉"
+          }
+        }
+      },
+      {
+        "nr": 7,
+        "name": "Grüner Spargel",
+        "beschreibung": "Mit Kirschtomaten und Parmesanspalte",
+        "preis": 13.9,
+        "tags": [
+          "vegetarisch"
+        ],
+        "allergen_codes": [
+          "J",
+          "G"
+        ],
+        "translations": {
+          "en": {
+            "name": "Green Asparagus",
+            "beschreibung": "With cherry tomatoes and Parmesan shavings"
+          },
+          "it": {
+            "name": "Asparagi Verdi",
+            "beschreibung": "Con pomodorini e scaglie di parmigiano"
+          },
+          "zh": {
+            "name": "绿芦笋",
+            "beschreibung": "配小番茄和帕尔马干酪薄片"
+          }
+        }
+      },
+      {
+        "nr": 8,
+        "name": "Funghi Saltati",
+        "beschreibung": "Frische Champignons in Knoblauch gebraten",
+        "preis": 12.9,
+        "tags": [
+          "vegan"
+        ],
+        "allergen_codes": [],
+        "translations": {
+          "en": {
+            "name": "Funghi Saltati",
+            "beschreibung": "Fresh mushrooms sautéed with garlic"
+          },
+          "it": {
+            "name": "Funghi Saltati",
+            "beschreibung": "Funghi champignon freschi saltati con aglio"
+          },
+          "zh": {
+            "name": "Funghi Saltati",
+            "beschreibung": "蒜香炒蘑菇"
+          }
+        }
+      }
+    ],
+    "insalata": {
+      "hinweis": "Mit original italienischem Olivenöl, Balsamico & selbstgebackenem Brot",
+      "gerichte": [
+        {
+          "nr": 11,
+          "name": "Insalata Mista",
+          "beschreibung": "Gemischter Salat",
+          "preis": 6.6,
+          "tags": [
+            "vegan"
+          ],
+          "allergen_codes": [],
+          "translations": {
+            "en": {
+              "name": "Insalata Mista",
+              "beschreibung": "Mixed salad"
+            },
+            "it": {
+              "name": "Insalata Mista",
+              "beschreibung": "Insalata mista"
+            },
+            "zh": {
+              "name": "Insalata Mista",
+              "beschreibung": "混合沙拉"
+            }
+          }
+        },
+        {
+          "nr": 12,
+          "name": "Insalata Rucola",
+          "beschreibung": "Mit Tomaten, Rucola & gehobeltem Parmesan",
+          "preis": 9.4,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergen_codes": [
+            "G"
+          ],
+          "translations": {
+            "en": {
+              "name": "Insalata Rucola",
+              "beschreibung": "With tomatoes, arugula & shaved Parmesan"
+            },
+            "it": {
+              "name": "Insalata Rucola",
+              "beschreibung": "Con pomodori, rucola e scaglie di parmigiano"
+            },
+            "zh": {
+              "name": "Insalata Rucola",
+              "beschreibung": "芝麻菜沙拉，配番茄与帕玛森"
+            }
+          }
+        },
+        {
+          "nr": 13,
+          "name": "Insalata Verdura",
+          "beschreibung": "Gemischter Salat mit Antipasti Gemüse",
+          "preis": 13.6,
+          "tags": [
+            "vegan"
+          ],
+          "allergen_codes": [],
+          "translations": {
+            "en": {
+              "name": "Insalata Verdura",
+              "beschreibung": "Mixed salad with antipasti vegetables"
+            },
+            "it": {
+              "name": "Insalata Verdura",
+              "beschreibung": "Insalata mista con verdure di antipasto"
+            },
+            "zh": {
+              "name": "Insalata Verdura",
+              "beschreibung": "开胃菜蔬菜混合沙拉"
+            }
+          }
+        },
+        {
+          "nr": 14,
+          "name": "Insalata Parma",
+          "beschreibung": "Mit Tomaten, Mozzarella, Rucola, Parmaschinken, gehobeltem Parmesan",
+          "preis": 13.6,
+          "tags": [],
+          "allergen_codes": [
+            "2",
+            "G"
+          ],
+          "translations": {
+            "en": {
+              "name": "Insalata Parma",
+              "beschreibung": "With tomatoes, mozzarella, arugula, Parma ham, and shaved Parmesan"
+            },
+            "it": {
+              "name": "Insalata Parma",
+              "beschreibung": "Con pomodori, mozzarella, rucola, prosciutto di Parma e scaglie di parmigiano"
+            },
+            "zh": {
+              "name": "Insalata Parma",
+              "beschreibung": "番茄、马苏里拉、芝麻菜、帕尔马火腿，佐帕玛森"
+            }
+          }
+        },
+        {
+          "nr": 15,
+          "name": "Insalata Pollo",
+          "beschreibung": "Mit Rucola & Hähnchenbrustfilet mit Parmesan, Tomaten & Karotten",
+          "preis": 13.6,
+          "tags": [],
+          "allergen_codes": [
+            "G"
+          ],
+          "translations": {
+            "en": {
+              "name": "Insalata Pollo",
+              "beschreibung": "With arugula & chicken breast, Parmesan, tomatoes & carrots"
+            },
+            "it": {
+              "name": "Insalata Pollo",
+              "beschreibung": "Con rucola e petto di pollo, parmigiano, pomodori e carote"
+            },
+            "zh": {
+              "name": "Insalata Pollo",
+              "beschreibung": "芝麻菜鸡胸肉沙拉，配帕玛森、番茄与胡萝卜"
+            }
+          }
+        },
+        {
+          "nr": 16,
+          "name": "Insalata Estate",
+          "beschreibung": "Mit Tomaten, Mozzarella, Rucola, Lachs & gehobeltem Parmesan",
+          "preis": 13.6,
+          "tags": [],
+          "allergen_codes": [
+            "D",
+            "G"
+          ],
+          "translations": {
+            "en": {
+              "name": "Insalata Estate",
+              "beschreibung": "With tomatoes, mozzarella, arugula, salmon & shaved Parmesan"
+            },
+            "it": {
+              "name": "Insalata Estate",
+              "beschreibung": "Con pomodori, mozzarella, rucola, salmone e scaglie di parmigiano"
+            },
+            "zh": {
+              "name": "Insalata Estate",
+              "beschreibung": "三文鱼芝士沙拉，配番茄、芝麻菜与帕玛森"
+            }
+          }
+        },
+        {
+          "nr": 17,
+          "name": "Insalata Greca",
+          "beschreibung": "Mit Eisbergsalat, Tomaten, Gurken, Oliven & Schafskäse",
+          "preis": 11.8,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergen_codes": [
+            "G"
+          ],
+          "translations": {
+            "en": {
+              "name": "Insalata Greca",
+              "beschreibung": "With iceberg lettuce, tomatoes, cucumbers, olives & feta cheese"
+            },
+            "it": {
+              "name": "Insalata Greca",
+              "beschreibung": "Con lattuga iceberg, pomodori, cetrioli, olive e formaggio feta"
+            },
+            "zh": {
+              "name": "Insalata Greca",
+              "beschreibung": "希腊沙拉（冰山生菜、番茄、黄瓜、橄榄、羊奶酪）"
+            }
+          }
+        },
+        {
+          "nr": 18,
+          "name": "Insalata Italiana",
+          "beschreibung": "Eisbergsalat, Tomaten, Schinken, Thunfisch & Käse",
+          "preis": 11.8,
+          "tags": [],
+          "allergen_codes": [
+            "2",
+            "6",
+            "13",
+            "D",
+            "14",
+            "G"
+          ],
+          "translations": {
+            "en": {
+              "name": "Insalata Italiana",
+              "beschreibung": "Iceberg lettuce, tomatoes, ham, tuna & cheese"
+            },
+            "it": {
+              "name": "Insalata Italiana",
+              "beschreibung": "Lattuga iceberg, pomodori, prosciutto, tonno e formaggio"
+            },
+            "zh": {
+              "name": "Insalata Italiana",
+              "beschreibung": "意大利沙拉（冰山生菜、番茄、火腿、金枪鱼、奶酪）"
+            }
+          }
+        }
+      ]
+    },
+    "zuppe": [
+      {
+        "nr": 205,
+        "name": "Zuppa di Pomodoro",
+        "beschreibung": "Tomatensuppe",
+        "preis": 6.2,
+        "tags": [
+          "vegan"
+        ],
+        "allergen_codes": [
+          "I"
+        ],
+        "translations": {
+          "en": {
+            "name": "Zuppa di Pomodoro",
+            "beschreibung": "Tomato soup"
+          },
+          "it": {
+            "name": "Zuppa di Pomodoro",
+            "beschreibung": "Zuppa di pomodoro"
+          },
+          "zh": {
+            "name": "Zuppa di Pomodoro",
+            "beschreibung": "番茄汤"
+          }
+        }
+      },
+      {
+        "nr": 206,
+        "name": "Brodo Mistretto",
+        "beschreibung": "Kraftbrühe mit Ei, Parmesan & Nudeln",
+        "preis": 7.2,
+        "tags": [],
+        "allergen_codes": [
+          "C",
+          "14",
+          "A1",
+          "I"
+        ],
+        "translations": {
+          "en": {
+            "name": "Brodo Mistretto",
+            "beschreibung": "Clear broth with egg, Parmesan & pasta"
+          },
+          "it": {
+            "name": "Brodo Mistretto",
+            "beschreibung": "Brodo con uovo, parmigiano e pasta"
+          },
+          "zh": {
+            "name": "Brodo Mistretto",
+            "beschreibung": "清汤配鸡蛋、帕尔马干酪和意面"
+          }
+        }
+      },
+      {
+        "nr": 207,
+        "name": "Zuppa Vegetaria",
+        "beschreibung": "Gemüsecremesuppe",
+        "preis": 6.2,
+        "tags": [
+          "vegetarisch"
+        ],
+        "allergen_codes": [],
+        "translations": {
+          "en": {
+            "name": "Zuppa Vegetaria",
+            "beschreibung": "Creamy vegetable soup"
+          },
+          "it": {
+            "name": "Zuppa Vegetaria",
+            "beschreibung": "Zuppa di verdure cremosa"
+          },
+          "zh": {
+            "name": "Zuppa Vegetaria",
+            "beschreibung": "奶油蔬菜汤"
+          }
+        }
+      }
+    ],
+    "bruschette": {
+      "hinweis": "Hausgemachtes geröstetes Brot mit Knoblauch",
+      "gerichte": [
+        {
+          "nr": 101,
+          "name": "Bruschetta Pomodoro",
+          "beschreibung": "Mit frischen Tomaten",
+          "preis": 5.4,
+          "tags": [
+            "vegan"
+          ],
+          "allergen_codes": [
+            "A1"
+          ],
+          "translations": {
+            "en": {
+              "name": "Bruschetta Pomodoro",
+              "beschreibung": "With fresh tomatoes"
+            },
+            "it": {
+              "name": "Bruschetta Pomodoro",
+              "beschreibung": "Con pomodori freschi"
+            },
+            "zh": {
+              "name": "Bruschetta Pomodoro",
+              "beschreibung": "配新鲜番茄"
+            }
+          }
+        },
+        {
+          "nr": 103,
+          "name": "Bruschetta Mozzarella",
+          "beschreibung": "Mit Strauchtomaten & Mozzarella",
+          "preis": 5.6,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergen_codes": [
+            "G",
+            "A1"
+          ],
+          "translations": {
+            "en": {
+              "name": "Bruschetta Mozzarella",
+              "beschreibung": "With vine tomatoes & mozzarella"
+            },
+            "it": {
+              "name": "Bruschetta Mozzarella",
+              "beschreibung": "Con pomodori a grappolo e mozzarella"
+            },
+            "zh": {
+              "name": "Bruschetta Mozzarella",
+              "beschreibung": "配串番茄和马苏里拉奶酪"
+            }
+          }
+        },
+        {
+          "nr": 104,
+          "name": "Bruschetta Rucola",
+          "beschreibung": "Mit Rucola, frischen Tomaten, Mozzarella & Parmesan in Balsamico Vinaigrette",
+          "preis": 5.9,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergen_codes": [
+            "14",
+            "G",
+            "A1"
+          ],
+          "translations": {
+            "en": {
+              "name": "Bruschetta Rucola",
+              "beschreibung": "With arugula, fresh tomatoes, mozzarella & Parmesan in balsamic vinaigrette"
+            },
+            "it": {
+              "name": "Bruschetta Rucola",
+              "beschreibung": "Con rucola, pomodori freschi, mozzarella e parmigiano in vinaigrette al balsamico"
+            },
+            "zh": {
+              "name": "Bruschetta Rucola",
+              "beschreibung": "芝麻菜、新鲜番茄、马苏里拉与帕玛森，佐香醋油醋汁"
+            }
+          }
+        },
+        {
+          "nr": 107,
+          "name": "Bruschetta al Salmone",
+          "beschreibung": "Mit Rucola, Lachs & Mozzarella und Parmesan",
+          "preis": 5.9,
+          "tags": [],
+          "allergen_codes": [
+            "D",
+            "14",
+            "G",
+            "A1"
+          ],
+          "translations": {
+            "en": {
+              "name": "Bruschetta al Salmone",
+              "beschreibung": "With arugula, salmon, mozzarella and Parmesan"
+            },
+            "it": {
+              "name": "Bruschetta al Salmone",
+              "beschreibung": "Con rucola, salmone, mozzarella e parmigiano"
+            },
+            "zh": {
+              "name": "Bruschetta al Salmone",
+              "beschreibung": "配芝麻菜、三文鱼、马苏里拉奶酪和帕尔马干酪"
+            }
+          }
+        }
+      ]
+    },
+    "pizze": {
+      "hinweis_klein": "Jede andere Pizza in klein für 5,80 € / Pizza Margherita in klein für den kleinen Hunger: Jede Pizza auch in klein für 9,90 €",
+      "gerichte": [
+        {
+          "nr": 41,
+          "name": "Margherita",
+          "beschreibung": "Tomatensoße & Mozzarella",
+          "preis": 11.3,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergen_codes": [
+            "G",
+            "A1"
+          ],
+          "translations": {
+            "en": {
+              "name": "Margherita",
+              "beschreibung": "Tomato sauce & mozzarella"
+            },
+            "it": {
+              "name": "Margherita",
+              "beschreibung": "Salsa di pomodoro & mozzarella"
+            },
+            "zh": {
+              "name": "Margherita",
+              "beschreibung": "番茄酱和马苏里拉奶酪"
+            }
+          }
+        },
+        {
+          "nr": 42,
+          "name": "Prosciutto",
+          "beschreibung": "Tomatensoße, Käse & Schinken",
+          "preis": 13.9,
+          "tags": [],
+          "allergen_codes": [
+            "G",
+            "A1",
+            "2",
+            "6",
+            "13"
+          ],
+          "translations": {
+            "en": {
+              "name": "Prosciutto",
+              "beschreibung": "Tomato sauce, cheese & ham"
+            },
+            "it": {
+              "name": "Prosciutto",
+              "beschreibung": "Salsa di pomodoro, formaggio & prosciutto"
+            },
+            "zh": {
+              "name": "Prosciutto",
+              "beschreibung": "番茄酱、奶酪和火腿"
+            }
+          }
+        },
+        {
+          "nr": 43,
+          "name": "Salame",
+          "beschreibung": "Tomatensoße, Käse & Salami",
+          "preis": 13.3,
+          "tags": [],
+          "allergen_codes": [
+            "A1",
+            "G",
+            "1",
+            "2",
+            "6"
+          ],
+          "translations": {
+            "en": {
+              "name": "Salame",
+              "beschreibung": "Tomato sauce, cheese & salami"
+            },
+            "it": {
+              "name": "Salame",
+              "beschreibung": "Salsa di pomodoro, formaggio & salame"
+            },
+            "zh": {
+              "name": "Salame",
+              "beschreibung": "番茄酱、奶酪和萨拉米"
+            }
+          }
+        },
+        {
+          "nr": 44,
+          "name": "Tonnara",
+          "beschreibung": "Tomatensoße, Käse, Zwiebeln & Thunfisch",
+          "preis": 13.9,
+          "tags": [],
+          "allergen_codes": [
+            "D",
+            "G",
+            "A1"
+          ],
+          "translations": {
+            "en": {
+              "name": "Tonnara",
+              "beschreibung": "Tomato sauce, cheese, onions & tuna"
+            },
+            "it": {
+              "name": "Tonnara",
+              "beschreibung": "Salsa di pomodoro, formaggio, cipolle & tonno"
+            },
+            "zh": {
+              "name": "Tonnara",
+              "beschreibung": "番茄酱、奶酪、洋葱和金枪鱼"
+            }
+          }
+        },
+        {
+          "nr": 45,
+          "name": "Mista",
+          "beschreibung": "Salami, Schinken, Champignons & Käse",
+          "preis": 13.9,
+          "tags": [],
+          "allergen_codes": [
+            "G",
+            "A1",
+            "2",
+            "6",
+            "13"
+          ],
+          "translations": {
+            "en": {
+              "name": "Mista",
+              "beschreibung": "Salami, ham, mushrooms & cheese"
+            },
+            "it": {
+              "name": "Mista",
+              "beschreibung": "Salame, prosciutto, funghi & formaggio"
+            },
+            "zh": {
+              "name": "Mista",
+              "beschreibung": "萨拉米、火腿、蘑菇和奶酪"
+            }
+          }
+        },
+        {
+          "nr": 46,
+          "name": "Hawaii",
+          "beschreibung": "Tomatensoße, Käse, Schinken & Ananas",
+          "preis": 13.9,
+          "tags": [],
+          "allergen_codes": [
+            "G",
+            "A1",
+            "2",
+            "6",
+            "13"
+          ],
+          "translations": {
+            "en": {
+              "name": "Hawaii",
+              "beschreibung": "Tomato sauce, cheese, ham & pineapple"
+            },
+            "it": {
+              "name": "Hawaii",
+              "beschreibung": "Salsa di pomodoro, formaggio, prosciutto & ananas"
+            },
+            "zh": {
+              "name": "Hawaii",
+              "beschreibung": "番茄酱、奶酪、火腿和菠萝"
+            }
+          }
+        },
+        {
+          "nr": 47,
+          "name": "Vegetaria",
+          "beschreibung": "Mozzarella & frisches Gemüse & Knoblauch",
+          "preis": 16,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergen_codes": [
+            "G",
+            "A1"
+          ],
+          "translations": {
+            "en": {
+              "name": "Vegetaria",
+              "beschreibung": "Mozzarella, fresh vegetables & garlic"
+            },
+            "it": {
+              "name": "Vegetaria",
+              "beschreibung": "Mozzarella, verdure fresche & aglio"
+            },
+            "zh": {
+              "name": "Vegetaria",
+              "beschreibung": "马苏里拉奶酪、新鲜蔬菜和大蒜"
+            }
+          }
+        },
+        {
+          "nr": 48,
+          "name": "Al Salmone",
+          "beschreibung": "Mozzarella, Lachs, Brokkoli & Knoblauch",
+          "preis": 16.8,
+          "tags": [],
+          "allergen_codes": [
+            "D",
+            "G",
+            "A1"
+          ],
+          "translations": {
+            "en": {
+              "name": "Al Salmone",
+              "beschreibung": "Mozzarella, salmon, broccoli & garlic"
+            },
+            "it": {
+              "name": "Al Salmone",
+              "beschreibung": "Mozzarella, salmone, broccoli & aglio"
+            },
+            "zh": {
+              "name": "Al Salmone",
+              "beschreibung": "马苏里拉奶酪、三文鱼、西兰花和大蒜"
+            }
+          }
+        },
+        {
+          "nr": 49,
+          "name": "Caro",
+          "beschreibung": "Salami, Paprika, Champignons & Käse",
+          "preis": 13.9,
+          "tags": [],
+          "allergen_codes": [
+            "G",
+            "A1",
+            "2",
+            "6",
+            "13"
+          ],
+          "translations": {
+            "en": {
+              "name": "Caro",
+              "beschreibung": "Salami, bell pepper, mushrooms & cheese"
+            },
+            "it": {
+              "name": "Caro",
+              "beschreibung": "Salame, peperoni, funghi & formaggio"
+            },
+            "zh": {
+              "name": "Caro",
+              "beschreibung": "萨拉米、灯笼椒、蘑菇和奶酪"
+            }
+          }
+        },
+        {
+          "nr": 50,
+          "name": "Quattro Stagioni",
+          "beschreibung": "Salami, Schinken, Pilze, Thunfisch & Mozzarella",
+          "preis": 14.3,
+          "tags": [],
+          "allergen_codes": [
+            "D",
+            "G",
+            "A1",
+            "2",
+            "6",
+            "13"
+          ],
+          "translations": {
+            "en": {
+              "name": "Quattro Stagioni",
+              "beschreibung": "Salami, ham, mushrooms, tuna & mozzarella"
+            },
+            "it": {
+              "name": "Quattro Stagioni",
+              "beschreibung": "Salame, prosciutto, funghi, tonno & mozzarella"
+            },
+            "zh": {
+              "name": "Quattro Stagioni",
+              "beschreibung": "萨拉米、火腿、蘑菇、金枪鱼和马苏里拉奶酪"
+            }
+          }
+        },
+        {
+          "nr": 51,
+          "name": "Al Gorgonzola",
+          "beschreibung": "Schinken, Brokkoli, Gorgonzola, Zwiebeln & Käse",
+          "preis": 15.8,
+          "tags": [],
+          "allergen_codes": [
+            "G",
+            "A1",
+            "2",
+            "6",
+            "13"
+          ],
+          "translations": {
+            "en": {
+              "name": "Al Gorgonzola",
+              "beschreibung": "Ham, broccoli, gorgonzola, onions & cheese"
+            },
+            "it": {
+              "name": "Al Gorgonzola",
+              "beschreibung": "Prosciutto, broccoli, gorgonzola, cipolle & formaggio"
+            },
+            "zh": {
+              "name": "Al Gorgonzola",
+              "beschreibung": "火腿、西兰花、戈贡佐拉、洋葱和奶酪"
+            }
+          }
+        },
+        {
+          "nr": 52,
+          "name": "Nero",
+          "beschreibung": "Mozzarella, Parmaschinken & Frischkäse",
+          "preis": 15.8,
+          "tags": [],
+          "allergen_codes": [
+            "G",
+            "A1",
+            "2",
+            "6",
+            "13"
+          ],
+          "translations": {
+            "en": {
+              "name": "Nero",
+              "beschreibung": "Mozzarella, Parma ham & cream cheese"
+            },
+            "it": {
+              "name": "Nero",
+              "beschreibung": "Mozzarella, prosciutto di Parma & formaggio spalmabile"
+            },
+            "zh": {
+              "name": "Nero",
+              "beschreibung": "马苏里拉奶酪、帕尔马火腿和奶油奶酪"
+            }
+          }
+        },
+        {
+          "nr": 53,
+          "name": "Remo",
+          "beschreibung": "Mozzarella, Parmaschinken & gewürfelte Tomaten",
+          "preis": 15.8,
+          "tags": [],
+          "allergen_codes": [
+            "G",
+            "A1",
+            "2",
+            "6",
+            "13"
+          ],
+          "translations": {
+            "en": {
+              "name": "Remo",
+              "beschreibung": "Mozzarella, Parma ham & diced tomatoes"
+            },
+            "it": {
+              "name": "Remo",
+              "beschreibung": "Mozzarella, prosciutto di Parma & pomodori a cubetti"
+            },
+            "zh": {
+              "name": "Remo",
+              "beschreibung": "马苏里拉奶酪、帕尔马火腿和番茄丁"
+            }
+          }
+        },
+        {
+          "nr": 54,
+          "name": "Prosciutto e Funghi",
+          "beschreibung": "Schinken, Champignons & Mozzarella",
+          "preis": 14.9,
+          "tags": [],
+          "allergen_codes": [
+            "G",
+            "A1",
+            "2",
+            "6"
+          ],
+          "translations": {
+            "en": {
+              "name": "Prosciutto e Funghi",
+              "beschreibung": "Ham & mushrooms & mozzarella"
+            },
+            "it": {
+              "name": "Prosciutto e Funghi",
+              "beschreibung": "Prosciutto, funghi & mozzarella"
+            },
+            "zh": {
+              "name": "Prosciutto e Funghi",
+              "beschreibung": "火腿、蘑菇和马苏里拉奶酪"
+            }
+          }
+        },
+        {
+          "nr": 55,
+          "name": "Napoletana",
+          "beschreibung": "Kapern, Sardellen, Oliven & Mozzarella",
+          "preis": 14.6,
+          "tags": [],
+          "allergen_codes": [
+            "D",
+            "G",
+            "A1"
+          ],
+          "translations": {
+            "en": {
+              "name": "Napoletana",
+              "beschreibung": "Capers, anchovies, olives & mozzarella"
+            },
+            "it": {
+              "name": "Napoletana",
+              "beschreibung": "Capperi, acciughe, olive & mozzarella"
+            },
+            "zh": {
+              "name": "Napoletana",
+              "beschreibung": "刺山柑、鳾鱼、橄榄和马苏里拉奶酪"
+            }
+          }
+        },
+        {
+          "nr": 56,
+          "name": "Carciofi",
+          "beschreibung": "Artischocken, Schinken, Zwiebeln & Mozzarella",
+          "preis": 14.9,
+          "tags": [],
+          "allergen_codes": [
+            "G",
+            "A1",
+            "2",
+            "6",
+            "13"
+          ],
+          "translations": {
+            "en": {
+              "name": "Carciofi",
+              "beschreibung": "Artichokes, ham, onions & mozzarella"
+            },
+            "it": {
+              "name": "Carciofi",
+              "beschreibung": "Carciofi, prosciutto, cipolle & mozzarella"
+            },
+            "zh": {
+              "name": "Carciofi",
+              "beschreibung": "洋蓟、火腿、洋葱和马苏里拉奶酪"
+            }
+          }
+        },
+        {
+          "nr": 57,
+          "name": "Ortolana",
+          "beschreibung": "Artischocken, Paprika, Zwiebeln, Peperoni & Käse",
+          "preis": 14.8,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergen_codes": [
+            "G",
+            "A1"
+          ],
+          "translations": {
+            "en": {
+              "name": "Ortolana",
+              "beschreibung": "Artichokes, bell pepper, onions, chili peppers & cheese"
+            },
+            "it": {
+              "name": "Ortolana",
+              "beschreibung": "Carciofi, peperoni, cipolle, peperoncini & formaggio"
+            },
+            "zh": {
+              "name": "Ortolana",
+              "beschreibung": "洋蓟、彩椒、洋葱、辣椒和奶酪"
+            }
+          }
+        },
+        {
+          "nr": 58,
+          "name": "Romana",
+          "beschreibung": "Schinken, Salami, Zwiebeln & Käse",
+          "preis": 13.9,
+          "tags": [],
+          "allergen_codes": [
+            "G",
+            "A1",
+            "2",
+            "6",
+            "13"
+          ],
+          "translations": {
+            "en": {
+              "name": "Romana",
+              "beschreibung": "Ham, salami, onions & mozzarella"
+            },
+            "it": {
+              "name": "Romana",
+              "beschreibung": "Prosciutto, salame, cipolle & mozzarella"
+            },
+            "zh": {
+              "name": "Romana",
+              "beschreibung": "火腿、萨拉米、洋葱和马苏里拉奶酪"
+            }
+          }
+        },
+        {
+          "nr": 59,
+          "name": "Contadina",
+          "beschreibung": "Salami, Fetakäse, Paprika & Käse",
+          "preis": 15.3,
+          "tags": [],
+          "allergen_codes": [
+            "G",
+            "A1",
+            "2",
+            "6",
+            "13"
+          ],
+          "translations": {
+            "en": {
+              "name": "Contadina",
+              "beschreibung": "Salami, feta cheese, bell pepper & cheese"
+            },
+            "it": {
+              "name": "Contadina",
+              "beschreibung": "Salame, feta, peperoni & formaggio"
+            },
+            "zh": {
+              "name": "Contadina",
+              "beschreibung": "萨拉米、羊奶酪、彩椒和奶酪"
+            }
+          }
+        },
+        {
+          "nr": 60,
+          "name": "Rucola",
+          "beschreibung": "Mozzarella, Parmaschinken, Rucola & Parmesan",
+          "preis": 16.7,
+          "tags": [],
+          "allergen_codes": [
+            "G",
+            "A1",
+            "2",
+            "6",
+            "13"
+          ],
+          "translations": {
+            "en": {
+              "name": "Rucola",
+              "beschreibung": "Mozzarella, Parma ham, arugula & Parmesan"
+            },
+            "it": {
+              "name": "Rucola",
+              "beschreibung": "Mozzarella, prosciutto di Parma, rucola & parmigiano"
+            },
+            "zh": {
+              "name": "Rucola",
+              "beschreibung": "马苏里拉奶酪、帕尔马火腿、芝麻菜和帕尔马干酪"
+            }
+          }
+        },
+        {
+          "nr": 61,
+          "name": "Parma",
+          "beschreibung": "Mozzarella, Parmaschinken & Parmesan",
+          "preis": 16.4,
+          "tags": [],
+          "allergen_codes": [
+            "G",
+            "A1",
+            "2",
+            "6",
+            "13"
+          ],
+          "translations": {
+            "en": {
+              "name": "Parma",
+              "beschreibung": "Mozzarella, Parma ham & Parmesan"
+            },
+            "it": {
+              "name": "Parma",
+              "beschreibung": "Mozzarella, prosciutto di Parma & parmigiano"
+            },
+            "zh": {
+              "name": "Parma",
+              "beschreibung": "马苏里拉奶酪、帕尔马火腿和帕尔马干酪"
+            }
+          }
+        },
+        {
+          "nr": 62,
+          "name": "Ai Spinaci",
+          "beschreibung": "Spinat, Lachs & Knoblauch & Mozzarella",
+          "preis": 15.9,
+          "tags": [],
+          "allergen_codes": [
+            "D",
+            "G",
+            "A1"
+          ],
+          "translations": {
+            "en": {
+              "name": "Ai Spinaci",
+              "beschreibung": "Spinach, salmon, garlic & mozzarella"
+            },
+            "it": {
+              "name": "Ai Spinaci",
+              "beschreibung": "Spinaci, salmone, aglio & mozzarella"
+            },
+            "zh": {
+              "name": "Ai Spinaci",
+              "beschreibung": "菠菜、三文鱼、大蒜和马苏里拉奶酪"
+            }
+          }
+        },
+        {
+          "nr": 63,
+          "name": "Parma e Zola",
+          "beschreibung": "Parmaschinken & Gorgonzola & Mozzarella",
+          "preis": 16.4,
+          "tags": [],
+          "allergen_codes": [
+            "G",
+            "A1",
+            "2",
+            "6",
+            "13"
+          ],
+          "translations": {
+            "en": {
+              "name": "Parma e Zola",
+              "beschreibung": "Parma ham, gorgonzola & mozzarella"
+            },
+            "it": {
+              "name": "Parma e Zola",
+              "beschreibung": "Prosciutto di Parma, gorgonzola & mozzarella"
+            },
+            "zh": {
+              "name": "Parma e Zola",
+              "beschreibung": "帕尔马火腿、戈贡佐拉和马苏里拉奶酪"
+            }
+          }
+        },
+        {
+          "nr": 64,
+          "name": "Ai 4 Formaggi",
+          "beschreibung": "Mit 4 verschiedenen Käsesorten",
+          "preis": 16.8,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergen_codes": [
+            "G",
+            "A1"
+          ],
+          "translations": {
+            "en": {
+              "name": "Ai 4 Formaggi",
+              "beschreibung": "Four cheeses"
+            },
+            "it": {
+              "name": "Ai 4 Formaggi",
+              "beschreibung": "Quattro formaggi"
+            },
+            "zh": {
+              "name": "Ai 4 Formaggi",
+              "beschreibung": "四种奶酪"
+            }
+          }
+        },
+        {
+          "nr": 644,
+          "name": "Mare",
+          "beschreibung": "Mit Meeresfrüchten & Käse & Knoblauch",
+          "preis": 16.8,
+          "tags": [],
+          "allergen_codes": [
+            "B",
+            "D",
+            "I",
+            "G",
+            "A1"
+          ],
+          "translations": {
+            "en": {
+              "name": "Mare",
+              "beschreibung": "Seafood, cheese & garlic"
+            },
+            "it": {
+              "name": "Mare",
+              "beschreibung": "Frutti di mare, formaggio & aglio"
+            },
+            "zh": {
+              "name": "Mare",
+              "beschreibung": "海鲜、奶酪和大蒜"
+            }
+          }
+        },
+        {
+          "nr": 65,
+          "name": "Ai Scampi",
+          "beschreibung": "Mit Garnelen & Mozzarella & Knoblauch",
+          "preis": 17.7,
+          "tags": [],
+          "allergen_codes": [
+            "B",
+            "G",
+            "A1"
+          ],
+          "translations": {
+            "en": {
+              "name": "Ai Scampi",
+              "beschreibung": "Prawns, mozzarella & garlic"
+            },
+            "it": {
+              "name": "Ai Scampi",
+              "beschreibung": "Scampi, mozzarella & aglio"
+            },
+            "zh": {
+              "name": "Ai Scampi",
+              "beschreibung": "大虾、马苏里拉奶酪和大蒜"
+            }
+          }
+        },
+        {
+          "nr": 66,
+          "name": "Pastore",
+          "beschreibung": "Frische Tomaten, Fetakäse, Knoblauch & Zwiebeln",
+          "preis": 15.8,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergen_codes": [
+            "G",
+            "A1"
+          ],
+          "translations": {
+            "en": {
+              "name": "Pastore",
+              "beschreibung": "Fresh tomatoes, feta, garlic & onions"
+            },
+            "it": {
+              "name": "Pastore",
+              "beschreibung": "Pomodori freschi, feta, aglio & cipolle"
+            },
+            "zh": {
+              "name": "Pastore",
+              "beschreibung": "新鲜番茄、羊奶酪、大蒜和洋葱"
+            }
+          }
+        },
+        {
+          "nr": 67,
+          "name": "Calabra",
+          "beschreibung": "Pikante Salami, Pilze & Mozzarella",
+          "preis": 15.8,
+          "tags": [],
+          "allergen_codes": [
+            "G",
+            "A1",
+            "2",
+            "6"
+          ],
+          "translations": {
+            "en": {
+              "name": "Calabra",
+              "beschreibung": "Spicy salami, mushrooms & mozzarella"
+            },
+            "it": {
+              "name": "Calabra",
+              "beschreibung": "Salame piccante, funghi & mozzarella"
+            },
+            "zh": {
+              "name": "Calabra",
+              "beschreibung": "辣萨拉米、蘑菇和马苏里拉奶酪"
+            }
+          }
+        },
+        {
+          "nr": 68,
+          "name": "Seppe",
+          "beschreibung": "Pikante Salami, Rucola, Parmesan & Mozzarella",
+          "preis": 16.6,
+          "tags": [],
+          "allergen_codes": [
+            "G",
+            "A1",
+            "2",
+            "6"
+          ],
+          "translations": {
+            "en": {
+              "name": "Seppe",
+              "beschreibung": "Spicy salami, arugula, Parmesan & mozzarella"
+            },
+            "it": {
+              "name": "Seppe",
+              "beschreibung": "Salame piccante, rucola, parmigiano & mozzarella"
+            },
+            "zh": {
+              "name": "Seppe",
+              "beschreibung": "辣萨拉米、芝麻菜、帕尔马干酪和马苏里拉奶酪"
+            }
+          }
+        },
+        {
+          "nr": 69,
+          "name": "Spianata",
+          "beschreibung": "Pikante Salami, Spinat, Peperoni, Parmesan & Mozzarella",
+          "preis": 16.8,
+          "tags": [],
+          "allergen_codes": [
+            "G",
+            "A1",
+            "2",
+            "6"
+          ],
+          "translations": {
+            "en": {
+              "name": "Spianata",
+              "beschreibung": "Spicy salami, spinach, chili peppers, Parmesan & mozzarella"
+            },
+            "it": {
+              "name": "Spianata",
+              "beschreibung": "Salame piccante, spinaci, peperoncini, parmigiano & mozzarella"
+            },
+            "zh": {
+              "name": "Spianata",
+              "beschreibung": "辣萨拉米、菠菜、辣椒、帕尔马干酪和马苏里拉奶酪"
+            }
+          }
+        },
+        {
+          "nr": 70,
+          "name": "Nonna",
+          "beschreibung": "Pikante Salami, Zwiebeln, Walnüsse, Gorgonzola & Mozzarella",
+          "preis": 16.8,
+          "tags": [],
+          "allergen_codes": [
+            "H3",
+            "G",
+            "A1",
+            "2",
+            "6"
+          ],
+          "translations": {
+            "en": {
+              "name": "Nonna",
+              "beschreibung": "Spicy salami, onions, walnuts, gorgonzola & mozzarella"
+            },
+            "it": {
+              "name": "Nonna",
+              "beschreibung": "Salame piccante, cipolle, noci, gorgonzola & mozzarella"
+            },
+            "zh": {
+              "name": "Nonna",
+              "beschreibung": "辣萨拉米、洋葱、核桃、戈贡佐拉和马苏里拉奶酪"
+            }
+          }
+        },
+        {
+          "nr": 93,
+          "name": "Gio",
+          "beschreibung": "Pikante Salami, Oliven, Sardellen, Walnüsse & Mozzarella",
+          "preis": 16.8,
+          "tags": [],
+          "allergen_codes": [
+            "D",
+            "H3",
+            "G",
+            "A1",
+            "2",
+            "6"
+          ],
+          "translations": {
+            "en": {
+              "name": "Gio",
+              "beschreibung": "Spicy salami, olives, anchovies, walnuts & mozzarella"
+            },
+            "it": {
+              "name": "Gio",
+              "beschreibung": "Salame piccante, olive, acciughe, noci & mozzarella"
+            },
+            "zh": {
+              "name": "Gio",
+              "beschreibung": "辣萨拉米、橄榄、鳾鱼、核桃和马苏里拉奶酪"
+            }
+          }
+        },
+        {
+          "nr": 94,
+          "name": "Milano",
+          "beschreibung": "Pikante Salami, Parmaschinken, Parmesan & Mozzarella",
+          "preis": 17.4,
+          "tags": [],
+          "allergen_codes": [
+            "G",
+            "A1",
+            "2",
+            "6",
+            "13"
+          ],
+          "translations": {
+            "en": {
+              "name": "Milano",
+              "beschreibung": "Spicy salami, Parma ham, Parmesan & mozzarella"
+            },
+            "it": {
+              "name": "Milano",
+              "beschreibung": "Salame piccante, prosciutto di Parma, parmigiano & mozzarella"
+            },
+            "zh": {
+              "name": "Milano",
+              "beschreibung": "辣萨拉米、帕尔马火腿、帕尔马干酪和马苏里拉奶酪"
+            }
+          }
+        },
+        {
+          "nr": 95,
+          "name": "Peppe",
+          "beschreibung": "Pikante Salami, Rucola, Tomaten, Walnüsse, Parmesan & Mozzarella",
+          "preis": 17.4,
+          "tags": [],
+          "allergen_codes": [
+            "H3",
+            "G",
+            "A1",
+            "2",
+            "6"
+          ],
+          "translations": {
+            "en": {
+              "name": "Peppe",
+              "beschreibung": "Spicy salami, arugula, tomatoes, walnuts, Parmesan & mozzarella"
+            },
+            "it": {
+              "name": "Peppe",
+              "beschreibung": "Salame piccante, rucola, pomodori, noci, parmigiano & mozzarella"
+            },
+            "zh": {
+              "name": "Peppe",
+              "beschreibung": "辣萨拉米、芝麻菜、番茄、核桃、帕尔马干酪和马苏里拉奶酪"
+            }
+          }
+        },
+        {
+          "nr": 96,
+          "name": "Alla Giovanni",
+          "beschreibung": "Pikante Salami, Walnüsse, Parmesan & Mozzarella",
+          "preis": 16.9,
+          "tags": [],
+          "allergen_codes": [
+            "H3",
+            "G",
+            "A1",
+            "2",
+            "6"
+          ],
+          "translations": {
+            "en": {
+              "name": "Alla Giovanni",
+              "beschreibung": "Spicy salami, walnuts, Parmesan & mozzarella"
+            },
+            "it": {
+              "name": "Alla Giovanni",
+              "beschreibung": "Salame piccante, noci, parmigiano & mozzarella"
+            },
+            "zh": {
+              "name": "Alla Giovanni",
+              "beschreibung": "辣萨拉米、核桃、帕尔马干酪和马苏里拉奶酪"
+            }
+          }
+        },
+        {
+          "nr": 97,
+          "name": "Pizza Bruschetta",
+          "beschreibung": "Gebackener Mozzarella & frische Tomaten (ohne Tomatensoße)",
+          "preis": 13.8,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergen_codes": [
+            "G",
+            "A1"
+          ],
+          "translations": {
+            "en": {
+              "name": "Pizza Bruschetta",
+              "beschreibung": "Baked mozzarella & fresh tomatoes (without tomato sauce)"
+            },
+            "it": {
+              "name": "Pizza Bruschetta",
+              "beschreibung": "Mozzarella al forno & pomodori freschi (senza salsa di pomodoro)"
+            },
+            "zh": {
+              "name": "Pizza Bruschetta",
+              "beschreibung": "烤马苏里拉奶酪和新鲜番茄（无番茄酱）"
+            }
+          }
+        }
+      ]
+    },
+    "fisch": [
+      {
+        "nr": 285,
+        "name": "Doradenfilet",
+        "beschreibung": "Auf Gemüse und Kartoffeln",
+        "preis": 26,
+        "tags": [],
+        "allergen_codes": [
+          "D"
+        ],
+        "translations": {
+          "en": {
+            "name": "Sea Bream Fillet",
+            "beschreibung": "With vegetables and potatoes"
+          },
+          "it": {
+            "name": "Filetto di Orata",
+            "beschreibung": "Con verdure e patate"
+          },
+          "zh": {
+            "name": "金鲷鱼柳",
+            "beschreibung": "配蔬菜和土豆"
+          }
+        }
+      },
+      {
+        "nr": 286,
+        "name": "Doradenfilet",
+        "beschreibung": "Mit Spinat, Parmesan und Kartoffeln",
+        "preis": 26,
+        "tags": [],
+        "allergen_codes": [
+          "D",
+          "G"
+        ],
+        "translations": {
+          "en": {
+            "name": "Sea Bream Fillet",
+            "beschreibung": "With spinach, Parmesan and potatoes"
+          },
+          "it": {
+            "name": "Filetto di Orata",
+            "beschreibung": "Con spinaci, parmigiano e patate"
+          },
+          "zh": {
+            "name": "金鲷鱼柳",
+            "beschreibung": "配菠菜、帕尔马干酪和土豆"
+          }
+        }
+      }
+    ],
+    "fleischgerichte": {
+      "hinweis": "Zu jedem Fleischgericht Kartoffeln",
+      "gerichte": [
+        {
+          "nr": 71,
+          "name": "Pollo alla Senape",
+          "kategorie": "Hähnchenbrustfilet",
+          "beschreibung": "Hähnchenbrustfilet in Streifen in Rosmarin-Senf-Soße",
+          "preis": 24,
+          "tags": [],
+          "allergen_codes": [
+            "J",
+            "G"
+          ],
+          "translations": {
+            "en": {
+              "name": "Pollo alla Senape",
+              "beschreibung": "Chicken breast strips in rosemary–mustard sauce, with potatoes"
+            },
+            "it": {
+              "name": "Pollo alla Senape",
+              "beschreibung": "Strisce di petto di pollo in salsa rosmarino-senape, con patate"
+            },
+            "zh": {
+              "name": "Pollo alla Senape",
+              "beschreibung": "迷迭香芥末酱鸡胸肉条，配土豆"
+            }
+          }
+        },
+        {
+          "nr": 72,
+          "name": "Pollo alla Griglia",
+          "kategorie": "Hähnchenbrustfilet",
+          "beschreibung": "Gegrillte Hähnchenbrust mit Kartoffeln und Salat",
+          "preis": 24,
+          "tags": [],
+          "allergen_codes": [],
+          "translations": {
+            "en": {
+              "name": "Grilled Chicken Breast",
+              "beschreibung": "With potatoes and salad"
+            },
+            "it": {
+              "name": "Filetto di Pollo alla Griglia",
+              "beschreibung": "Con patate e insalata"
+            },
+            "zh": {
+              "name": "烤鸡胸肉",
+              "beschreibung": "配土豆和沙拉"
+            }
+          }
+        },
+        {
+          "nr": 80,
+          "name": "Vitello al Pomodoro",
+          "kategorie": "Kalbsfleisch",
+          "beschreibung": "Kalbsfleisch mit Oliven, Kapern und Tomatensoße",
+          "preis": 26,
+          "tags": [],
+          "allergen_codes": [
+            "I"
+          ],
+          "translations": {
+            "en": {
+              "name": "Vitello al Pomodoro",
+              "beschreibung": "Veal with olives, capers and tomato sauce"
+            },
+            "it": {
+              "name": "Vitello al Pomodoro",
+              "beschreibung": "Vitello con olive, capperi e salsa di pomodoro"
+            },
+            "zh": {
+              "name": "Vitello al Pomodoro",
+              "beschreibung": "小牛肉配橄榄、刺山柑和番茄酱"
+            }
+          }
+        },
+        {
+          "nr": 81,
+          "name": "Saltimbocca alla Romana",
+          "kategorie": "Kalbsfleisch",
+          "beschreibung": "In Parmaschinken & Salbeisoße",
+          "preis": 26,
+          "tags": [],
+          "allergen_codes": [
+            "G"
+          ],
+          "translations": {
+            "en": {
+              "name": "Saltimbocca alla Romana",
+              "beschreibung": "Veal in Parma ham & sage sauce, with potatoes"
+            },
+            "it": {
+              "name": "Saltimbocca alla Romana",
+              "beschreibung": "Vitello in prosciutto di Parma e salsa alla salvia, con patate"
+            },
+            "zh": {
+              "name": "Saltimbocca alla Romana",
+              "beschreibung": "帕尔马火腿包小牛肉配鼠尾草酱和土豆"
+            }
+          }
+        },
+        {
+          "nr": 82,
+          "name": "Scaloppina ai Funghi",
+          "kategorie": "Kalbsfleisch",
+          "beschreibung": "In Waldpilzsoße",
+          "preis": 26,
+          "tags": [],
+          "allergen_codes": [
+            "G"
+          ],
+          "translations": {
+            "en": {
+              "name": "Scaloppina with Wild Mushroom Sauce",
+              "beschreibung": "Veal in wild mushroom sauce, with potatoes"
+            },
+            "it": {
+              "name": "Scaloppina ai Funghi",
+              "beschreibung": "Vitello in salsa ai funghi di bosco, con patate"
+            },
+            "zh": {
+              "name": "野蘑菇酱小牛肉片",
+              "beschreibung": "野蘑菇酱小牛肉配土豆"
+            }
+          }
+        },
+        {
+          "nr": 83,
+          "name": "Scaloppina al Gorgonzola",
+          "kategorie": "Kalbsfleisch",
+          "beschreibung": "In Gorgonzolasoße",
+          "preis": 26,
+          "tags": [],
+          "allergen_codes": [
+            "14",
+            "G"
+          ],
+          "translations": {
+            "en": {
+              "name": "Scaloppina al Gorgonzola",
+              "beschreibung": "Veal in gorgonzola sauce, with potatoes"
+            },
+            "it": {
+              "name": "Scaloppina al Gorgonzola",
+              "beschreibung": "Vitello in salsa al gorgonzola, con patate"
+            },
+            "zh": {
+              "name": "Scaloppina al Gorgonzola",
+              "beschreibung": "戈贡佐拉酱小牛肉，配土豆"
+            }
+          }
+        }
+      ]
+    },
+    "dessert": [
+      {
+        "name": "Tiramisu",
+        "beschreibung": "Selbstgemacht, ohne Ei",
+        "preis": 6.8,
+        "tags": [
+          "vegetarisch"
+        ],
+        "allergen_codes": [
+          "C",
+          "G",
+          "A1",
+          "15"
+        ],
+        "translations": {
+          "en": {
+            "name": "Tiramisu",
+            "beschreibung": "Homemade, without egg"
+          },
+          "it": {
+            "name": "Tiramisu",
+            "beschreibung": "Fatto in casa, senza uova"
+          },
+          "zh": {
+            "name": "Tiramisu",
+            "beschreibung": "自制，不含鸡蛋"
+          }
+        }
+      },
+      {
+        "name": "Panna Cotta",
+        "beschreibung": "Mit Erdbeersoße (selbstgemacht)",
+        "preis": 6.8,
+        "tags": [
+          "vegetarisch"
+        ],
+        "allergen_codes": [
+          "G"
+        ],
+        "translations": {
+          "en": {
+            "name": "Panna Cotta",
+            "beschreibung": "With strawberry sauce (homemade)"
+          },
+          "it": {
+            "name": "Panna Cotta",
+            "beschreibung": "Con salsa di fragole (fatto in casa)"
+          },
+          "zh": {
+            "name": "Panna Cotta",
+            "beschreibung": "配草莓酱（自制）"
+          }
+        }
+      },
+      {
+        "name": "2 Kugeln Vanilleeis",
+        "beschreibung": "Mit warmen Himbeeren",
+        "preis": 6.8,
+        "tags": [
+          "vegetarisch"
+        ],
+        "allergen_codes": [
+          "C",
+          "E",
+          "G"
+        ],
+        "translations": {
+          "en": {
+            "name": "2 Scoops Vanilla Ice Cream",
+            "beschreibung": "With warm raspberries"
+          },
+          "it": {
+            "name": "2 Palline Gelato alla Vaniglia",
+            "beschreibung": "Con lamponi caldi"
+          },
+          "zh": {
+            "name": "2球香草冰淇淋",
+            "beschreibung": "配温覆盆子"
+          }
+        }
+      },
+      {
+        "name": "Vanilleeis / Schokoeis",
+        "beschreibung": "Einzelkugel",
+        "preis": 2.7,
+        "tags": [
+          "vegetarisch"
+        ],
+        "allergen_codes": [
+          "C",
+          "E",
+          "G"
+        ],
+        "translations": {
+          "en": {
+            "name": "Vanilla / Chocolate Ice Cream",
+            "beschreibung": "Single scoop"
+          },
+          "it": {
+            "name": "Gelato Vaniglia / Cioccolato",
+            "beschreibung": "Pallina singola"
+          },
+          "zh": {
+            "name": "香草冰淇淋 / 巧克力冰淇淋",
+            "beschreibung": "单球"
+          }
+        }
+      }
+    ],
+    "mittagstisch": {
+      "hinweis": "11:00–14:00 Uhr. Auch als Seniorenportion.",
+      "gerichte": [
+        {
+          "id": "A",
+          "name": "Rotebeete Carpaccio",
+          "beschreibung": "Mit Ziegenkäse und Sonnenblumenkernen",
+          "preis": 9.9,
+          "tags": [
+            "NEU",
+            "vegetarisch"
+          ],
+          "allergen_codes": [
+            "G"
+          ],
+          "translations": {
+            "en": {
+              "name": "Beetroot Carpaccio",
+              "beschreibung": "With goat cheese and sunflower seeds"
+            },
+            "it": {
+              "name": "Carpaccio di Barbabietola",
+              "beschreibung": "Con formaggio di capra e semi di girasole"
+            },
+            "zh": {
+              "name": "甜菜根薄片",
+              "beschreibung": "配山羊奶酪和葵花籽"
+            }
+          }
+        },
+        {
+          "id": "B",
+          "name": "Rigatoni Pomodoro",
+          "beschreibung": "Mit Schafkäse",
+          "preis": 9.9,
+          "tags": [
+            "NEU",
+            "vegetarisch"
+          ],
+          "allergen_codes": [
+            "A1",
+            "G",
+            "I"
+          ],
+          "translations": {
+            "en": {
+              "name": "Rigatoni Pomodoro",
+              "beschreibung": "With sheep's cheese"
+            },
+            "it": {
+              "name": "Rigatoni al Pomodoro",
+              "beschreibung": "Con formaggio di pecora"
+            },
+            "zh": {
+              "name": "番茄酱管状意面",
+              "beschreibung": "配羊奶酪"
+            }
+          }
+        },
+        {
+          "id": "C",
+          "name": "Pappardelle mit Hirschragout",
+          "beschreibung": "Hausgemachte Pasta",
+          "preis": 13.9,
+          "tags": [
+            "NEU"
+          ],
+          "allergen_codes": [
+            "A1",
+            "C"
+          ],
+          "translations": {
+            "en": {
+              "name": "Pappardelle with Venison Ragout",
+              "beschreibung": "Homemade"
+            },
+            "it": {
+              "name": "Pappardelle al Ragù di Cervo",
+              "beschreibung": "Fatto in casa"
+            },
+            "zh": {
+              "name": "鹿肉酱宽面条",
+              "beschreibung": "自制"
+            }
+          }
+        },
+        {
+          "id": "D",
+          "name": "Zitronen-Ravioli in Orangensoße",
+          "beschreibung": "Hausgemachte Pasta",
+          "preis": 12.9,
+          "tags": [],
+          "allergen_codes": [
+            "A1",
+            "C",
+            "G"
+          ],
+          "translations": {
+            "en": {
+              "name": "Lemon Ravioli in Orange Sauce",
+              "beschreibung": "Homemade"
+            },
+            "it": {
+              "name": "Ravioli al Limone in Salsa all'Arancia",
+              "beschreibung": "Fatto in casa"
+            },
+            "zh": {
+              "name": "柠檬意式饺子配橙子酱",
+              "beschreibung": "自制"
+            }
+          }
+        },
+        {
+          "id": "E",
+          "name": "Rucola-Salat mit Hähnchenbrust",
+          "beschreibung": "",
+          "preis": 12.9,
+          "tags": [],
+          "allergen_codes": [],
+          "translations": {
+            "en": {
+              "name": "Arugula Salad with Chicken Breast",
+              "beschreibung": ""
+            },
+            "it": {
+              "name": "Insalata di Rucola con Petto di Pollo",
+              "beschreibung": ""
+            },
+            "zh": {
+              "name": "芝麻菜沙拉配鸡胸肉",
+              "beschreibung": ""
+            }
+          }
+        },
+        {
+          "id": "F",
+          "name": "Lasagne mit Rinderbolognese",
+          "beschreibung": "",
+          "preis": 13.9,
+          "tags": [],
+          "allergen_codes": [
+            "G",
+            "A1",
+            "C",
+            "I"
+          ],
+          "translations": {
+            "en": {
+              "name": "Lasagna with Beef Bolognese",
+              "beschreibung": ""
+            },
+            "it": {
+              "name": "Lasagna al Ragù di Manzo",
+              "beschreibung": ""
+            },
+            "zh": {
+              "name": "牛肉博洛尼亚酱千层面",
+              "beschreibung": ""
+            }
+          }
+        },
+        {
+          "id": "G",
+          "name": "Gegrillte Hähnchenbrust",
+          "beschreibung": "Mit Kartoffel-Trüffel-Püree",
+          "preis": 13.9,
+          "tags": [
+            "NEU"
+          ],
+          "allergen_codes": [],
+          "translations": {
+            "en": {
+              "name": "Grilled Chicken Breast",
+              "beschreibung": "With potato–truffle purée"
+            },
+            "it": {
+              "name": "Petto di Pollo alla Griglia",
+              "beschreibung": "Con purè di patate al tartufo"
+            },
+            "zh": {
+              "name": "烤鸡胸肉",
+              "beschreibung": "配松露土豆泥"
+            }
+          }
+        },
+        {
+          "id": "H",
+          "name": "Pasta Cacio e Pepe",
+          "beschreibung": "Pasta mit cremiger Käse-Pfeffer-Sauce",
+          "preis": 11.9,
+          "tags": [
+            "NEU",
+            "vegetarisch"
+          ],
+          "allergen_codes": [
+            "G",
+            "A1"
+          ],
+          "translations": {
+            "en": {
+              "name": "Pasta Cacio e Pepe",
+              "beschreibung": "Pasta with creamy cheese–pepper sauce"
+            },
+            "it": {
+              "name": "Pasta Cacio e Pepe",
+              "beschreibung": "Pasta con cremosa salsa al formaggio e pepe"
+            },
+            "zh": {
+              "name": "奶酪胡椒意面",
+              "beschreibung": "意面配奶油奶酪胡椒酱"
+            }
+          }
+        },
+        {
+          "id": "I",
+          "name": "Tiramisu / Panna Cotta",
+          "beschreibung": "Dessert",
+          "preis": 5.8,
+          "tags": [],
+          "allergen_codes": [
+            "C",
+            "G",
+            "A1"
+          ],
+          "translations": {
+            "en": {
+              "name": "Tiramisu / Panna Cotta",
+              "beschreibung": "Dessert"
+            },
+            "it": {
+              "name": "Tiramisu / Panna Cotta",
+              "beschreibung": "Dolce"
+            },
+            "zh": {
+              "name": "提拉米苏 / 奶冻",
+              "beschreibung": "甜点"
+            }
+          }
+        }
+      ]
+    },
+    "empfehlungen": {
+      "hinweis": "Alle Nudeln aus eigener Nudelproduktion, frisch hergestellt",
+      "gerichte": [
+        {
+          "id": "M1",
+          "name": "Rotebeete Carpaccio",
+          "beschreibung": "Mit Ziegenkäse und Sonnenblumenkerne",
+          "preis": 12.8,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergen_codes": [
+            "G"
+          ],
+          "translations": {
+            "en": {
+              "name": "Beetroot Carpaccio with Goat Cheese",
+              "beschreibung": "With goat cheese and sunflower seeds"
+            },
+            "it": {
+              "name": "Carpaccio di Barbabietola con Formaggio di Capra",
+              "beschreibung": "Con formaggio di capra e semi di girasole"
+            },
+            "zh": {
+              "name": "甜菜根薄片配山羊奶酪",
+              "beschreibung": "配山羊奶酪和葵花籽"
+            }
+          }
+        },
+        {
+          "id": "M2",
+          "name": "Tris di Pasta",
+          "beschreibung": "Tortellini, Ravioli und Gnocchi in Butter Salbei",
+          "preis": 22,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergen_codes": [
+            "A1",
+            "C",
+            "G"
+          ],
+          "translations": {
+            "en": {
+              "name": "Tris di Pasta",
+              "beschreibung": "Tortellini (meat filling), ravioli (ricotta & spinach), gnocchi in butter–sage sauce"
+            },
+            "it": {
+              "name": "Tris di Pasta",
+              "beschreibung": "Tortellini (ripieno di carne), ravioli (ricotta e spinaci), gnocchi al burro e salvia"
+            },
+            "zh": {
+              "name": "Tris di Pasta",
+              "beschreibung": "Tortellini（肉馅）、Ravioli（里科塔和菠菜）、Gnocchi配黄油鼠尾草酱"
+            }
+          }
+        },
+        {
+          "id": "M3",
+          "name": "Tris di Pasta (Fisch)",
+          "beschreibung": "Verschiedene Ravioli gefüllt mit Stockfisch, Lachs und Scampi in Butter Salbei",
+          "preis": 23,
+          "tags": [],
+          "allergen_codes": [
+            "B",
+            "D",
+            "A1",
+            "C"
+          ],
+          "translations": {
+            "en": {
+              "name": "Tris di Pasta Fish",
+              "beschreibung": "Salt cod, salmon, prawns in lemon sauce"
+            },
+            "it": {
+              "name": "Tris di Pasta Pesce",
+              "beschreibung": "Baccalà, salmone, scampi in salsa al limone"
+            },
+            "zh": {
+              "name": "鱼馅意面三重奏",
+              "beschreibung": "咸鳕鱼、三文鱼、大虾配柠檬酱"
+            }
+          }
+        },
+        {
+          "id": "M4",
+          "name": "Pappardelle",
+          "beschreibung": "Mit Hirschragout und Tomatensoße",
+          "preis": 22,
+          "tags": [],
+          "allergen_codes": [
+            "A1",
+            "C"
+          ],
+          "translations": {
+            "en": {
+              "name": "Pappardelle with Venison Ragout",
+              "beschreibung": "Homemade"
+            },
+            "it": {
+              "name": "Pappardelle al Ragù di Cervo",
+              "beschreibung": "Fatto in casa"
+            },
+            "zh": {
+              "name": "鹿肉酱宽面条",
+              "beschreibung": "自制"
+            }
+          }
+        },
+        {
+          "id": "M5",
+          "name": "Cannelloni",
+          "beschreibung": "Gefüllt mit Ricotta und Spinat, überbacken mit Mozzarella",
+          "preis": 18.9,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergen_codes": [
+            "A1",
+            "C",
+            "G"
+          ],
+          "translations": {
+            "en": {
+              "name": "Cannelloni",
+              "beschreibung": "With ricotta & spinach, au gratin"
+            },
+            "it": {
+              "name": "Cannelloni",
+              "beschreibung": "Con ricotta e spinaci, gratinati"
+            },
+            "zh": {
+              "name": "Cannelloni",
+              "beschreibung": "里科塔奶酪菠菜馅，焗烤"
+            }
+          }
+        },
+        {
+          "id": "M6",
+          "name": "Tagliolini Neri",
+          "beschreibung": "Schwarze Tagliolini mit Meeresfrüchten (Pikant)",
+          "preis": 23,
+          "tags": [],
+          "allergen_codes": [
+            "B",
+            "D",
+            "A1",
+            "C"
+          ],
+          "translations": {
+            "en": {
+              "name": "Black Tagliolini with Seafood (spicy)",
+              "beschreibung": ""
+            },
+            "it": {
+              "name": "Tagliolini Neri con Frutti di Mare (piccante)",
+              "beschreibung": ""
+            },
+            "zh": {
+              "name": "黑意面配海鲜（辣）",
+              "beschreibung": ""
+            }
+          }
+        },
+        {
+          "id": "M7",
+          "name": "Zitronen Ravioli",
+          "beschreibung": "Zitronen-Ravioli in Orangensoße",
+          "preis": 23,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergen_codes": [
+            "A1",
+            "C",
+            "G"
+          ],
+          "translations": {
+            "en": {
+              "name": "Lemon Ravioli in Orange Sauce",
+              "beschreibung": "Homemade"
+            },
+            "it": {
+              "name": "Ravioli al Limone in Salsa all'Arancia",
+              "beschreibung": "Fatto in casa"
+            },
+            "zh": {
+              "name": "柠檬意式饺子配橙子酱",
+              "beschreibung": "自制"
+            }
+          }
+        },
+        {
+          "id": "M8",
+          "name": "Gegrillte Hähnchenbrust",
+          "beschreibung": "Mit cremigem Kartoffel-Trüffel-Püree und Röstzwiebeln",
+          "preis": 24,
+          "tags": [],
+          "allergen_codes": [],
+          "translations": {
+            "en": {
+              "name": "Grilled Chicken Breast",
+              "beschreibung": "With potato–truffle purée and roasted onions"
+            },
+            "it": {
+              "name": "Petto di Pollo alla Griglia",
+              "beschreibung": "Con purè di patate al tartufo e cipolle arrostite"
+            },
+            "zh": {
+              "name": "烤鸡胸肉",
+              "beschreibung": "配松露土豆泥和烤洋葱"
+            }
+          }
+        },
+        {
+          "id": "M9",
+          "name": "Crème Brûlée",
+          "beschreibung": "Crème brûlée mit Vanilleeis",
+          "preis": 8.6,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergen_codes": [
+            "C",
+            "G"
+          ],
+          "translations": {
+            "en": {
+              "name": "Crème Brûlée",
+              "beschreibung": "With vanilla ice cream"
+            },
+            "it": {
+              "name": "Crème Brûlée",
+              "beschreibung": "Con gelato alla vaniglia"
+            },
+            "zh": {
+              "name": "法式焦糖布丁",
+              "beschreibung": "配香草冰淇淋"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "getraenke": {
+    "heissgetraenke": [
+      {
+        "nr": 1,
+        "name": "Espresso",
+        "preis": "2,40 €"
+      },
+      {
+        "nr": 2,
+        "name": "Espresso Doppio",
+        "preis": "4,10 €"
+      },
+      {
+        "nr": 3,
+        "name": "Espresso Corretto",
+        "preis": "3,60 €"
+      },
+      {
+        "nr": 4,
+        "name": "Cappuccino",
+        "preis": "3,30 €"
+      },
+      {
+        "nr": 5,
+        "name": "Latte Macchiato",
+        "preis": "3,80 €"
+      },
+      {
+        "nr": 6,
+        "name": "Milchkaffee",
+        "preis": "3,80 €"
+      },
+      {
+        "nr": 7,
+        "name": "Kaffee Crema",
+        "preis": "3,10 €"
+      },
+      {
+        "nr": 8,
+        "name": "Kakao mit Sahne",
+        "preis": "3,50 €"
+      },
+      {
+        "nr": 9,
+        "name": "Tee – verschiedene Sorten",
+        "preis": "3,10 €"
+      }
+    ],
+    "softdrinks": [
+      {
+        "nr": 1,
+        "name": "Cola",
+        "preise": {
+          "0.2l": "3,10 €",
+          "0.4l": "4,70 €"
+        }
+      },
+      {
+        "nr": 2,
+        "name": "Cola (Flasche)",
+        "preise": {
+          "0.33l": "5,10 €"
+        }
+      },
+      {
+        "nr": 3,
+        "name": "Cola light",
+        "preise": {
+          "0.2l": "3,10 €",
+          "0.4l": "4,70 €"
+        }
+      },
+      {
+        "nr": 4,
+        "name": "Cola zero",
+        "preise": {
+          "0.2l": "3,10 €",
+          "0.4l": "4,70 €"
+        }
+      },
+      {
+        "nr": 5,
+        "name": "Fanta, Sprite",
+        "preise": {
+          "0.2l": "3,10 €",
+          "0.4l": "4,70 €"
+        }
+      },
+      {
+        "nr": 6,
+        "name": "San Pellegrino",
+        "preise": {
+          "0.25l": "3,10 €",
+          "0.75l": "6,70 €"
+        }
+      },
+      {
+        "nr": 7,
+        "name": "Stilles Wasser",
+        "preise": {
+          "0.25l": "3,10 €",
+          "0.75l": "6,70 €"
+        }
+      },
+      {
+        "nr": 8,
+        "name": "Soda Water",
+        "preise": {
+          "0.2l": "3,40 €"
+        }
+      },
+      {
+        "nr": 9,
+        "name": "Orangina gelb/rot",
+        "preise": {
+          "0.25l": "3,40 €"
+        }
+      },
+      {
+        "nr": 10,
+        "name": "Limonade Sizilien",
+        "preise": {
+          "0.275l": "4,60 €"
+        }
+      },
+      {
+        "nr": 11,
+        "name": "Rote Orange Sizilien",
+        "preise": {
+          "0.275l": "4,60 €"
+        }
+      },
+      {
+        "nr": 12,
+        "name": "Bitter Lemon",
+        "preise": {
+          "0.2l": "3,40 €"
+        }
+      },
+      {
+        "nr": 13,
+        "name": "Tonic Water",
+        "preise": {
+          "0.2l": "3,40 €"
+        }
+      },
+      {
+        "nr": 14,
+        "name": "Ginger Ale",
+        "preise": {
+          "0.2l": "3,40 €"
+        }
+      },
+      {
+        "nr": 15,
+        "name": "Eistee Zitrone, Pfirsich",
+        "preise": {
+          "0.2l": "3,10 €",
+          "0.4l": "4,30 €"
+        }
+      },
+      {
+        "nr": 16,
+        "name": "Malzbier",
+        "preise": {
+          "0.33l": "4,20 €"
+        }
+      }
+    ],
+    "saefte": [
+      {
+        "nr": 1,
+        "name": "Orangensaft 100%",
+        "preise": {
+          "0.2l": "3,70 €",
+          "0.4l": "5,10 €"
+        }
+      },
+      {
+        "nr": 2,
+        "name": "Apfelsaft 100%",
+        "preise": {
+          "0.2l": "3,70 €",
+          "0.4l": "5,10 €"
+        }
+      },
+      {
+        "nr": 3,
+        "name": "Apfelschorle",
+        "preise": {
+          "0.2l": "3,30 €",
+          "0.4l": "4,60 €"
+        }
+      },
+      {
+        "nr": 4,
+        "name": "Maracujaschorle",
+        "preise": {
+          "0.2l": "3,30 €",
+          "0.4l": "4,60 €"
+        }
+      },
+      {
+        "nr": 5,
+        "name": "Rhabarberschorle",
+        "preise": {
+          "0.2l": "3,30 €",
+          "0.4l": "4,60 €"
+        }
+      },
+      {
+        "nr": 6,
+        "name": "Bananennektar 27%",
+        "preise": {
+          "0.2l": "3,70 €",
+          "0.4l": "5,30 €"
+        }
+      },
+      {
+        "nr": 7,
+        "name": "Kirschnektar 40%",
+        "preise": {
+          "0.2l": "3,70 €",
+          "0.4l": "5,30 €"
+        }
+      },
+      {
+        "nr": 8,
+        "name": "KiBa (Kirsch-Banane)",
+        "preise": {
+          "0.2l": "3,70 €",
+          "0.4l": "4,60 €"
+        }
+      },
+      {
+        "nr": 9,
+        "name": "Maracuja",
+        "preise": {
+          "0.2l": "3,70 €",
+          "0.4l": "4,60 €"
+        }
+      },
+      {
+        "nr": 10,
+        "name": "Rhabarber",
+        "preise": {
+          "0.2l": "3,70 €",
+          "0.4l": "4,60 €"
+        }
+      }
+    ],
+    "bier": [
+      {
+        "nr": 1,
+        "name": "Birra Moretti",
+        "preise": {
+          "0.33l": "3,40 €"
+        }
+      },
+      {
+        "nr": 2,
+        "name": "Gilde",
+        "preise": {
+          "0.3l": "3,80 €",
+          "0.5l": "5,30 €"
+        }
+      },
+      {
+        "nr": 3,
+        "name": "Alsterwasser",
+        "preise": {
+          "0.3l": "3,80 €",
+          "0.5l": "5,30 €"
+        }
+      },
+      {
+        "nr": 4,
+        "name": "Gilde Alkoholfrei",
+        "preise": {
+          "0.33l": "3,80 €"
+        }
+      },
+      {
+        "nr": 5,
+        "name": "Hefe-Weißbier",
+        "preise": {
+          "0.5l": "5,30 €"
+        }
+      },
+      {
+        "nr": 6,
+        "name": "Hefe-Weißbier Banane",
+        "preise": {
+          "0.5l": "5,70 €"
+        }
+      },
+      {
+        "nr": 7,
+        "name": "Hefe-Weißbier Alkoholfrei",
+        "preise": {
+          "0.5l": "5,20 €"
+        }
+      },
+      {
+        "nr": 8,
+        "name": "Weißbier Zitrone",
+        "preise": {
+          "0.5l": "5,20 €"
+        }
+      }
+    ],
+    "aperitifs": [
+      {
+        "nr": 1,
+        "name": "Prosecco",
+        "preise": {
+          "0.1l": "4,40 €"
+        }
+      },
+      {
+        "nr": 2,
+        "name": "Bitterino O-Saft alkoholfrei",
+        "preise": {
+          "0.2l": "6,90 €"
+        }
+      },
+      {
+        "nr": 3,
+        "name": "Bitterino Prosecco",
+        "preise": {
+          "0.2l": "6,90 €"
+        }
+      },
+      {
+        "nr": 4,
+        "name": "Bitterino Pinot",
+        "preise": {
+          "0.2l": "6,90 €"
+        }
+      },
+      {
+        "nr": 5,
+        "name": "Aperol Spritz",
+        "preise": {
+          "0.2l": "6,90 €"
+        }
+      },
+      {
+        "nr": 6,
+        "name": "Aperol Lemon",
+        "preise": {
+          "0.2l": "6,90 €"
+        }
+      },
+      {
+        "nr": 7,
+        "name": "Aperol Soda",
+        "preise": {
+          "0.2l": "6,90 €"
+        }
+      },
+      {
+        "nr": 8,
+        "name": "Aperol Maracuja",
+        "preise": {
+          "0.2l": "6,90 €"
+        }
+      },
+      {
+        "nr": 9,
+        "name": "Limoncello Spritz",
+        "preise": {
+          "0.2l": "6,90 €"
+        }
+      },
+      {
+        "nr": 10,
+        "name": "Negroni",
+        "preise": {
+          "0.2l": "6,90 €"
+        }
+      },
+      {
+        "nr": 11,
+        "name": "Gin Tonic",
+        "preise": {
+          "0.2l": "6,90 €"
+        }
+      },
+      {
+        "nr": 12,
+        "name": "Campari Orange",
+        "preise": {
+          "0.2l": "6,90 €"
+        }
+      },
+      {
+        "nr": 13,
+        "name": "Campari Soda",
+        "preise": {
+          "0.2l": "6,90 €"
+        }
+      },
+      {
+        "nr": 14,
+        "name": "Bacardí Cola",
+        "preise": {
+          "0.2l": "6,90 €"
+        }
+      },
+      {
+        "nr": 15,
+        "name": "Martini (Bianco, Rosso, Dry)",
+        "preise": {
+          "5cl": "3,80 €"
+        }
+      }
+    ],
+    "spirituosen": [
+      {
+        "nr": 1,
+        "name": "Jack Daniels",
+        "preise": {
+          "2cl": "3,80 €"
+        }
+      },
+      {
+        "nr": 2,
+        "name": "Gin",
+        "preise": {
+          "2cl": "3,80 €"
+        }
+      },
+      {
+        "nr": 3,
+        "name": "Amaro Montenegro",
+        "preise": {
+          "2cl": "3,80 €"
+        }
+      },
+      {
+        "nr": 4,
+        "name": "Amaro Del Capo",
+        "preise": {
+          "2cl": "3,80 €"
+        }
+      },
+      {
+        "nr": 5,
+        "name": "Cynar",
+        "preise": {
+          "2cl": "3,80 €"
+        }
+      },
+      {
+        "nr": 6,
+        "name": "Limoncello Zitronenlikör",
+        "preise": {
+          "2cl": "3,80 €"
+        }
+      },
+      {
+        "nr": 7,
+        "name": "Sambuca",
+        "preise": {
+          "2cl": "3,80 €"
+        }
+      },
+      {
+        "nr": 8,
+        "name": "Ramazzotti",
+        "preise": {
+          "2cl": "3,80 €"
+        }
+      },
+      {
+        "nr": 9,
+        "name": "Averna",
+        "preise": {
+          "2cl": "3,80 €"
+        }
+      },
+      {
+        "nr": 10,
+        "name": "Amaretto",
+        "preise": {
+          "2cl": "3,80 €"
+        }
+      },
+      {
+        "nr": 11,
+        "name": "Fernet Branca",
+        "preise": {
+          "2cl": "3,80 €"
+        }
+      },
+      {
+        "nr": 12,
+        "name": "Vecchia Romagna",
+        "preise": {
+          "2cl": "3,80 €"
+        }
+      },
+      {
+        "nr": 13,
+        "name": "Wodka",
+        "preise": {
+          "2cl": "4,40 €"
+        }
+      },
+      {
+        "nr": 14,
+        "name": "Baileys",
+        "preise": {
+          "2cl": "3,80 €"
+        }
+      },
+      {
+        "nr": 15,
+        "name": "Jägermeister",
+        "preise": {
+          "2cl": "3,80 €"
+        }
+      },
+      {
+        "nr": 16,
+        "name": "Grappa (Hausmarke)",
+        "preise": {
+          "2cl": "3,80 €"
+        }
+      },
+      {
+        "nr": 17,
+        "name": "Grappa Nonino div. Sorten",
+        "preise": {
+          "2cl": "ab 6,40 €"
+        }
+      }
+    ],
+    "weisswein": {
+      "offen": [
+        {
+          "nr": 1,
+          "name": "Pinot Grigio",
+          "preise": {
+            "0.25l": "6,60 €",
+            "0.5l": "10,70 €"
+          }
+        },
+        {
+          "nr": 2,
+          "name": "Chardonnay",
+          "preise": {
+            "0.25l": "6,60 €",
+            "0.5l": "10,90 €"
+          }
+        },
+        {
+          "nr": 3,
+          "name": "Weinschorle",
+          "preise": {
+            "0.25l": "6,10 €",
+            "0.5l": "9,20 €"
+          }
+        },
+        {
+          "nr": 4,
+          "name": "Lugana",
+          "preise": {
+            "0.25l": "8,10 €",
+            "0.5l": "13,30 €"
+          }
+        }
+      ],
+      "flasche": [
+        {
+          "nr": 1,
+          "name": "Lugana",
+          "preise": {
+            "0.7l": "27,20 €"
+          }
+        },
+        {
+          "nr": 2,
+          "name": "Custoza",
+          "preise": {
+            "0.7l": "27,20 €"
+          }
+        },
+        {
+          "nr": 3,
+          "name": "Sauvignon Blanc",
+          "preise": {
+            "0.7l": "30,20 €"
+          }
+        },
+        {
+          "nr": 4,
+          "name": "Falanghina",
+          "preise": {
+            "0.7l": "27,20 €"
+          }
+        },
+        {
+          "nr": 5,
+          "name": "Pinot Grigio",
+          "preise": {
+            "0.7l": "25,20 €"
+          }
+        },
+        {
+          "nr": 6,
+          "name": "Gavi di Gavi",
+          "preise": {
+            "0.7l": "27,20 €"
+          }
+        }
+      ]
+    },
+    "rotwein": {
+      "offen": [
+        {
+          "nr": 1,
+          "name": "Merlot",
+          "preise": {
+            "0.25l": "6,50 €",
+            "0.5l": "10,60 €"
+          }
+        },
+        {
+          "nr": 2,
+          "name": "Cabernet",
+          "preise": {
+            "0.25l": "6,50 €",
+            "0.5l": "10,80 €"
+          }
+        },
+        {
+          "nr": 3,
+          "name": "Lambrusco",
+          "preise": {
+            "0.25l": "6,00 €",
+            "0.5l": "10,00 €"
+          }
+        },
+        {
+          "nr": 4,
+          "name": "Primitivo",
+          "preise": {
+            "0.25l": "8,00 €",
+            "0.5l": "13,70 €"
+          }
+        },
+        {
+          "nr": 5,
+          "name": "Montepulciano",
+          "preise": {
+            "0.25l": "7,60 €",
+            "0.5l": "13,20 €"
+          }
+        }
+      ],
+      "flasche": [
+        {
+          "nr": 1,
+          "name": "Primitivo",
+          "preise": {
+            "0.7l": "27,20 €"
+          }
+        },
+        {
+          "nr": 2,
+          "name": "Morellino Toscana",
+          "preise": {
+            "0.7l": "27,20 €"
+          }
+        },
+        {
+          "nr": 3,
+          "name": "Valpolicella",
+          "preise": {
+            "0.7l": "27,20 €"
+          }
+        },
+        {
+          "nr": 4,
+          "name": "Brunello di Montalcino",
+          "preise": {
+            "0.7l": "50,20 €"
+          }
+        },
+        {
+          "nr": 5,
+          "name": "Nero D'Avola",
+          "preise": {
+            "0.7l": "27,20 €"
+          }
+        }
+      ]
+    },
+    "rosewein": {
+      "offen": [
+        {
+          "nr": 1,
+          "name": "Rosé Wein",
+          "preise": {
+            "0.25l": "6,40 €",
+            "0.5l": "10,50 €"
+          }
+        }
+      ],
+      "flasche": [
+        {
+          "nr": 1,
+          "name": "Rosé di Primitivo",
+          "preise": {
+            "0.7l": "27,20 €"
+          }
+        }
+      ]
+    },
+    "prosecco_flasche": [
+      {
+        "nr": 1,
+        "name": "Prosecco Rosé",
+        "preise": {
+          "0.7l": "26,20 €"
+        }
+      },
+      {
+        "nr": 2,
+        "name": "Prosecco Extra Dry",
+        "preise": {
+          "0.7l": "26,20 €"
+        }
+      }
+    ]
+  }
+}
