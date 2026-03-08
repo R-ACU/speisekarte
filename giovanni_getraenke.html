@@ -8,21 +8,42 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="giovanni_menu.css">
 <style>
-/* ── BUTTON HIGHLIGHT ON LOAD ── */
-@keyframes btnPulse {
-  0%   { box-shadow: 0 0 0 0px rgba(184,147,42,0.5); background: rgba(184,147,42,0.12); }
-  50%  { box-shadow: 0 0 0 6px rgba(184,147,42,0); background: rgba(184,147,42,0.18); }
-  100% { box-shadow: 0 0 0 0px rgba(184,147,42,0); background: transparent; }
+/* ── SPOTLIGHT WALKTHROUGH ── */
+#wt-overlay { position:fixed; inset:0; z-index:9000; pointer-events:none; opacity:0; transition:opacity 0.5s ease; }
+#wt-overlay.active { pointer-events:auto; opacity:1; }
+#wt-backdrop {
+  position:absolute; inset:0;
+  background: radial-gradient(ellipse var(--wt-rw) var(--wt-rh) at var(--wt-x) var(--wt-y), transparent 60%, rgba(8,5,2,0.5) 80%, rgba(8,5,2,0.82) 100%);
+  /* no CSS transition — animated via JS rAF instead */
 }
-
-.highlight-pulse {
-  border-radius: 6px;
-  animation: btnPulse 1s ease both;
+#wt-label-text {
+  position:absolute; bottom:100px; left:0; right:0; text-align:center;
+  font-family:'Playfair Display',serif; font-size:clamp(38px,8vw,74px);
+  font-style:italic; color:#f5f0e8; letter-spacing:0.04em;
+  text-shadow:0 2px 28px rgba(0,0,0,0.7);
+  opacity:0; pointer-events:none;
+  transition:opacity 0.25s ease;
 }
-.page-tab.highlight-pulse { border-radius: 4px; }
+#wt-overlay.active #wt-label-text.visible { opacity:1; }
+#wt-arrow-svg { position:absolute; left:0; top:0; pointer-events:none; overflow:visible; }
+#wt-arrow-svg path { stroke:#b8932a; stroke-width:5; stroke-linecap:round; stroke-linejoin:round; fill:none; transition:opacity 0.4s ease; }
+#wt-arrow-svg polygon { fill:#b8932a; transition:opacity 0.4s ease; }
 </style>
 </head>
 <body class="getraenke-page">
+
+<!-- SPOTLIGHT WALKTHROUGH -->
+<div id="wt-overlay">
+  <div id="wt-backdrop"></div>
+  <span id="wt-label-text"></span>
+  <svg id="wt-arrow-svg">
+    <path id="wt-arrow-path" d=""/>
+    <polygon id="wt-arrow-head" points=""/>
+  </svg>
+</div>
+
+<!-- BACK TO TOP -->
+<button id="back-to-top" aria-label="Nach oben">&#8593;</button>
 
 <!-- HEADER -->
 <header>
@@ -357,21 +378,136 @@
 </script>
 
 <script>
-// Highlight Language, Speisekarte & Getränke buttons on page load
-window.addEventListener('load', () => {
-  const delays = [
-    { el: document.querySelector('.lang-wrapper'), delay: 800 },
-    { el: document.querySelector('.page-tab[data-tab="speisekarte"]'), delay: 1400 },
-    { el: document.querySelector('.page-tab[data-tab="getraenke"]'), delay: 2000 },
+// ── SPOTLIGHT WALKTHROUGH (once only) ──
+(function () {
+  if (localStorage.getItem('giovanni_wt_done')) return;
+
+  const steps = [
+    { selector: '.lang-wrapper',                     label: 'Change Language' },
+    { selector: '.page-tab[data-tab="speisekarte"]', label: 'Food Menu' },
+    { selector: '.page-tab[data-tab="getraenke"]',   label: 'Drinks Menu' },
   ];
-  delays.forEach(({ el, delay }) => {
-    if (!el) return;
-    setTimeout(() => {
-      el.classList.add('highlight-pulse');
-      el.addEventListener('animationend', () => el.classList.remove('highlight-pulse'), { once: true });
-    }, delay);
-  });
-});
+
+  const STEP_DURATION = 1400;
+  const ANIM_DURATION = 300;
+  const PAD_X = 28, PAD_Y = 14;
+
+  const overlay  = document.getElementById('wt-overlay');
+  const backdrop = document.getElementById('wt-backdrop');
+  const labelTxt = document.getElementById('wt-label-text');
+  const arrowSvg = document.getElementById('wt-arrow-svg');
+  const arrowPth = document.getElementById('wt-arrow-path');
+  const arrowHd  = document.getElementById('wt-arrow-head');
+
+  let cur = { cx: 0, cy: 0, rw: 0, rh: 0 };
+  let rafId = null;
+
+  function getPos(el) {
+    const r = el.getBoundingClientRect();
+    return { cx: r.left+r.width/2, cy: r.top+r.height/2, rw: r.width/2+PAD_X, rh: r.height/2+PAD_Y };
+  }
+
+  function ease(t) { return t < 0.5 ? 2*t*t : -1+(4-2*t)*t; }
+
+  function animateTo(target) {
+    const start = { ...cur };
+    const t0 = performance.now();
+    cancelAnimationFrame(rafId);
+    function frame(now) {
+      const p = Math.min((now - t0) / ANIM_DURATION, 1);
+      const e = ease(p);
+      cur.cx = start.cx + (target.cx - start.cx) * e;
+      cur.cy = start.cy + (target.cy - start.cy) * e;
+      cur.rw = start.rw + (target.rw - start.rw) * e;
+      cur.rh = start.rh + (target.rh - start.rh) * e;
+      applySpotlight();
+      applyArrow();
+      if (p < 1) rafId = requestAnimationFrame(frame);
+    }
+    rafId = requestAnimationFrame(frame);
+  }
+
+  function applySpotlight() {
+    const { cx, cy, rw, rh } = cur;
+    backdrop.style.setProperty('--wt-x',  cx + 'px');
+    backdrop.style.setProperty('--wt-y',  cy + 'px');
+    backdrop.style.setProperty('--wt-rw', rw + 'px');
+    backdrop.style.setProperty('--wt-rh', rh + 'px');
+  }
+
+  function applyArrow() {
+    const { cx, cy, rw, rh } = cur;
+    const W = window.innerWidth, H = window.innerHeight;
+    const ax = cx+rw*0.4, ay = cy+rh+65, bx = cx, by = cy+rh+8;
+    const mx = cx+18, my = (ay+by)/2;
+    const len = Math.hypot(bx-ax, by-ay);
+    const angle = Math.atan2(by-my, bx-mx);
+    const hs = 16;
+    const hx1 = bx-hs*Math.cos(angle-0.4), hy1 = by-hs*Math.sin(angle-0.4);
+    const hx2 = bx-hs*Math.cos(angle+0.4), hy2 = by-hs*Math.sin(angle+0.4);
+    arrowSvg.setAttribute('width',W); arrowSvg.setAttribute('height',H);
+    arrowSvg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+    arrowPth.setAttribute('d',`M${ax} ${ay} Q${mx} ${my} ${bx} ${by}`);
+    arrowHd.setAttribute('points',`${bx},${by} ${hx1},${hy1} ${hx2},${hy2}`);
+    arrowPth.style.strokeDasharray = len;
+    arrowPth.style.strokeDashoffset = '0';
+  }
+
+  function crossfadeText(text) {
+    labelTxt.style.transition = 'opacity 0.2s ease';
+    labelTxt.style.opacity = '0';
+    setTimeout(() => { labelTxt.textContent = text; labelTxt.style.opacity = '1'; }, 220);
+  }
+
+  function showStep(i) {
+    if (i >= steps.length) {
+      labelTxt.style.transition = 'opacity 0.5s ease';
+      labelTxt.style.opacity = '0';
+      arrowPth.style.opacity = '0'; arrowHd.style.opacity = '0';
+
+      setTimeout(() => { overlay.classList.remove('active'); localStorage.setItem('giovanni_wt_done','1'); }, 550);
+      return;
+    }
+    const el = document.querySelector(steps[i].selector);
+    if (!el) { showStep(i+1); return; }
+    const target = getPos(el);
+
+    if (i === 0) {
+      cur = { ...target };
+      applySpotlight(); applyArrow();
+      labelTxt.textContent = steps[0].label;
+      arrowPth.style.opacity = '0'; arrowHd.style.opacity = '0';
+      overlay.classList.add('active');
+      requestAnimationFrame(() => {
+
+        labelTxt.classList.add('visible');
+        setTimeout(() => {
+          arrowPth.style.transition = 'opacity 0.4s ease'; arrowPth.style.opacity = '1';
+          arrowHd.style.transition  = 'opacity 0.4s ease 0.3s'; arrowHd.style.opacity = '1';
+        }, 200);
+      });
+    } else {
+      crossfadeText(steps[i].label);
+      animateTo(target);
+    }
+
+    setTimeout(() => showStep(i+1), STEP_DURATION);
+  }
+
+  overlay.addEventListener('click', () => { overlay.classList.remove('active'); localStorage.setItem('giovanni_wt_done','1'); });
+  window.addEventListener('load', () => setTimeout(() => showStep(0), 800));
+})();
+</script>
+
+<script>
+// Back to top button
+(function() {
+  const btn = document.getElementById('back-to-top');
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+  btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+})();
 </script>
 
 </body>
