@@ -7,8 +7,22 @@
 <link rel="icon" href="extra/favicon.png" type="image/png">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="giovanni_menu.css">
+<style>
+/* ── BUTTON HIGHLIGHT ON LOAD ── */
+@keyframes btnPulse {
+  0%   { box-shadow: 0 0 0 0px rgba(184,147,42,0.5); background: rgba(184,147,42,0.12); }
+  50%  { box-shadow: 0 0 0 6px rgba(184,147,42,0); background: rgba(184,147,42,0.18); }
+  100% { box-shadow: 0 0 0 0px rgba(184,147,42,0); background: transparent; }
+}
+
+.highlight-pulse {
+  border-radius: 6px;
+  animation: btnPulse 1s ease both;
+}
+.page-tab.highlight-pulse { border-radius: 4px; }
+</style>
 </head>
-<body>
+<body class="getraenke-page">
 
 <!-- HEADER -->
 <header>
@@ -24,12 +38,16 @@
     <a href="giovanni_menu.html" class="page-tab" data-tab="speisekarte">Speisekarte</a>
     <a href="giovanni_getraenke.html" class="page-tab page-tab--active" data-tab="getraenke">Getränke</a>
   </div>
-  <select class="lang-select" id="langSelect">
-    <option value="de">DE</option>
-    <option value="en">EN</option>
-    <option value="it">IT</option>
-    <option value="zh">中文</option>
-  </select>
+  <div class="lang-wrapper">
+    <img src="extra/language-regular-full.svg" class="lang-icon" alt="">
+    <div class="lang-arrow"></div>
+    <select class="lang-select" id="langSelect">
+      <option value="de">DE</option>
+      <option value="en">EN</option>
+      <option value="it">IT</option>
+      <option value="zh">中文</option>
+    </select>
+  </div>
 </header>
 
 <!-- NAV -->
@@ -336,6 +354,24 @@
       });
     });
 })();
+</script>
+
+<script>
+// Highlight Language, Speisekarte & Getränke buttons on page load
+window.addEventListener('load', () => {
+  const delays = [
+    { el: document.querySelector('.lang-wrapper'), delay: 800 },
+    { el: document.querySelector('.page-tab[data-tab="speisekarte"]'), delay: 1400 },
+    { el: document.querySelector('.page-tab[data-tab="getraenke"]'), delay: 2000 },
+  ];
+  delays.forEach(({ el, delay }) => {
+    if (!el) return;
+    setTimeout(() => {
+      el.classList.add('highlight-pulse');
+      el.addEventListener('animationend', () => el.classList.remove('highlight-pulse'), { once: true });
+    }, delay);
+  });
+});
 </script>
 
 </body>

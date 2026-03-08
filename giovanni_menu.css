@@ -266,16 +266,16 @@ section {
 .item-name-row {
   display: flex;
   align-items: baseline;
-  gap: 10px;
+  gap: 5px;
   flex-wrap: wrap;
 }
 
 .item-nr {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 14px;
+  font-size: 17px;
   color: var(--gold);
-  letter-spacing: 0.1em;
-  min-width: 26px;
+  letter-spacing: 0.05em;
+  min-width: auto;
 }
 
 .item-name {
@@ -355,7 +355,7 @@ section {
 .pizza-card .item-nr {
   position: absolute;
   top: 14px; right: 16px;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 .pizza-card .item-name {
@@ -588,6 +588,7 @@ footer p {
 /* ─── RESPONSIVE ─── */
 @media (max-width: 768px) {
   body { font-size: 16px; }
+  body.getraenke-page { font-size: 18px; }
 
   header { padding: 48px 20px 40px; }
 
@@ -605,7 +606,7 @@ footer p {
 
   .item-name { font-size: 16px; }
   .item-desc { font-size: 14px; padding-left: 0; }
-  .item-nr { min-width: 18px; font-size: 10px; }
+  .item-nr { font-size: 17px; }
 
   .item-price { font-size: 15px; }
 
@@ -641,7 +642,7 @@ footer p {
 
   nav a { padding: 10px 8px; font-size: 9px; letter-spacing: 0.08em; }
 
-  .lang-select { top: 12px; left: 12px; }
+  .lang-wrapper { top: 12px; left: 12px; }
 }
 
 /* ─── GETRÄNKE ─── */
@@ -713,30 +714,49 @@ footer p {
 }
 
 /* ─── LANGUAGE DROPDOWN ─── */
-.lang-select {
+.lang-wrapper {
   position: absolute;
   top: 20px;
   left: 16px;
   z-index: 10;
-  appearance: none;
-  -webkit-appearance: none;
-  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23b8932a'/%3E%3C/svg%3E") no-repeat right 8px center;
-  border: 1px solid var(--divider);
-  color: var(--ink-soft);
-  font-family: 'EB Garamond', serif;
-  font-size: 13px;
-  letter-spacing: 0.1em;
-  padding: 5px 28px 5px 10px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
   cursor: pointer;
-  border-radius: 2px;
-  transition: border-color 0.2s ease, color 0.2s ease;
 }
 
-.lang-select:hover,
-.lang-select:focus {
-  border-color: var(--gold);
-  color: var(--gold);
-  outline: none;
+.lang-icon {
+  width: 22px;
+  height: 22px;
+  pointer-events: none;
+  filter: opacity(0.45);
+  transition: filter 0.2s;
+}
+
+.lang-wrapper:hover .lang-icon {
+  filter: opacity(0.75);
+}
+
+.lang-arrow {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid var(--gold);
+  opacity: 0.7;
+  pointer-events: none;
+  flex-shrink: 0;
+}
+
+.lang-select {
+  position: absolute;
+  inset: -4px -4px -4px -4px;
+  opacity: 0;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  cursor: pointer;
+  border: none;
+  background: transparent;
 }
 
 /* ── ALLERGEN LEGEND ── */
