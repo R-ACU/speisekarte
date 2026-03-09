@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Speisekarte des Ristorante Giovanni R in Laatzen – Antipasti, Pizze, Pasta, Fisch und Fleischgerichte. Frische italienische Küche, alle Pasta hausgemacht.">
 <title>Giovanni R – Cucine Italiane</title>
 <link rel="icon" href="extra/favicon.png" type="image/png">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="giovanni_menu.css">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="style.css">
 <style>
 /* ── SPOTLIGHT WALKTHROUGH ── */
 #wt-overlay {
@@ -95,7 +96,7 @@
 
 <!-- HEADER -->
 <header>
-  <a href="giovanni_menu.html" class="header-logo-link">
+  <a href="index.html" class="header-logo-link">
     <img src="extra/Logo.svg" alt="Ristorante Giovanni R" class="header-logo">
   </a>
   <div class="header-ornament">
@@ -104,7 +105,7 @@
     <span></span>
   </div>
   <div class="page-tabs">
-    <a href="giovanni_menu.html" class="page-tab page-tab--active" data-tab="speisekarte">Speisekarte</a>
+    <a href="index.html" class="page-tab page-tab--active" data-tab="speisekarte">Speisekarte</a>
     <a href="giovanni_getraenke.html" class="page-tab" data-tab="getraenke">Getränke</a>
   </div>
   <div class="lang-wrapper">
@@ -252,12 +253,14 @@
 </main>
 
 <footer>
-  <a href="giovanni_menu.html" class="header-logo-link">
+  <a href="index.html" class="header-logo-link">
     <img src="extra/Logo.svg" alt="Ristorante Giovanni R" class="header-logo">
   </a>
   <p>Cucine Italiane · Tutte le paste sono fatte in casa</p>
   <p style="margin-top: 12px; opacity: 0.4; font-family: 'Cormorant Garamond', serif; font-size: 13px; letter-spacing: 0.15em; text-transform: uppercase;">
     <a href="impressum.html" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">Impressum</a>
+    &nbsp;·&nbsp;
+    <a href="datenschutz.html" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">Datenschutz</a>
   </p>
 </footer>
 
@@ -689,13 +692,16 @@
   document.querySelectorAll('main section[id]').forEach(sec => navObserver.observe(sec));
 
   fetch('giovanni_r_menu.json')
-    .then(response => response.json())
+    .then(response => { if (!response.ok) throw new Error('HTTP ' + response.status); return response.json(); })
     .then(data => {
       menuData = data;
       render();
       document.getElementById('langSelect').addEventListener('change', function() {
         setLanguage(this.value);
       });
+    })
+    .catch(() => {
+      document.querySelector('main').innerHTML = '<p style="text-align:center;padding:80px 24px;font-family:\'EB Garamond\',serif;font-size:1.1rem;color:var(--ink-soft);">Die Speisekarte konnte leider nicht geladen werden. Bitte versuche es später erneut oder ruf uns an: +49 (0)511 – 84901140</p>';
     });
 })();
 </script>

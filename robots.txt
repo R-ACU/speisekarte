@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://giovannir-menu.de/sitemap.xml

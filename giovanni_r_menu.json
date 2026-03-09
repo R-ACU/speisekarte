@@ -2019,6 +2019,32 @@
             "beschreibung": "单球"
           }
         }
+      },
+      {
+        "name": "Crème Brûlée",
+        "beschreibung": "Crème brûlée mit Vanilleeis",
+        "preis": 8.6,
+        "tags": [
+          "vegetarisch"
+        ],
+        "allergen_codes": [
+          "C",
+          "G"
+        ],
+        "translations": {
+          "en": {
+            "name": "Crème Brûlée",
+            "beschreibung": "With vanilla ice cream"
+          },
+          "it": {
+            "name": "Crème Brûlée",
+            "beschreibung": "Con gelato alla vaniglia"
+          },
+          "zh": {
+            "name": "法式焦糖布丁",
+            "beschreibung": "配香草冰淇淋"
+          }
+        }
       }
     ],
     "mittagstisch": {
@@ -2511,538 +2537,462 @@
       {
         "nr": 1,
         "name": "Espresso",
-        "preis": "2,40 €"
+        "preis": "2,40 €",
+        "translations": { "en": { "name": "Espresso" }, "it": { "name": "Espresso" }, "zh": { "name": "浓缩咖啡" } }
       },
       {
         "nr": 2,
         "name": "Espresso Doppio",
-        "preis": "4,10 €"
+        "preis": "4,10 €",
+        "translations": { "en": { "name": "Espresso Doppio" }, "it": { "name": "Espresso Doppio" }, "zh": { "name": "双份浓缩咖啡" } }
       },
       {
         "nr": 3,
         "name": "Espresso Corretto",
-        "preis": "3,60 €"
+        "preis": "3,60 €",
+        "translations": { "en": { "name": "Espresso Corretto" }, "it": { "name": "Espresso Corretto" }, "zh": { "name": "加烈浓缩咖啡" } }
       },
       {
         "nr": 4,
         "name": "Cappuccino",
-        "preis": "3,30 €"
+        "preis": "3,30 €",
+        "translations": { "en": { "name": "Cappuccino" }, "it": { "name": "Cappuccino" }, "zh": { "name": "卡布奇诺" } }
       },
       {
         "nr": 5,
         "name": "Latte Macchiato",
-        "preis": "3,80 €"
+        "preis": "3,80 €",
+        "translations": { "en": { "name": "Latte Macchiato" }, "it": { "name": "Latte Macchiato" }, "zh": { "name": "拿铁玛奇朵" } }
       },
       {
         "nr": 6,
         "name": "Milchkaffee",
-        "preis": "3,80 €"
+        "preis": "3,80 €",
+        "translations": { "en": { "name": "White Coffee" }, "it": { "name": "Caffè con Latte" }, "zh": { "name": "牛奶咖啡" } }
       },
       {
         "nr": 7,
         "name": "Kaffee Crema",
-        "preis": "3,10 €"
+        "preis": "3,10 €",
+        "translations": { "en": { "name": "Coffee Crema" }, "it": { "name": "Caffè Crema" }, "zh": { "name": "奶油咖啡" } }
       },
       {
         "nr": 8,
         "name": "Kakao mit Sahne",
-        "preis": "3,50 €"
+        "preis": "3,50 €",
+        "translations": { "en": { "name": "Hot Chocolate with Cream" }, "it": { "name": "Cacao con Panna" }, "zh": { "name": "热巧克力配奶油" } }
       },
       {
         "nr": 9,
         "name": "Tee – verschiedene Sorten",
-        "preis": "3,10 €"
+        "preis": "3,10 €",
+        "translations": { "en": { "name": "Tea – various varieties" }, "it": { "name": "Tè – varie varietà" }, "zh": { "name": "茶——多种口味" } }
       }
     ],
     "softdrinks": [
       {
         "nr": 1,
         "name": "Cola",
-        "preise": {
-          "0.2l": "3,10 €",
-          "0.4l": "4,70 €"
-        }
+        "preise": { "0.2l": "3,10 €", "0.4l": "4,70 €" },
+        "translations": { "en": { "name": "Cola" }, "it": { "name": "Cola" }, "zh": { "name": "可乐" } }
       },
       {
         "nr": 2,
         "name": "Cola (Flasche)",
-        "preise": {
-          "0.33l": "5,10 €"
-        }
+        "preise": { "0.33l": "5,10 €" },
+        "translations": { "en": { "name": "Cola (Bottle)" }, "it": { "name": "Cola (Bottiglia)" }, "zh": { "name": "可乐（瓶装）" } }
       },
       {
         "nr": 3,
         "name": "Cola light",
-        "preise": {
-          "0.2l": "3,10 €",
-          "0.4l": "4,70 €"
-        }
+        "preise": { "0.2l": "3,10 €", "0.4l": "4,70 €" },
+        "translations": { "en": { "name": "Diet Cola" }, "it": { "name": "Cola light" }, "zh": { "name": "健怡可乐" } }
       },
       {
         "nr": 4,
         "name": "Cola zero",
-        "preise": {
-          "0.2l": "3,10 €",
-          "0.4l": "4,70 €"
-        }
+        "preise": { "0.2l": "3,10 €", "0.4l": "4,70 €" },
+        "translations": { "en": { "name": "Cola Zero" }, "it": { "name": "Cola Zero" }, "zh": { "name": "零度可乐" } }
       },
       {
         "nr": 5,
         "name": "Fanta, Sprite",
-        "preise": {
-          "0.2l": "3,10 €",
-          "0.4l": "4,70 €"
-        }
+        "preise": { "0.2l": "3,10 €", "0.4l": "4,70 €" },
+        "translations": { "en": { "name": "Fanta, Sprite" }, "it": { "name": "Fanta, Sprite" }, "zh": { "name": "Fanta（橙味）、Sprite（柠檬味）" } }
       },
       {
         "nr": 6,
         "name": "San Pellegrino",
-        "preise": {
-          "0.25l": "3,10 €",
-          "0.75l": "6,70 €"
-        }
+        "preise": { "0.25l": "3,10 €", "0.75l": "6,70 €" },
+        "translations": { "en": { "name": "San Pellegrino" }, "it": { "name": "San Pellegrino" }, "zh": { "name": "San Pellegrino（气泡矿泉水）" } }
       },
       {
         "nr": 7,
         "name": "Stilles Wasser",
-        "preise": {
-          "0.25l": "3,10 €",
-          "0.75l": "6,70 €"
-        }
+        "preise": { "0.25l": "3,10 €", "0.75l": "6,70 €" },
+        "translations": { "en": { "name": "Still Water" }, "it": { "name": "Acqua Naturale" }, "zh": { "name": "无气矿泉水" } }
       },
       {
         "nr": 8,
         "name": "Soda Water",
-        "preise": {
-          "0.2l": "3,40 €"
-        }
+        "preise": { "0.2l": "3,40 €" },
+        "translations": { "en": { "name": "Soda Water" }, "it": { "name": "Acqua Frizzante" }, "zh": { "name": "苏打水" } }
       },
       {
         "nr": 9,
         "name": "Orangina gelb/rot",
-        "preise": {
-          "0.25l": "3,40 €"
-        }
+        "preise": { "0.25l": "3,40 €" },
+        "translations": { "en": { "name": "Orangina Yellow/Red" }, "it": { "name": "Orangina Gialla/Rossa" }, "zh": { "name": "Orangina（橙味饮料）黄/红" } }
       },
       {
         "nr": 10,
         "name": "Limonade Sizilien",
-        "preise": {
-          "0.275l": "4,60 €"
-        }
+        "preise": { "0.275l": "4,60 €" },
+        "translations": { "en": { "name": "Sicilian Lemonade" }, "it": { "name": "Limonata Siciliana" }, "zh": { "name": "西西里柠檬水" } }
       },
       {
         "nr": 11,
         "name": "Rote Orange Sizilien",
-        "preise": {
-          "0.275l": "4,60 €"
-        }
+        "preise": { "0.275l": "4,60 €" },
+        "translations": { "en": { "name": "Sicilian Blood Orange" }, "it": { "name": "Arancia Rossa Siciliana" }, "zh": { "name": "西西里血橙饮料" } }
       },
       {
         "nr": 12,
         "name": "Bitter Lemon",
-        "preise": {
-          "0.2l": "3,40 €"
-        }
+        "preise": { "0.2l": "3,40 €" },
+        "translations": { "en": { "name": "Bitter Lemon" }, "it": { "name": "Bitter Lemon" }, "zh": { "name": "苦柠檬汽水" } }
       },
       {
         "nr": 13,
         "name": "Tonic Water",
-        "preise": {
-          "0.2l": "3,40 €"
-        }
+        "preise": { "0.2l": "3,40 €" },
+        "translations": { "en": { "name": "Tonic Water" }, "it": { "name": "Acqua Tonica" }, "zh": { "name": "汤力水" } }
       },
       {
         "nr": 14,
         "name": "Ginger Ale",
-        "preise": {
-          "0.2l": "3,40 €"
-        }
+        "preise": { "0.2l": "3,40 €" },
+        "translations": { "en": { "name": "Ginger Ale" }, "it": { "name": "Ginger Ale" }, "zh": { "name": "姜汁汽水" } }
       },
       {
         "nr": 15,
         "name": "Eistee Zitrone, Pfirsich",
-        "preise": {
-          "0.2l": "3,10 €",
-          "0.4l": "4,30 €"
-        }
+        "preise": { "0.2l": "3,10 €", "0.4l": "4,30 €" },
+        "translations": { "en": { "name": "Iced Tea Lemon, Peach" }, "it": { "name": "Tè Freddo Limone, Pesca" }, "zh": { "name": "冰茶（柠檬/桃子）" } }
       },
       {
         "nr": 16,
         "name": "Malzbier",
-        "preise": {
-          "0.33l": "4,20 €"
-        }
+        "preise": { "0.33l": "4,20 €" },
+        "translations": { "en": { "name": "Malt Beer" }, "it": { "name": "Birra al Malto" }, "zh": { "name": "麦芽啤酒" } }
       }
     ],
     "saefte": [
       {
         "nr": 1,
         "name": "Orangensaft 100%",
-        "preise": {
-          "0.2l": "3,70 €",
-          "0.4l": "5,10 €"
-        }
+        "preise": { "0.2l": "3,70 €", "0.4l": "5,10 €" },
+        "translations": { "en": { "name": "Orange Juice 100%" }, "it": { "name": "Succo d'Arancia 100%" }, "zh": { "name": "100%橙汁" } }
       },
       {
         "nr": 2,
         "name": "Apfelsaft 100%",
-        "preise": {
-          "0.2l": "3,70 €",
-          "0.4l": "5,10 €"
-        }
+        "preise": { "0.2l": "3,70 €", "0.4l": "5,10 €" },
+        "translations": { "en": { "name": "Apple Juice 100%" }, "it": { "name": "Succo di Mela 100%" }, "zh": { "name": "100%苹果汁" } }
       },
       {
         "nr": 3,
         "name": "Apfelschorle",
-        "preise": {
-          "0.2l": "3,30 €",
-          "0.4l": "4,60 €"
-        }
+        "preise": { "0.2l": "3,30 €", "0.4l": "4,60 €" },
+        "translations": { "en": { "name": "Apple Juice Spritzer" }, "it": { "name": "Succo di Mela con Acqua Frizzante" }, "zh": { "name": "苹果气泡饮料" } }
       },
       {
         "nr": 4,
         "name": "Maracujaschorle",
-        "preise": {
-          "0.2l": "3,30 €",
-          "0.4l": "4,60 €"
-        }
+        "preise": { "0.2l": "3,30 €", "0.4l": "4,60 €" },
+        "translations": { "en": { "name": "Passion Fruit Spritzer" }, "it": { "name": "Maracuja con Acqua Frizzante" }, "zh": { "name": "百香果气泡饮料" } }
       },
       {
         "nr": 5,
         "name": "Rhabarberschorle",
-        "preise": {
-          "0.2l": "3,30 €",
-          "0.4l": "4,60 €"
-        }
+        "preise": { "0.2l": "3,30 €", "0.4l": "4,60 €" },
+        "translations": { "en": { "name": "Rhubarb Spritzer" }, "it": { "name": "Rabarbaro con Acqua Frizzante" }, "zh": { "name": "大黄气泡饮料" } }
       },
       {
         "nr": 6,
         "name": "Bananennektar 27%",
-        "preise": {
-          "0.2l": "3,70 €",
-          "0.4l": "5,30 €"
-        }
+        "preise": { "0.2l": "3,70 €", "0.4l": "5,30 €" },
+        "translations": { "en": { "name": "Banana Nectar 27%" }, "it": { "name": "Nettare di Banana 27%" }, "zh": { "name": "香蕉果汁27%" } }
       },
       {
         "nr": 7,
         "name": "Kirschnektar 40%",
-        "preise": {
-          "0.2l": "3,70 €",
-          "0.4l": "5,30 €"
-        }
+        "preise": { "0.2l": "3,70 €", "0.4l": "5,30 €" },
+        "translations": { "en": { "name": "Cherry Nectar 40%" }, "it": { "name": "Nettare di Ciliegia 40%" }, "zh": { "name": "樱桃果汁40%" } }
       },
       {
         "nr": 8,
         "name": "KiBa (Kirsch-Banane)",
-        "preise": {
-          "0.2l": "3,70 €",
-          "0.4l": "4,60 €"
-        }
+        "preise": { "0.2l": "3,70 €", "0.4l": "4,60 €" },
+        "translations": { "en": { "name": "KiBa (Cherry-Banana)" }, "it": { "name": "KiBa (Ciliegia-Banana)" }, "zh": { "name": "KiBa（樱桃香蕉混合汁）" } }
       },
       {
         "nr": 9,
         "name": "Maracuja",
-        "preise": {
-          "0.2l": "3,70 €",
-          "0.4l": "4,60 €"
-        }
+        "preise": { "0.2l": "3,70 €", "0.4l": "4,60 €" },
+        "translations": { "en": { "name": "Passion Fruit Juice" }, "it": { "name": "Succo di Maracuja" }, "zh": { "name": "百香果汁" } }
       },
       {
         "nr": 10,
         "name": "Rhabarber",
-        "preise": {
-          "0.2l": "3,70 €",
-          "0.4l": "4,60 €"
-        }
+        "preise": { "0.2l": "3,70 €", "0.4l": "4,60 €" },
+        "translations": { "en": { "name": "Rhubarb Juice" }, "it": { "name": "Succo di Rabarbaro" }, "zh": { "name": "大黄汁" } }
       }
     ],
     "bier": [
       {
         "nr": 1,
         "name": "Birra Moretti",
-        "preise": {
-          "0.33l": "3,40 €"
-        }
+        "preise": { "0.33l": "3,40 €" },
+        "translations": { "en": { "name": "Birra Moretti" }, "it": { "name": "Birra Moretti" }, "zh": { "name": "Birra Moretti（意大利啤酒）" } }
       },
       {
         "nr": 2,
         "name": "Gilde",
-        "preise": {
-          "0.3l": "3,80 €",
-          "0.5l": "5,30 €"
-        }
+        "preise": { "0.3l": "3,80 €", "0.5l": "5,30 €" },
+        "translations": { "en": { "name": "Gilde" }, "it": { "name": "Gilde" }, "zh": { "name": "Gilde（啤酒）" } }
       },
       {
         "nr": 3,
         "name": "Alsterwasser",
-        "preise": {
-          "0.3l": "3,80 €",
-          "0.5l": "5,30 €"
-        }
+        "preise": { "0.3l": "3,80 €", "0.5l": "5,30 €" },
+        "translations": { "en": { "name": "Shandy" }, "it": { "name": "Birra con Limonata" }, "zh": { "name": "啤酒柠檬水" } }
       },
       {
         "nr": 4,
         "name": "Gilde Alkoholfrei",
-        "preise": {
-          "0.33l": "3,80 €"
-        }
+        "preise": { "0.33l": "3,80 €" },
+        "translations": { "en": { "name": "Gilde Non-Alcoholic" }, "it": { "name": "Gilde Analcolica" }, "zh": { "name": "Gilde（无醇啤酒）" } }
       },
       {
         "nr": 5,
         "name": "Hefe-Weißbier",
-        "preise": {
-          "0.5l": "5,30 €"
-        }
+        "preise": { "0.5l": "5,30 €" },
+        "translations": { "en": { "name": "Wheat Beer" }, "it": { "name": "Birra di Frumento" }, "zh": { "name": "小麦啤酒" } }
       },
       {
         "nr": 6,
         "name": "Hefe-Weißbier Banane",
-        "preise": {
-          "0.5l": "5,70 €"
-        }
+        "preise": { "0.5l": "5,70 €" },
+        "translations": { "en": { "name": "Wheat Beer Banana" }, "it": { "name": "Birra di Frumento alla Banana" }, "zh": { "name": "香蕉小麦啤酒" } }
       },
       {
         "nr": 7,
         "name": "Hefe-Weißbier Alkoholfrei",
-        "preise": {
-          "0.5l": "5,20 €"
-        }
+        "preise": { "0.5l": "5,20 €" },
+        "translations": { "en": { "name": "Wheat Beer Non-Alcoholic" }, "it": { "name": "Birra di Frumento Analcolica" }, "zh": { "name": "无醇小麦啤酒" } }
       },
       {
         "nr": 8,
         "name": "Weißbier Zitrone",
-        "preise": {
-          "0.5l": "5,20 €"
-        }
+        "preise": { "0.5l": "5,20 €" },
+        "translations": { "en": { "name": "Wheat Beer Lemon" }, "it": { "name": "Birra di Frumento al Limone" }, "zh": { "name": "柠檬小麦啤酒" } }
       }
     ],
     "aperitifs": [
       {
         "nr": 1,
         "name": "Prosecco",
-        "preise": {
-          "0.1l": "4,40 €"
-        }
+        "preise": { "0.1l": "4,40 €" },
+        "translations": { "en": { "name": "Prosecco" }, "it": { "name": "Prosecco" }, "zh": { "name": "Prosecco（意大利气泡酒）" } }
       },
       {
         "nr": 2,
         "name": "Bitterino O-Saft alkoholfrei",
-        "preise": {
-          "0.2l": "6,90 €"
-        }
+        "preise": { "0.2l": "6,90 €" },
+        "translations": { "en": { "name": "Bitterino Orange Juice Non-Alcoholic" }, "it": { "name": "Bitterino Succo d'Arancia Analcolico" }, "zh": { "name": "Bitterino（无醇橙汁苦味饮料）" } }
       },
       {
         "nr": 3,
         "name": "Bitterino Prosecco",
-        "preise": {
-          "0.2l": "6,90 €"
-        }
+        "preise": { "0.2l": "6,90 €" },
+        "translations": { "en": { "name": "Bitterino Prosecco" }, "it": { "name": "Bitterino Prosecco" }, "zh": { "name": "Bitterino Prosecco（苦味气泡酒）" } }
       },
       {
         "nr": 4,
         "name": "Bitterino Pinot",
-        "preise": {
-          "0.2l": "6,90 €"
-        }
+        "preise": { "0.2l": "6,90 €" },
+        "translations": { "en": { "name": "Bitterino Pinot" }, "it": { "name": "Bitterino Pinot" }, "zh": { "name": "Bitterino Pinot（苦味白葡萄酒）" } }
       },
       {
         "nr": 5,
         "name": "Aperol Spritz",
-        "preise": {
-          "0.2l": "6,90 €"
-        }
+        "preise": { "0.2l": "6,90 €" },
+        "translations": { "en": { "name": "Aperol Spritz" }, "it": { "name": "Aperol Spritz" }, "zh": { "name": "Aperol Spritz（意式开胃酒）" } }
       },
       {
         "nr": 6,
         "name": "Aperol Lemon",
-        "preise": {
-          "0.2l": "6,90 €"
-        }
+        "preise": { "0.2l": "6,90 €" },
+        "translations": { "en": { "name": "Aperol Lemon" }, "it": { "name": "Aperol Lemon" }, "zh": { "name": "Aperol Lemon（柠檬开胃酒）" } }
       },
       {
         "nr": 7,
         "name": "Aperol Soda",
-        "preise": {
-          "0.2l": "6,90 €"
-        }
+        "preise": { "0.2l": "6,90 €" },
+        "translations": { "en": { "name": "Aperol Soda" }, "it": { "name": "Aperol Soda" }, "zh": { "name": "Aperol Soda（苏打开胃酒）" } }
       },
       {
         "nr": 8,
         "name": "Aperol Maracuja",
-        "preise": {
-          "0.2l": "6,90 €"
-        }
+        "preise": { "0.2l": "6,90 €" },
+        "translations": { "en": { "name": "Aperol Maracuja" }, "it": { "name": "Aperol Maracuja" }, "zh": { "name": "Aperol Maracuja（百香果开胃酒）" } }
       },
       {
         "nr": 9,
         "name": "Limoncello Spritz",
-        "preise": {
-          "0.2l": "6,90 €"
-        }
+        "preise": { "0.2l": "6,90 €" },
+        "translations": { "en": { "name": "Limoncello Spritz" }, "it": { "name": "Limoncello Spritz" }, "zh": { "name": "Limoncello Spritz（柠檬利口酒气泡饮）" } }
       },
       {
         "nr": 10,
         "name": "Negroni",
-        "preise": {
-          "0.2l": "6,90 €"
-        }
+        "preise": { "0.2l": "6,90 €" },
+        "translations": { "en": { "name": "Negroni" }, "it": { "name": "Negroni" }, "zh": { "name": "Negroni（内格罗尼鸡尾酒）" } }
       },
       {
         "nr": 11,
         "name": "Gin Tonic",
-        "preise": {
-          "0.2l": "6,90 €"
-        }
+        "preise": { "0.2l": "6,90 €" },
+        "translations": { "en": { "name": "Gin Tonic" }, "it": { "name": "Gin Tonic" }, "zh": { "name": "Gin Tonic（金汤力）" } }
       },
       {
         "nr": 12,
         "name": "Campari Orange",
-        "preise": {
-          "0.2l": "6,90 €"
-        }
+        "preise": { "0.2l": "6,90 €" },
+        "translations": { "en": { "name": "Campari Orange" }, "it": { "name": "Campari Orange" }, "zh": { "name": "Campari Orange（金巴利橙汁）" } }
       },
       {
         "nr": 13,
         "name": "Campari Soda",
-        "preise": {
-          "0.2l": "6,90 €"
-        }
+        "preise": { "0.2l": "6,90 €" },
+        "translations": { "en": { "name": "Campari Soda" }, "it": { "name": "Campari Soda" }, "zh": { "name": "Campari Soda（金巴利苏打）" } }
       },
       {
         "nr": 14,
         "name": "Bacardí Cola",
-        "preise": {
-          "0.2l": "6,90 €"
-        }
+        "preise": { "0.2l": "6,90 €" },
+        "translations": { "en": { "name": "Bacardí Cola" }, "it": { "name": "Bacardí Cola" }, "zh": { "name": "Bacardí Cola（百加得朗姆可乐）" } }
       },
       {
         "nr": 15,
         "name": "Martini (Bianco, Rosso, Dry)",
-        "preise": {
-          "5cl": "3,80 €"
-        }
+        "preise": { "5cl": "3,80 €" },
+        "translations": { "en": { "name": "Martini (Bianco, Rosso, Dry)" }, "it": { "name": "Martini (Bianco, Rosso, Dry)" }, "zh": { "name": "Martini（马天尼，白/红/干）" } }
       }
     ],
     "spirituosen": [
       {
         "nr": 1,
         "name": "Jack Daniels",
-        "preise": {
-          "2cl": "3,80 €"
-        }
+        "preise": { "2cl": "3,80 €" },
+        "translations": { "en": { "name": "Jack Daniels" }, "it": { "name": "Jack Daniels" }, "zh": { "name": "Jack Daniels（威士忌）" } }
       },
       {
         "nr": 2,
         "name": "Gin",
-        "preise": {
-          "2cl": "3,80 €"
-        }
+        "preise": { "2cl": "3,80 €" },
+        "translations": { "en": { "name": "Gin" }, "it": { "name": "Gin" }, "zh": { "name": "金酒" } }
       },
       {
         "nr": 3,
         "name": "Amaro Montenegro",
-        "preise": {
-          "2cl": "3,80 €"
-        }
+        "preise": { "2cl": "3,80 €" },
+        "translations": { "en": { "name": "Amaro Montenegro" }, "it": { "name": "Amaro Montenegro" }, "zh": { "name": "Amaro Montenegro（意大利草本苦酒）" } }
       },
       {
         "nr": 4,
         "name": "Amaro Del Capo",
-        "preise": {
-          "2cl": "3,80 €"
-        }
+        "preise": { "2cl": "3,80 €" },
+        "translations": { "en": { "name": "Amaro Del Capo" }, "it": { "name": "Amaro Del Capo" }, "zh": { "name": "Amaro Del Capo（意大利草本苦酒）" } }
       },
       {
         "nr": 5,
         "name": "Cynar",
-        "preise": {
-          "2cl": "3,80 €"
-        }
+        "preise": { "2cl": "3,80 €" },
+        "translations": { "en": { "name": "Cynar" }, "it": { "name": "Cynar" }, "zh": { "name": "Cynar（朝鲜蓟苦酒）" } }
       },
       {
         "nr": 6,
         "name": "Limoncello Zitronenlikör",
-        "preise": {
-          "2cl": "3,80 €"
-        }
+        "preise": { "2cl": "3,80 €" },
+        "translations": { "en": { "name": "Limoncello Lemon Liqueur" }, "it": { "name": "Limoncello" }, "zh": { "name": "Limoncello（柠檬利口酒）" } }
       },
       {
         "nr": 7,
         "name": "Sambuca",
-        "preise": {
-          "2cl": "3,80 €"
-        }
+        "preise": { "2cl": "3,80 €" },
+        "translations": { "en": { "name": "Sambuca" }, "it": { "name": "Sambuca" }, "zh": { "name": "Sambuca（茴香利口酒）" } }
       },
       {
         "nr": 8,
         "name": "Ramazzotti",
-        "preise": {
-          "2cl": "3,80 €"
-        }
+        "preise": { "2cl": "3,80 €" },
+        "translations": { "en": { "name": "Ramazzotti" }, "it": { "name": "Ramazzotti" }, "zh": { "name": "Ramazzotti（意大利苦味利口酒）" } }
       },
       {
         "nr": 9,
         "name": "Averna",
-        "preise": {
-          "2cl": "3,80 €"
-        }
+        "preise": { "2cl": "3,80 €" },
+        "translations": { "en": { "name": "Averna" }, "it": { "name": "Averna" }, "zh": { "name": "Averna（意大利草本苦酒）" } }
       },
       {
         "nr": 10,
         "name": "Amaretto",
-        "preise": {
-          "2cl": "3,80 €"
-        }
+        "preise": { "2cl": "3,80 €" },
+        "translations": { "en": { "name": "Amaretto" }, "it": { "name": "Amaretto" }, "zh": { "name": "Amaretto（杏仁利口酒）" } }
       },
       {
         "nr": 11,
         "name": "Fernet Branca",
-        "preise": {
-          "2cl": "3,80 €"
-        }
+        "preise": { "2cl": "3,80 €" },
+        "translations": { "en": { "name": "Fernet Branca" }, "it": { "name": "Fernet Branca" }, "zh": { "name": "Fernet Branca（意大利苦味草本酒）" } }
       },
       {
         "nr": 12,
         "name": "Vecchia Romagna",
-        "preise": {
-          "2cl": "3,80 €"
-        }
+        "preise": { "2cl": "3,80 €" },
+        "translations": { "en": { "name": "Vecchia Romagna" }, "it": { "name": "Vecchia Romagna" }, "zh": { "name": "Vecchia Romagna（意大利白兰地）" } }
       },
       {
         "nr": 13,
         "name": "Wodka",
-        "preise": {
-          "2cl": "4,40 €"
-        }
+        "preise": { "2cl": "4,40 €" },
+        "translations": { "en": { "name": "Vodka" }, "it": { "name": "Vodka" }, "zh": { "name": "伏特加" } }
       },
       {
         "nr": 14,
         "name": "Baileys",
-        "preise": {
-          "2cl": "3,80 €"
-        }
+        "preise": { "2cl": "3,80 €" },
+        "translations": { "en": { "name": "Baileys" }, "it": { "name": "Baileys" }, "zh": { "name": "Baileys（爱尔兰奶油利口酒）" } }
       },
       {
         "nr": 15,
         "name": "Jägermeister",
-        "preise": {
-          "2cl": "3,80 €"
-        }
+        "preise": { "2cl": "3,80 €" },
+        "translations": { "en": { "name": "Jägermeister" }, "it": { "name": "Jägermeister" }, "zh": { "name": "Jägermeister（德国草本利口酒）" } }
       },
       {
         "nr": 16,
         "name": "Grappa (Hausmarke)",
-        "preise": {
-          "2cl": "3,80 €"
-        }
+        "preise": { "2cl": "3,80 €" },
+        "translations": { "en": { "name": "Grappa (House Brand)" }, "it": { "name": "Grappa (Nostra Marca)" }, "zh": { "name": "Grappa（意大利白兰地，自有品牌）" } }
       },
       {
         "nr": 17,
         "name": "Grappa Nonino div. Sorten",
-        "preise": {
-          "2cl": "ab 6,40 €"
-        }
+        "preise": { "2cl": "ab 6,40 €" },
+        "translations": { "en": { "name": "Grappa Nonino various varieties" }, "it": { "name": "Grappa Nonino varie varietà" }, "zh": { "name": "Grappa Nonino（多种品种）" } }
       }
     ],
     "weisswein": {
@@ -3050,78 +3000,64 @@
         {
           "nr": 1,
           "name": "Pinot Grigio",
-          "preise": {
-            "0.25l": "6,60 €",
-            "0.5l": "10,70 €"
-          }
+          "preise": { "0.25l": "6,60 €", "0.5l": "10,70 €" },
+          "translations": { "en": { "name": "Pinot Grigio" }, "it": { "name": "Pinot Grigio" }, "zh": { "name": "Pinot Grigio（灰皮诺白葡萄酒）" } }
         },
         {
           "nr": 2,
           "name": "Chardonnay",
-          "preise": {
-            "0.25l": "6,60 €",
-            "0.5l": "10,90 €"
-          }
+          "preise": { "0.25l": "6,60 €", "0.5l": "10,90 €" },
+          "translations": { "en": { "name": "Chardonnay" }, "it": { "name": "Chardonnay" }, "zh": { "name": "Chardonnay（霞多丽白葡萄酒）" } }
         },
         {
           "nr": 3,
           "name": "Weinschorle",
-          "preise": {
-            "0.25l": "6,10 €",
-            "0.5l": "9,20 €"
-          }
+          "preise": { "0.25l": "6,10 €", "0.5l": "9,20 €" },
+          "translations": { "en": { "name": "White Wine Spritzer" }, "it": { "name": "Vino Bianco con Acqua Frizzante" }, "zh": { "name": "白葡萄酒气泡饮" } }
         },
         {
           "nr": 4,
           "name": "Lugana",
-          "preise": {
-            "0.25l": "8,10 €",
-            "0.5l": "13,30 €"
-          }
+          "preise": { "0.25l": "8,10 €", "0.5l": "13,30 €" },
+          "translations": { "en": { "name": "Lugana" }, "it": { "name": "Lugana" }, "zh": { "name": "Lugana（卢加纳白葡萄酒）" } }
         }
       ],
       "flasche": [
         {
           "nr": 1,
           "name": "Lugana",
-          "preise": {
-            "0.7l": "27,20 €"
-          }
+          "preise": { "0.7l": "27,20 €" },
+          "translations": { "en": { "name": "Lugana" }, "it": { "name": "Lugana" }, "zh": { "name": "Lugana（卢加纳白葡萄酒）" } }
         },
         {
           "nr": 2,
           "name": "Custoza",
-          "preise": {
-            "0.7l": "27,20 €"
-          }
+          "preise": { "0.7l": "27,20 €" },
+          "translations": { "en": { "name": "Custoza" }, "it": { "name": "Custoza" }, "zh": { "name": "Custoza（库斯托扎白葡萄酒）" } }
         },
         {
           "nr": 3,
           "name": "Sauvignon Blanc",
-          "preise": {
-            "0.7l": "30,20 €"
-          }
+          "preise": { "0.7l": "30,20 €" },
+          "translations": { "en": { "name": "Sauvignon Blanc" }, "it": { "name": "Sauvignon Blanc" }, "zh": { "name": "Sauvignon Blanc（长相思白葡萄酒）" } }
         },
         {
           "nr": 4,
           "name": "Falanghina",
-          "preise": {
-            "0.7l": "27,20 €"
-          }
+          "preise": { "0.7l": "27,20 €" },
+          "translations": { "en": { "name": "Falanghina" }, "it": { "name": "Falanghina" }, "zh": { "name": "Falanghina（法兰吉娜白葡萄酒）" } }
         },
         {
           "nr": 5,
           "name": "Pinot Grigio",
-          "preise": {
-            "0.7l": "25,20 €"
-          }
+          "preise": { "0.7l": "25,20 €" },
+          "translations": { "en": { "name": "Pinot Grigio" }, "it": { "name": "Pinot Grigio" }, "zh": { "name": "Pinot Grigio（灰皮诺白葡萄酒）" } }
         },
         {
           "nr": 6,
           "name": "Gavi di Gavi",
-          "preise": {
-            "0.7l": "27,20 €"
-          }
+          "preise": { "0.7l": "27,20 €" },
+          "translations": { "en": { "name": "Gavi di Gavi" }, "it": { "name": "Gavi di Gavi" }, "zh": { "name": "Gavi di Gavi（加维白葡萄酒）" } }
         }
       ]
     },
@@ -3130,79 +3066,64 @@
         {
           "nr": 1,
           "name": "Merlot",
-          "preise": {
-            "0.25l": "6,50 €",
-            "0.5l": "10,60 €"
-          }
+          "preise": { "0.25l": "6,50 €", "0.5l": "10,60 €" },
+          "translations": { "en": { "name": "Merlot" }, "it": { "name": "Merlot" }, "zh": { "name": "Merlot（梅洛红葡萄酒）" } }
         },
         {
           "nr": 2,
           "name": "Cabernet",
-          "preise": {
-            "0.25l": "6,50 €",
-            "0.5l": "10,80 €"
-          }
+          "preise": { "0.25l": "6,50 €", "0.5l": "10,80 €" },
+          "translations": { "en": { "name": "Cabernet" }, "it": { "name": "Cabernet" }, "zh": { "name": "Cabernet（赤霞珠红葡萄酒）" } }
         },
         {
           "nr": 3,
           "name": "Lambrusco",
-          "preise": {
-            "0.25l": "6,00 €",
-            "0.5l": "10,00 €"
-          }
+          "preise": { "0.25l": "6,00 €", "0.5l": "10,00 €" },
+          "translations": { "en": { "name": "Lambrusco" }, "it": { "name": "Lambrusco" }, "zh": { "name": "Lambrusco（兰布鲁斯科红葡萄酒）" } }
         },
         {
           "nr": 4,
           "name": "Primitivo",
-          "preise": {
-            "0.25l": "8,00 €",
-            "0.5l": "13,70 €"
-          }
+          "preise": { "0.25l": "8,00 €", "0.5l": "13,70 €" },
+          "translations": { "en": { "name": "Primitivo" }, "it": { "name": "Primitivo" }, "zh": { "name": "Primitivo（普里米蒂沃红葡萄酒）" } }
         },
         {
           "nr": 5,
           "name": "Montepulciano",
-          "preise": {
-            "0.25l": "7,60 €",
-            "0.5l": "13,20 €"
-          }
+          "preise": { "0.25l": "7,60 €", "0.5l": "13,20 €" },
+          "translations": { "en": { "name": "Montepulciano" }, "it": { "name": "Montepulciano" }, "zh": { "name": "Montepulciano（蒙特普尔恰诺红葡萄酒）" } }
         }
       ],
       "flasche": [
         {
           "nr": 1,
           "name": "Primitivo",
-          "preise": {
-            "0.7l": "27,20 €"
-          }
+          "preise": { "0.7l": "27,20 €" },
+          "translations": { "en": { "name": "Primitivo" }, "it": { "name": "Primitivo" }, "zh": { "name": "Primitivo（普里米蒂沃红葡萄酒）" } }
         },
         {
           "nr": 2,
           "name": "Morellino Toscana",
-          "preise": {
-            "0.7l": "27,20 €"
-          }
+          "preise": { "0.7l": "27,20 €" },
+          "translations": { "en": { "name": "Morellino Toscana" }, "it": { "name": "Morellino Toscana" }, "zh": { "name": "Morellino Toscana（托斯卡纳红葡萄酒）" } }
         },
         {
           "nr": 3,
           "name": "Valpolicella",
-          "preise": {
-            "0.7l": "27,20 €"
-          }
+          "preise": { "0.7l": "27,20 €" },
+          "translations": { "en": { "name": "Valpolicella" }, "it": { "name": "Valpolicella" }, "zh": { "name": "Valpolicella（瓦尔波利切拉红葡萄酒）" } }
         },
         {
           "nr": 4,
           "name": "Brunello di Montalcino",
-          "preise": {
-            "0.7l": "50,20 €"
-          }
+          "preise": { "0.7l": "50,20 €" },
+          "translations": { "en": { "name": "Brunello di Montalcino" }, "it": { "name": "Brunello di Montalcino" }, "zh": { "name": "Brunello di Montalcino（蒙塔尔奇诺红葡萄酒）" } }
         },
         {
           "nr": 5,
           "name": "Nero D'Avola",
-          "preise": {
-            "0.7l": "27,20 €"
-          }
+          "preise": { "0.7l": "27,20 €" },
+          "translations": { "en": { "name": "Nero D'Avola" }, "it": { "name": "Nero D'Avola" }, "zh": { "name": "Nero D'Avola（黑达沃拉红葡萄酒）" } }
         }
       ]
     },
@@ -3211,19 +3132,16 @@
         {
           "nr": 1,
           "name": "Rosé Wein",
-          "preise": {
-            "0.25l": "6,40 €",
-            "0.5l": "10,50 €"
-          }
+          "preise": { "0.25l": "6,40 €", "0.5l": "10,50 €" },
+          "translations": { "en": { "name": "Rosé Wine" }, "it": { "name": "Vino Rosato" }, "zh": { "name": "桃红葡萄酒" } }
         }
       ],
       "flasche": [
         {
           "nr": 1,
           "name": "Rosé di Primitivo",
-          "preise": {
-            "0.7l": "27,20 €"
-          }
+          "preise": { "0.7l": "27,20 €" },
+          "translations": { "en": { "name": "Rosé di Primitivo" }, "it": { "name": "Rosé di Primitivo" }, "zh": { "name": "Rosé di Primitivo（普里米蒂沃桃红葡萄酒）" } }
         }
       ]
     },
@@ -3231,16 +3149,14 @@
       {
         "nr": 1,
         "name": "Prosecco Rosé",
-        "preise": {
-          "0.7l": "26,20 €"
-        }
+        "preise": { "0.7l": "26,20 €" },
+        "translations": { "en": { "name": "Prosecco Rosé" }, "it": { "name": "Prosecco Rosé" }, "zh": { "name": "Prosecco Rosé（桃红气泡酒）" } }
       },
       {
         "nr": 2,
         "name": "Prosecco Extra Dry",
-        "preise": {
-          "0.7l": "26,20 €"
-        }
+        "preise": { "0.7l": "26,20 €" },
+        "translations": { "en": { "name": "Prosecco Extra Dry" }, "it": { "name": "Prosecco Extra Dry" }, "zh": { "name": "Prosecco Extra Dry（特干型气泡酒）" } }
       }
     ]
   }
