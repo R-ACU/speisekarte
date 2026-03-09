@@ -1774,14 +1774,17 @@
           "translations": {
             "en": {
               "name": "Pollo alla Senape",
+              "kategorie": "Chicken breast fillet",
               "beschreibung": "Chicken breast strips in rosemary–mustard sauce, with potatoes"
             },
             "it": {
               "name": "Pollo alla Senape",
+              "kategorie": "Filetto di petto di pollo",
               "beschreibung": "Strisce di petto di pollo in salsa rosmarino-senape, con patate"
             },
             "zh": {
               "name": "Pollo alla Senape",
+              "kategorie": "鸡胸肉",
               "beschreibung": "迷迭香芥末酱鸡胸肉条，配土豆"
             }
           }
@@ -1797,14 +1800,17 @@
           "translations": {
             "en": {
               "name": "Grilled Chicken Breast",
+              "kategorie": "Chicken breast fillet",
               "beschreibung": "With potatoes and salad"
             },
             "it": {
               "name": "Filetto di Pollo alla Griglia",
+              "kategorie": "Filetto di petto di pollo",
               "beschreibung": "Con patate e insalata"
             },
             "zh": {
               "name": "烤鸡胸肉",
+              "kategorie": "鸡胸肉",
               "beschreibung": "配土豆和沙拉"
             }
           }
@@ -1822,14 +1828,17 @@
           "translations": {
             "en": {
               "name": "Vitello al Pomodoro",
+              "kategorie": "Veal",
               "beschreibung": "Veal with olives, capers and tomato sauce"
             },
             "it": {
               "name": "Vitello al Pomodoro",
+              "kategorie": "Carne di vitello",
               "beschreibung": "Vitello con olive, capperi e salsa di pomodoro"
             },
             "zh": {
               "name": "Vitello al Pomodoro",
+              "kategorie": "小牛肉",
               "beschreibung": "小牛肉配橄榄、刺山柑和番茄酱"
             }
           }
@@ -1847,14 +1856,17 @@
           "translations": {
             "en": {
               "name": "Saltimbocca alla Romana",
+              "kategorie": "Veal",
               "beschreibung": "Veal in Parma ham & sage sauce, with potatoes"
             },
             "it": {
               "name": "Saltimbocca alla Romana",
+              "kategorie": "Carne di vitello",
               "beschreibung": "Vitello in prosciutto di Parma e salsa alla salvia, con patate"
             },
             "zh": {
               "name": "Saltimbocca alla Romana",
+              "kategorie": "小牛肉",
               "beschreibung": "帕尔马火腿包小牛肉配鼠尾草酱和土豆"
             }
           }
@@ -1872,14 +1884,17 @@
           "translations": {
             "en": {
               "name": "Scaloppina with Wild Mushroom Sauce",
+              "kategorie": "Veal",
               "beschreibung": "Veal in wild mushroom sauce, with potatoes"
             },
             "it": {
               "name": "Scaloppina ai Funghi",
+              "kategorie": "Carne di vitello",
               "beschreibung": "Vitello in salsa ai funghi di bosco, con patate"
             },
             "zh": {
               "name": "野蘑菇酱小牛肉片",
+              "kategorie": "小牛肉",
               "beschreibung": "野蘑菇酱小牛肉配土豆"
             }
           }
@@ -1898,14 +1913,17 @@
           "translations": {
             "en": {
               "name": "Scaloppina al Gorgonzola",
+              "kategorie": "Veal",
               "beschreibung": "Veal in gorgonzola sauce, with potatoes"
             },
             "it": {
               "name": "Scaloppina al Gorgonzola",
+              "kategorie": "Carne di vitello",
               "beschreibung": "Vitello in salsa al gorgonzola, con patate"
             },
             "zh": {
               "name": "Scaloppina al Gorgonzola",
+              "kategorie": "小牛肉",
               "beschreibung": "戈贡佐拉酱小牛肉，配土豆"
             }
           }

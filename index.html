@@ -6,6 +6,30 @@
 <meta name="description" content="Speisekarte des Ristorante Giovanni R in Laatzen – Antipasti, Pizze, Pasta, Fisch und Fleischgerichte. Frische italienische Küche, alle Pasta hausgemacht.">
 <title>Giovanni R – Cucine Italiane</title>
 <link rel="icon" href="extra/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="extra/favicon.png">
+<link rel="canonical" href="https://giovannir-menu.de/">
+<meta property="og:title" content="Giovanni R – Cucine Italiane">
+<meta property="og:description" content="Speisekarte des Ristorante Giovanni R in Laatzen – Antipasti, Pizze, Pasta, Fisch und Fleischgerichte. Frische italienische Küche, alle Pasta hausgemacht.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://giovannir-menu.de/">
+<meta property="og:locale" content="de_DE">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Ristorante Giovanni R",
+  "url": "https://giovannir-menu.de",
+  "servesCuisine": "Italian",
+  "hasMenu": "https://giovannir-menu.de/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Hildesheimer Str. 30",
+    "postalCode": "30880",
+    "addressLocality": "Laatzen",
+    "addressCountry": "DE"
+  }
+}
+</script>
 <link rel="stylesheet" href="fonts.css">
 <link rel="stylesheet" href="style.css">
 <style>
@@ -267,7 +291,7 @@
 <script>
 (function() {
   let menuData = null;
-  let currentLang = 'de';
+  let currentLang = localStorage.getItem('giovanni_lang') || 'de';
 
   const UI = {
     de: {
@@ -469,7 +493,8 @@
   function renderMenuItem(item) {
     const ui = UI[currentLang];
     const priceAlt = item.preis_klein ? `<span class="price-alt">${ui.klein} ${formatPrice(item.preis_klein)}</span>` : '';
-    const kategorie = item.kategorie ? `<div class="kategorie-label">${item.kategorie}</div>` : '';
+    const kat = item.translations?.[currentLang]?.kategorie || item.kategorie;
+    const kategorie = kat ? `<div class="kategorie-label">${kat}</div>` : '';
     return `
       <div class="menu-item">
         <div class="item-left">
@@ -672,6 +697,7 @@
   function setLanguage(lang) {
     currentLang = lang;
     document.documentElement.lang = lang;
+    localStorage.setItem('giovanni_lang', lang);
     render();
   }
 
@@ -695,6 +721,7 @@
     .then(response => { if (!response.ok) throw new Error('HTTP ' + response.status); return response.json(); })
     .then(data => {
       menuData = data;
+      document.getElementById('langSelect').value = currentLang;
       render();
       document.getElementById('langSelect').addEventListener('change', function() {
         setLanguage(this.value);
@@ -853,5 +880,46 @@
 })();
 </script>
 
+<script>
+// ── ZEITBASIERTE SICHTBARKEIT (Europe/Berlin) ──
+(function () {
+  function applyTimeBasedVisibility() {
+    const now = new Date();
+    const parts = new Intl.DateTimeFormat('de-DE', {
+      timeZone: 'Europe/Berlin',
+      hour: 'numeric',
+      minute: 'numeric',
+      hour12: false
+    }).formatToParts(now);
+    const h = parseInt(parts.find(p => p.type === 'hour').value);
+    const m = parseInt(parts.find(p => p.type === 'minute').value);
+    const t = h * 60 + m;
+
+    // Mittagstisch: nur 11:00–14:00
+    const showMittag = t >= 660 && t < 840;
+    ['mittagstisch'].forEach(id => {
+      const sec = document.getElementById(id);
+      const nav = document.querySelector('[data-nav="' + id + '"]');
+      if (sec) sec.style.display = showMittag ? '' : 'none';
+      if (nav) nav.style.display = showMittag ? '' : 'none';
+    });
+
+    // Ab 21:00 Uhr: nur Salate, Bruschetta, Pizza, Dessert sichtbar
+    const lateNight = t >= 1290 || t < 540; // 21:30–09:00 Uhr (Küche geschlossen)
+    ['antipasti', 'zuppe', 'fisch', 'fleisch', 'empfehlungen'].forEach(id => {
+      const sec = document.getElementById(id);
+      const nav = document.querySelector('[data-nav="' + id + '"]');
+      if (sec) sec.style.display = lateNight ? 'none' : '';
+      if (nav) nav.style.display = lateNight ? 'none' : '';
+    });
+  }
+
+  // Sofort ausführen, dann jede Minute prüfen
+  applyTimeBasedVisibility();
+  setInterval(applyTimeBasedVisibility, 60000);
+})();
+</script>
+
+<script src="https://cdn.counter.dev/script.js" data-id="9489299e-0c9b-498f-9a9f-3d3d6aa759e8" data-utcoffset="1"></script>
 </body>
 </html>
