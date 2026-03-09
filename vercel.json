@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    { "source": "/getraenke", "destination": "/giovanni_getraenke.html" },
+    { "source": "/impressum", "destination": "/impressum.html" },
+    { "source": "/datenschutz", "destination": "/datenschutz.html" }
+  ],
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/giovanni_getraenke.html", "destination": "/getraenke", "permanent": true },
+    { "source": "/impressum.html", "destination": "/impressum", "permanent": true },
+    { "source": "/datenschutz.html", "destination": "/datenschutz", "permanent": true }
+  ]
+}
