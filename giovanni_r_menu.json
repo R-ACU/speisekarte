@@ -2070,8 +2070,8 @@
       "gerichte": [
         {
           "id": "A",
-          "name": "Rotebeete Carpaccio",
-          "beschreibung": "Mit Ziegenkäse und Sonnenblumenkernen",
+          "name": "Kartoffel-Lauchcremesuppe",
+          "beschreibung": "",
           "preis": 9.9,
           "tags": [
             "NEU",
@@ -2082,51 +2082,48 @@
           ],
           "translations": {
             "en": {
-              "name": "Beetroot Carpaccio",
-              "beschreibung": "With goat cheese and sunflower seeds"
+              "name": "Potato and Leek Cream Soup",
+              "beschreibung": ""
             },
             "it": {
-              "name": "Carpaccio di Barbabietola",
-              "beschreibung": "Con formaggio di capra e semi di girasole"
+              "name": "Crema di Patate e Porri",
+              "beschreibung": ""
             },
             "zh": {
-              "name": "甜菜根薄片",
-              "beschreibung": "配山羊奶酪和葵花籽"
+              "name": "土豆韭葱奶油汤",
+              "beschreibung": ""
             }
           }
         },
         {
           "id": "B",
-          "name": "Rigatoni Pomodoro",
-          "beschreibung": "Mit Schafkäse",
+          "name": "Penne mit Salsiccia in Tomatensauce",
+          "beschreibung": "",
           "preis": 9.9,
           "tags": [
-            "NEU",
-            "vegetarisch"
+            "NEU"
           ],
           "allergen_codes": [
-            "A1",
-            "G",
-            "I"
+            "A1"
           ],
           "translations": {
             "en": {
-              "name": "Rigatoni Pomodoro",
-              "beschreibung": "With sheep's cheese"
+              "name": "Penne with Salsiccia in Tomato Sauce",
+              "beschreibung": ""
             },
             "it": {
-              "name": "Rigatoni al Pomodoro",
-              "beschreibung": "Con formaggio di pecora"
+              "name": "Penne con Salsiccia al Pomodoro",
+              "beschreibung": ""
             },
             "zh": {
-              "name": "番茄酱管状意面",
-              "beschreibung": "配羊奶酪"
+              "name": "意式香肠番茄管面",
+              "beschreibung": ""
             }
           }
         },
         {
           "id": "C",
-          "name": "Pappardelle mit Hirschragout",
+          "name": "Tagliatelle mit Ente und Trüffel in Tomatensauce",
           "beschreibung": "Hausgemachte Pasta",
           "preis": 13.9,
           "tags": [
@@ -2138,16 +2135,16 @@
           ],
           "translations": {
             "en": {
-              "name": "Pappardelle with Venison Ragout",
-              "beschreibung": "Homemade"
+              "name": "Tagliatelle with Duck and Truffle in Tomato Sauce",
+              "beschreibung": "Homemade pasta"
             },
             "it": {
-              "name": "Pappardelle al Ragù di Cervo",
-              "beschreibung": "Fatto in casa"
+              "name": "Tagliatelle con Anatra e Tartufo al Pomodoro",
+              "beschreibung": "Pasta fatta in casa"
             },
             "zh": {
-              "name": "鹿肉酱宽面条",
-              "beschreibung": "自制"
+              "name": "鸭肉松露番茄酱宽面",
+              "beschreibung": "自制意面"
             }
           }
         },
@@ -2228,53 +2225,53 @@
         },
         {
           "id": "G",
-          "name": "Gegrillte Hähnchenbrust",
-          "beschreibung": "Mit Kartoffel-Trüffel-Püree",
+          "name": "Gebratene Hähnchenbrust in cremiger Senfsauce",
+          "beschreibung": "",
           "preis": 13.9,
           "tags": [
             "NEU"
           ],
-          "allergen_codes": [],
+          "allergen_codes": [
+            "G"
+          ],
           "translations": {
             "en": {
-              "name": "Grilled Chicken Breast",
-              "beschreibung": "With potato–truffle purée"
+              "name": "Pan-fried Chicken Breast in Creamy Mustard Sauce",
+              "beschreibung": ""
             },
             "it": {
-              "name": "Petto di Pollo alla Griglia",
-              "beschreibung": "Con purè di patate al tartufo"
+              "name": "Petto di Pollo Fritto in Salsa di Senape Cremosa",
+              "beschreibung": ""
             },
             "zh": {
-              "name": "烤鸡胸肉",
-              "beschreibung": "配松露土豆泥"
+              "name": "奶油芥末酱煎鸡胸肉",
+              "beschreibung": ""
             }
           }
         },
         {
           "id": "H",
-          "name": "Pasta Cacio e Pepe",
-          "beschreibung": "Pasta mit cremiger Käse-Pfeffer-Sauce",
-          "preis": 11.9,
-          "tags": [
-            "NEU",
-            "vegetarisch"
-          ],
+          "name": "Gebratenes Lachsfilet mit Zitronensauce, dazu in Butter geschwenkte Tagliolini neri",
+          "beschreibung": "",
+          "preis": 16.9,
+          "tags": [],
           "allergen_codes": [
-            "G",
-            "A1"
+            "D",
+            "A1",
+            "G"
           ],
           "translations": {
             "en": {
-              "name": "Pasta Cacio e Pepe",
-              "beschreibung": "Pasta with creamy cheese–pepper sauce"
+              "name": "Pan-fried Salmon Fillet with Lemon Sauce and Butter-tossed Black Tagliolini",
+              "beschreibung": ""
             },
             "it": {
-              "name": "Pasta Cacio e Pepe",
-              "beschreibung": "Pasta con cremosa salsa al formaggio e pepe"
+              "name": "Filetto di Salmone con Salsa al Limone e Tagliolini Neri al Burro",
+              "beschreibung": ""
             },
             "zh": {
-              "name": "奶酪胡椒意面",
-              "beschreibung": "意面配奶油奶酪胡椒酱"
+              "name": "柠檬酱煎三文鱼配黑色宽面条",
+              "beschreibung": ""
             }
           }
         },

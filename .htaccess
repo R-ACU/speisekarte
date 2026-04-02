@@ -1,0 +1,18 @@
+Options -MultiViews
+RewriteEngine On
+
+# Direkt auf existierende Dateien/Ordner → nicht umschreiben
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Saubere URLs → .html-Dateien
+RewriteRule ^getraenke$ /giovanni_getraenke.html [L]
+RewriteRule ^impressum$ /impressum.html [L]
+RewriteRule ^datenschutz$ /datenschutz.html [L]
+
+# .html-Aufrufe → saubere URLs weiterleiten (301)
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^giovanni_getraenke\.html$ /getraenke [R=301,L]
+RewriteRule ^impressum\.html$ /impressum [R=301,L]
+RewriteRule ^datenschutz\.html$ /datenschutz [R=301,L]
