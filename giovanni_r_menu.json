@@ -2066,13 +2066,13 @@
       }
     ],
     "mittagstisch": {
-      "hinweis": "11:00–14:00 Uhr. Auch als Seniorenportion.",
+      "hinweis": "Dienstag-Freitag, 11:00-14:00 Uhr. Auch als Seniorenportion.",
       "gerichte": [
         {
           "id": "A",
           "name": "Kartoffel-Lauchcremesuppe",
           "beschreibung": "",
-          "preis": 9.9,
+          "preis": 7.9,
           "tags": [
             "NEU",
             "vegetarisch"
@@ -2097,26 +2097,28 @@
         },
         {
           "id": "B",
-          "name": "Penne mit Salsiccia in Tomatensauce",
+          "name": "Penne mit Gemüse in Tomaten-Sahnesauce",
           "beschreibung": "",
           "preis": 9.9,
           "tags": [
-            "NEU"
+            "NEU",
+            "vegetarisch"
           ],
           "allergen_codes": [
-            "A1"
+            "A1",
+            "G"
           ],
           "translations": {
             "en": {
-              "name": "Penne with Salsiccia in Tomato Sauce",
+              "name": "Penne with Vegetables in Tomato Cream Sauce",
               "beschreibung": ""
             },
             "it": {
-              "name": "Penne con Salsiccia al Pomodoro",
+              "name": "Penne con Verdure in Salsa Cremosa al Pomodoro",
               "beschreibung": ""
             },
             "zh": {
-              "name": "意式香肠番茄管面",
+              "name": "蔬菜番茄奶油管面",
               "beschreibung": ""
             }
           }
@@ -2227,7 +2229,7 @@
           "id": "G",
           "name": "Gebratene Hähnchenbrust in cremiger Senfsauce",
           "beschreibung": "",
-          "preis": 13.9,
+          "preis": 14.9,
           "tags": [
             "NEU"
           ],
