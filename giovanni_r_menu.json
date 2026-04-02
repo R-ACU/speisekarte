@@ -2277,26 +2277,27 @@
         },
         {
           "id": "I",
-          "name": "Tiramisu / Panna Cotta",
+          "name": "Crème brûlée",
           "beschreibung": "Dessert",
           "preis": 5.8,
-          "tags": [],
+          "tags": [
+            "NEU"
+          ],
           "allergen_codes": [
             "C",
-            "G",
-            "A1"
+            "G"
           ],
           "translations": {
             "en": {
-              "name": "Tiramisu / Panna Cotta",
+              "name": "Crème brûlée",
               "beschreibung": "Dessert"
             },
             "it": {
-              "name": "Tiramisu / Panna Cotta",
+              "name": "Crème brûlée",
               "beschreibung": "Dolce"
             },
             "zh": {
-              "name": "提拉米苏 / 奶冻",
+              "name": "焦糖布丁",
               "beschreibung": "甜点"
             }
           }
