@@ -44,16 +44,6 @@ header {
   overflow: hidden;
 }
 
-/* ─── HEADER OLIVE BRANCHES ─── */
-.header-olive {
-  position: absolute;
-  top: 16px;
-  pointer-events: none;
-  opacity: 0.11;
-}
-.header-olive--left  { left: 16px; }
-.header-olive--right { right: 16px; transform: scaleX(-1); }
-
 .header-logo-link {
   display: inline-block;
   animation: fadeUp 1s ease both;
@@ -583,10 +573,9 @@ footer p {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: 1px solid var(--divider);
-  background: rgba(237,229,208,0.92);
-  backdrop-filter: blur(8px);
-  color: var(--gold);
+  border: 1px solid rgba(184,147,42,0.3);
+  background: var(--cream);
+  color: rgba(184,147,42,0.5);
   font-size: 18px;
   display: flex;
   align-items: center;
