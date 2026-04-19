@@ -68,16 +68,6 @@ header {
   overflow: hidden;
 }
 
-header::before, header::after {
-  content: '✦';
-  position: absolute;
-  color: var(--gold);
-  font-size: 80px;
-  opacity: 0.08;
-  top: 20px;
-}
-header::before { left: -10px; }
-header::after  { right: -10px; }
 
 .header-logo-link {
   display: inline-block;
