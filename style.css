@@ -161,6 +161,7 @@ nav a {
   border-bottom: 2px solid transparent;
 }
 nav a:focus { outline: none; }
+nav a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 nav a.active { color: var(--rust); border-bottom-color: var(--rust); }
 
 /* ─── MAIN ─── */

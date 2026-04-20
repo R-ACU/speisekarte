@@ -70,7 +70,7 @@
   <div class="lang-wrapper">
     <img src="extra/language-regular-full.svg" class="lang-icon" alt="Sprache wählen">
     <div class="lang-arrow"></div>
-    <select class="lang-select" id="langSelect">
+    <select class="lang-select" id="langSelect" aria-label="Sprache wählen">
       <option value="de">DE</option>
       <option value="en">EN</option>
       <option value="it">IT</option>
@@ -262,11 +262,15 @@
     }
   };
 
+  function esc(s) {
+    return String(s ?? '').replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
+  }
+
   function renderDrinkPrices(item) {
-    if (item.preis) return `<span class="drink-price">${item.preis}</span>`;
+    if (item.preis) return `<span class="drink-price">${esc(item.preis)}</span>`;
     if (item.preise) {
       return Object.entries(item.preise)
-        .map(([size, price]) => `<span class="drink-price">${size} <b>${price}</b></span>`)
+        .map(([size, price]) => `<span class="drink-price">${esc(size)} <b>${esc(price)}</b></span>`)
         .join('');
     }
     return '';
@@ -278,7 +282,7 @@
       : item.name;
     return `
       <div class="drink-item">
-        <span class="drink-name">${name}</span>
+        <span class="drink-name">${esc(name)}</span>
         <div class="drink-prices">${renderDrinkPrices(item)}</div>
       </div>`;
   }
@@ -528,6 +532,5 @@
 })();
 </script>
 
-<script src="https://cdn.counter.dev/script.js" data-id="9489299e-0c9b-498f-9a9f-3d3d6aa759e8" data-utcoffset="1"></script>
 </body>
 </html>
