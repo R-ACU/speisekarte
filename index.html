@@ -464,7 +464,8 @@
   }
 
   function getName(item) {
-    return esc(item.name);
+    if (currentLang === 'de') return esc(item.name);
+    return esc((item.translations && item.translations[currentLang] && item.translations[currentLang].name) || item.name);
   }
 
   function renderAllergenCodes(codes) {
