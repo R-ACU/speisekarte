@@ -663,7 +663,7 @@ footer p {
   .item-name { font-size: 15px; }
 
   .empfehlung-item { grid-template-columns: 1fr auto; gap: 8px; padding: 14px 0; }
-  .empfehlung-id { font-size: 30px; }
+  .empfehlung-id { font-size: 30px; padding-right: 5px; }
 
   nav a { padding: 10px 8px; font-size: 9px; letter-spacing: 0.08em; }
 
