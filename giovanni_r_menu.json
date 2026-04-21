@@ -124,7 +124,7 @@
           },
           "zh": {
             "name": "Carpaccio di Manzo",
-            "beschreibung": "牛肉薄片配芝麻菜与帕玛森干酪"
+            "beschreibung": "牛肉薄片配芝麻菜与帕尔马干酪"
           }
         }
       },
@@ -150,7 +150,7 @@
           },
           "zh": {
             "name": "Antipasto di Scampi",
-            "beschreibung": "帕尔马火腿大虾配鼠尾草黄油"
+            "beschreibung": "帕尔马火腿大虾配鼠尾草酱"
           }
         }
       },
@@ -360,7 +360,7 @@
             },
             "zh": {
               "name": "Insalata Rucola",
-              "beschreibung": "芝麻菜沙拉，配番茄与帕玛森"
+              "beschreibung": "芝麻菜沙拉，配番茄与帕尔马干酪"
             }
           }
         },
@@ -409,7 +409,7 @@
             },
             "zh": {
               "name": "Insalata Parma",
-              "beschreibung": "番茄、马苏里拉、芝麻菜、帕尔马火腿，佐帕玛森"
+              "beschreibung": "番茄、马苏里拉、芝麻菜、帕尔马火腿，佐帕尔马干酪"
             }
           }
         },
@@ -433,7 +433,7 @@
             },
             "zh": {
               "name": "Insalata Pollo",
-              "beschreibung": "芝麻菜鸡胸肉沙拉，配帕玛森、番茄与胡萝卜"
+              "beschreibung": "芝麻菜鸡胸肉沙拉，配帕尔马干酪、番茄与胡萝卜"
             }
           }
         },
@@ -458,7 +458,7 @@
             },
             "zh": {
               "name": "Insalata Estate",
-              "beschreibung": "三文鱼芝士沙拉，配番茄、芝麻菜与帕玛森"
+              "beschreibung": "三文鱼芝士沙拉，配番茄、芝麻菜与帕尔马干酪"
             }
           }
         },
@@ -678,7 +678,7 @@
             },
             "zh": {
               "name": "Bruschetta Rucola",
-              "beschreibung": "芝麻菜、新鲜番茄、马苏里拉与帕玛森，佐香醋油醋汁"
+              "beschreibung": "芝麻菜、新鲜番茄、马苏里拉与帕尔马干酪，佐香醋油醋汁"
             }
           }
         },
@@ -1726,7 +1726,7 @@
             "beschreibung": "Con verdure e patate"
           },
           "zh": {
-            "name": "金鲷鱼柳",
+            "name": "金鲷鱼片",
             "beschreibung": "配蔬菜和土豆"
           }
         }
@@ -1751,7 +1751,7 @@
             "beschreibung": "Con spinaci, parmigiano e patate"
           },
           "zh": {
-            "name": "金鲷鱼柳",
+            "name": "金鲷鱼片",
             "beschreibung": "配菠菜、帕尔马干酪和土豆"
           }
         }
@@ -1893,7 +1893,7 @@
               "beschreibung": "Vitello in salsa ai funghi di bosco, con patate"
             },
             "zh": {
-              "name": "野蘑菇酱小牛肉片",
+              "name": "野蘑菇小牛肉片",
               "kategorie": "小牛肉",
               "beschreibung": "野蘑菇酱小牛肉配土豆"
             }
@@ -2185,7 +2185,7 @@
               "beschreibung": "Pasta fatta in casa"
             },
             "zh": {
-              "name": "芦笋豌豆淡奶油喇叭形意面",
+              "name": "铃铛形意面配芦笋豌豆淡奶油酱",
               "beschreibung": "自制意面"
             }
           }
@@ -2316,7 +2316,7 @@
               "beschreibung": "Pasta fatta in casa"
             },
             "zh": {
-              "name": "熊葱馅饺子配樱桃番茄熊葱酱",
+              "name": "熊葱馅馄饨配樱桃番茄熊葱酱",
               "beschreibung": "自制意面"
             }
           }
@@ -2480,7 +2480,7 @@
             },
             "zh": {
               "name": "鱼馅意面三重奏",
-              "beschreibung": "多种馅料饺子配咸鳕鱼、三文鱼和大虾，黄油罗勒酱"
+              "beschreibung": "多种馅料馄饨配咸鳕鱼、三文鱼和大虾，黄油罗勒酱"
             }
           }
         },
@@ -2722,7 +2722,7 @@
             },
             "zh": {
               "name": "熊葱馅饺子",
-              "beschreibung": "熊葱馅饺子配樱桃番茄熊葱酱"
+              "beschreibung": "熊葱馅馄饨配樱桃番茄熊葱酱"
             }
           }
         }
