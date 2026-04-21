@@ -2070,9 +2070,9 @@
       "gerichte": [
         {
           "id": "A",
-          "name": "Kartoffel-Lauchcremesuppe",
+          "name": "Spargelcremesuppe",
           "beschreibung": "",
-          "preis": 7.9,
+          "preis": 10.9,
           "tags": [
             "NEU",
             "vegetarisch"
@@ -2082,24 +2082,24 @@
           ],
           "translations": {
             "en": {
-              "name": "Potato and Leek Cream Soup",
+              "name": "Asparagus Cream Soup",
               "beschreibung": ""
             },
             "it": {
-              "name": "Crema di Patate e Porri",
+              "name": "Crema di Asparagi",
               "beschreibung": ""
             },
             "zh": {
-              "name": "土豆韭葱奶油汤",
+              "name": "芦笋奶油汤",
               "beschreibung": ""
             }
           }
         },
         {
           "id": "B",
-          "name": "Penne mit Gemüse in Tomaten-Sahnesauce",
-          "beschreibung": "",
-          "preis": 9.9,
+          "name": "Campanelle mit Spargel und Erbsen in einer leichten Sahnesoße",
+          "beschreibung": "Selbstgemachte Pasta",
+          "preis": 10.9,
           "tags": [
             "NEU",
             "vegetarisch"
@@ -2110,42 +2110,43 @@
           ],
           "translations": {
             "en": {
-              "name": "Penne with Vegetables in Tomato Cream Sauce",
-              "beschreibung": ""
+              "name": "Campanelle with Asparagus and Peas in a Light Cream Sauce",
+              "beschreibung": "Homemade pasta"
             },
             "it": {
-              "name": "Penne con Verdure in Salsa Cremosa al Pomodoro",
-              "beschreibung": ""
+              "name": "Campanelle con Asparagi e Piselli in Salsa di Panna Leggera",
+              "beschreibung": "Pasta fatta in casa"
             },
             "zh": {
-              "name": "蔬菜番茄奶油管面",
-              "beschreibung": ""
+              "name": "芦笋豌豆淡奶油喇叭形意面",
+              "beschreibung": "自制意面"
             }
           }
         },
         {
           "id": "C",
-          "name": "Tagliatelle mit Ente und Trüffel in Tomatensauce",
-          "beschreibung": "Hausgemachte Pasta",
-          "preis": 13.9,
+          "name": "Tagliatelle mit Spargel und Parmaschinken in leichter Sahnesauce",
+          "beschreibung": "Selbstgemachte Pasta",
+          "preis": 12.9,
           "tags": [
             "NEU"
           ],
           "allergen_codes": [
             "A1",
-            "C"
+            "C",
+            "G"
           ],
           "translations": {
             "en": {
-              "name": "Tagliatelle with Duck and Truffle in Tomato Sauce",
+              "name": "Tagliatelle with Asparagus and Parma Ham in Light Cream Sauce",
               "beschreibung": "Homemade pasta"
             },
             "it": {
-              "name": "Tagliatelle con Anatra e Tartufo al Pomodoro",
+              "name": "Tagliatelle con Asparagi e Prosciutto di Parma in Salsa di Panna Leggera",
               "beschreibung": "Pasta fatta in casa"
             },
             "zh": {
-              "name": "鸭肉松露番茄酱宽面",
+              "name": "芦笋帕尔马火腿淡奶油宽面条",
               "beschreibung": "自制意面"
             }
           }
@@ -2227,27 +2228,29 @@
         },
         {
           "id": "G",
-          "name": "Gebratene Hähnchenbrust in cremiger Senfsauce",
-          "beschreibung": "",
-          "preis": 14.9,
+          "name": "Ravioli mit Bärlauchfüllung in Kirschtomaten-Bärlauchsauce",
+          "beschreibung": "Selbstgemachte Pasta",
+          "preis": 13.9,
           "tags": [
             "NEU"
           ],
           "allergen_codes": [
+            "A1",
+            "C",
             "G"
           ],
           "translations": {
             "en": {
-              "name": "Pan-fried Chicken Breast in Creamy Mustard Sauce",
-              "beschreibung": ""
+              "name": "Ravioli with Wild Garlic Filling in Cherry Tomato and Wild Garlic Sauce",
+              "beschreibung": "Homemade pasta"
             },
             "it": {
-              "name": "Petto di Pollo Fritto in Salsa di Senape Cremosa",
-              "beschreibung": ""
+              "name": "Ravioli al Ripieno di Aglio Orsino in Salsa di Pomodorini e Aglio Orsino",
+              "beschreibung": "Pasta fatta in casa"
             },
             "zh": {
-              "name": "奶油芥末酱煎鸡胸肉",
-              "beschreibung": ""
+              "name": "熊葱馅饺子配樱桃番茄熊葱酱",
+              "beschreibung": "自制意面"
             }
           }
         },
@@ -2279,8 +2282,32 @@
         },
         {
           "id": "I",
+          "name": "Spargel mit Parmaschinken und Kartoffeln",
+          "beschreibung": "",
+          "preis": 16.8,
+          "tags": [
+            "NEU"
+          ],
+          "allergen_codes": [],
+          "translations": {
+            "en": {
+              "name": "Asparagus with Parma Ham and Potatoes",
+              "beschreibung": ""
+            },
+            "it": {
+              "name": "Asparagi con Prosciutto di Parma e Patate",
+              "beschreibung": ""
+            },
+            "zh": {
+              "name": "芦笋配帕尔马火腿和土豆",
+              "beschreibung": ""
+            }
+          }
+        },
+        {
+          "id": "J",
           "name": "Crème brûlée",
-          "beschreibung": "Dessert",
+          "beschreibung": "",
           "preis": 5.8,
           "tags": [
             "NEU"
@@ -2292,15 +2319,15 @@
           "translations": {
             "en": {
               "name": "Crème brûlée",
-              "beschreibung": "Dessert"
+              "beschreibung": ""
             },
             "it": {
               "name": "Crème brûlée",
-              "beschreibung": "Dolce"
+              "beschreibung": ""
             },
             "zh": {
               "name": "焦糖布丁",
-              "beschreibung": "甜点"
+              "beschreibung": ""
             }
           }
         }
@@ -2558,50 +2585,77 @@
         },
         {
           "id": "M10",
-          "name": "Hähnchenbrust",
-          "beschreibung": "Gegrilltes Hähnchenbrustfilet mit Kartoffel-Püree und Röstzwiebeln",
+          "name": "Spargel mit Parmaschinken",
+          "beschreibung": "Spargel mit Parmaschinken und Kartoffeln",
           "preis": 24.0,
           "tags": [],
           "allergen_codes": [],
           "translations": {
             "en": {
-              "name": "Chicken Breast",
-              "beschreibung": "Grilled chicken breast with potato purée and roasted onions"
+              "name": "Asparagus with Parma Ham",
+              "beschreibung": "Asparagus with Parma ham and potatoes"
             },
             "it": {
-              "name": "Petto di Pollo",
-              "beschreibung": "Petto di pollo alla griglia con purè di patate e cipolle arrostite"
+              "name": "Asparagi con Prosciutto di Parma",
+              "beschreibung": "Asparagi con prosciutto di Parma e patate"
             },
             "zh": {
-              "name": "烤鸡胸肉",
-              "beschreibung": "烤鸡胸肉配土豆泥和烤洋葱"
+              "name": "芦笋配帕尔马火腿",
+              "beschreibung": "芦笋配帕尔马火腿和土豆"
             }
           }
         },
         {
           "id": "M11",
-          "name": "Crème Brûlée",
-          "beschreibung": "Crème brûlée mit Vanilleeis",
-          "preis": 8.6,
-          "tags": [
-            "vegetarisch"
-          ],
+          "name": "Tagliatelle mit Spargel",
+          "beschreibung": "Tagliatelle mit Spargel und Parmaschinken oder Erbsen in leichter Sahnesauce",
+          "preis": 23.0,
+          "tags": [],
           "allergen_codes": [
+            "A1",
             "C",
             "G"
           ],
           "translations": {
             "en": {
-              "name": "Crème Brûlée",
-              "beschreibung": "With vanilla ice cream"
+              "name": "Tagliatelle with Asparagus",
+              "beschreibung": "Tagliatelle with asparagus and Parma ham or peas in a light cream sauce"
             },
             "it": {
-              "name": "Crème Brûlée",
-              "beschreibung": "Con gelato alla vaniglia"
+              "name": "Tagliatelle con Asparagi",
+              "beschreibung": "Tagliatelle con asparagi e prosciutto di Parma o piselli in salsa di panna leggera"
             },
             "zh": {
-              "name": "法式焦糖布丁",
-              "beschreibung": "配香草冰淇淋"
+              "name": "芦笋宽面条",
+              "beschreibung": "芦笋宽面条配帕尔马火腿或豌豆淡奶油酱"
+            }
+          }
+        },
+        {
+          "id": "M12",
+          "name": "Ravioli mit Bärlauchfüllung",
+          "beschreibung": "Ravioli mit Bärlauchfüllung in Kirschtomaten-Bärlauchsauce",
+          "preis": 23.0,
+          "tags": [
+            "neu"
+          ],
+          "allergen_codes": [
+            "A1",
+            "C",
+            "G"
+          ],
+          "translations": {
+            "en": {
+              "name": "Ravioli with Wild Garlic Filling",
+              "beschreibung": "Ravioli filled with wild garlic in cherry tomato and wild garlic sauce"
+            },
+            "it": {
+              "name": "Ravioli al Ripieno di Aglio Orsino",
+              "beschreibung": "Ravioli ripieni di aglio orsino in salsa di pomodorini e aglio orsino"
+            },
+            "zh": {
+              "name": "熊葱馅饺子",
+              "beschreibung": "熊葱馅饺子配樱桃番茄熊葱酱"
             }
           }
         }
