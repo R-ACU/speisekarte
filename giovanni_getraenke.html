@@ -277,12 +277,15 @@
   }
 
   function renderDrinkItem(item) {
-    const name = (currentLang !== 'de' && item.translations && item.translations[currentLang])
+    const translated = (currentLang !== 'de' && item.translations && item.translations[currentLang])
       ? item.translations[currentLang].name
       : item.name;
+    const nameHtml = (currentLang === 'zh' && translated !== item.name)
+      ? `${esc(translated)}<span style="font-size:0.75em;opacity:0.5;font-style:normal;margin-left:6px;">(${esc(item.name)})</span>`
+      : esc(translated);
     return `
       <div class="drink-item">
-        <span class="drink-name">${esc(name)}</span>
+        <span class="drink-name">${nameHtml}</span>
         <div class="drink-prices">${renderDrinkPrices(item)}</div>
       </div>`;
   }
