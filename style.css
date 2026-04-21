@@ -376,25 +376,30 @@ section {
 }
 
 .empfehlung-item {
+  position: relative;
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 1fr auto;
   align-items: start;
   gap: 16px;
   padding: 20px 0;
   border-bottom: 1px solid rgba(201,185,154,0.4);
   transition: background 0.2s;
+  overflow: hidden;
 }
 .empfehlung-item:last-child { border-bottom: none; }
 
 .empfehlung-id {
+  position: absolute;
+  bottom: -8px;
+  right: -4px;
   font-family: 'Playfair Display', serif;
   font-style: italic;
-  font-size: 28px;
+  font-size: 72px;
   color: var(--gold);
-  opacity: 0.4;
-  min-width: 36px;
+  opacity: 0.12;
   line-height: 1;
-  margin-top: 2px;
+  pointer-events: none;
+  user-select: none;
 }
 
 /* ─── MITTAGSTISCH ─── */
@@ -631,8 +636,8 @@ footer p {
   .item-price { font-size: 15px; }
 
   /* Empfehlungen */
-  .empfehlung-item { grid-template-columns: auto 1fr auto; gap: 10px; padding: 16px 0; }
-  .empfehlung-id { font-size: 22px; min-width: 28px; }
+  .empfehlung-item { grid-template-columns: 1fr auto; gap: 10px; padding: 16px 0; }
+  .empfehlung-id { font-size: 56px; }
 
   /* Grids: single column */
   .pizza-grid { grid-template-columns: 1fr; }
@@ -657,8 +662,8 @@ footer p {
   .item-name-row { gap: 6px; }
   .item-name { font-size: 15px; }
 
-  .empfehlung-item { grid-template-columns: auto 1fr auto; gap: 8px; padding: 14px 0; }
-  .empfehlung-id { font-size: 20px; min-width: 24px; }
+  .empfehlung-item { grid-template-columns: 1fr auto; gap: 8px; padding: 14px 0; }
+  .empfehlung-id { font-size: 48px; }
 
   nav a { padding: 10px 8px; font-size: 9px; letter-spacing: 0.08em; }
 
