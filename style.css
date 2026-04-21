@@ -390,7 +390,7 @@ section {
 
 .empfehlung-id {
   position: absolute;
-  bottom: -8px;
+  bottom: 4px;
   right: -4px;
   font-family: 'Playfair Display', serif;
   font-style: italic;
