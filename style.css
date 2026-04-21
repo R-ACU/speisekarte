@@ -394,7 +394,7 @@ section {
   right: -4px;
   font-family: 'Playfair Display', serif;
   font-style: italic;
-  font-size: 30px;
+  font-size: 45px;
   color: var(--gold);
   opacity: 0.12;
   line-height: 1;
@@ -637,7 +637,7 @@ footer p {
 
   /* Empfehlungen */
   .empfehlung-item { grid-template-columns: 1fr auto; gap: 10px; padding: 16px 0; }
-  .empfehlung-id { font-size: 38px; }
+  .empfehlung-id { font-size: 30px; }
 
   /* Grids: single column */
   .pizza-grid { grid-template-columns: 1fr; }
@@ -663,7 +663,7 @@ footer p {
   .item-name { font-size: 15px; }
 
   .empfehlung-item { grid-template-columns: 1fr auto; gap: 8px; padding: 14px 0; }
-  .empfehlung-id { font-size: 32px; }
+  .empfehlung-id { font-size: 30px; }
 
   nav a { padding: 10px 8px; font-size: 9px; letter-spacing: 0.08em; }
 
