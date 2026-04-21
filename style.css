@@ -384,14 +384,13 @@ section {
   padding: 20px 0;
   border-bottom: 1px solid rgba(201,185,154,0.4);
   transition: background 0.2s;
-  overflow: hidden;
 }
 .empfehlung-item:last-child { border-bottom: none; }
 
 .empfehlung-id {
   position: absolute;
   bottom: 4px;
-  right: -4px;
+  right: 6px;
   font-family: 'Playfair Display', serif;
   font-style: italic;
   font-size: 45px;
