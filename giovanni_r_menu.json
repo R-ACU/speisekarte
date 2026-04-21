@@ -1930,6 +1930,73 @@
         }
       ]
     },
+    "paste": {
+      "gerichte": [
+        { "nr": 24, "name": "Spaghetti Aglio e Olio", "beschreibung": "Nach Art des Hauses (pikant)", "preis": 12.70, "tags": ["vegetarisch"], "allergen_codes": ["A1"], "translations": { "en": { "name": "Spaghetti Aglio e Olio", "beschreibung": "House style (spicy)" }, "it": { "name": "Spaghetti Aglio e Olio", "beschreibung": "Alla maniera della casa (piccante)" } } },
+        { "nr": 25, "name": "Spaghetti Arrabbiata", "beschreibung": "In scharfer Tomatensauce mit Knoblauch & Oliven", "preis": 12.90, "tags": ["vegetarisch", "vegan"], "allergen_codes": ["A1"], "translations": { "en": { "name": "Spaghetti Arrabbiata", "beschreibung": "In spicy tomato sauce with garlic and olives" }, "it": { "name": "Spaghetti all'Arrabbiata", "beschreibung": "In salsa di pomodoro piccante con aglio e olive" } } },
+        { "nr": 26, "name": "Spaghetti Brokkoli", "beschreibung": "Brokkoli, Knoblauch & Olivenöl (pikant)", "preis": 12.90, "tags": ["vegetarisch"], "allergen_codes": ["A1"], "translations": { "en": { "name": "Spaghetti with Broccoli", "beschreibung": "Broccoli, garlic and olive oil (spicy)" }, "it": { "name": "Spaghetti ai Broccoli", "beschreibung": "Broccoli, aglio e olio d'oliva (piccante)" } } },
+        { "nr": 27, "name": "Spaghetti Aglio e Scampi", "beschreibung": "Garnelen & Olivenöl (pikant)", "preis": 16.40, "tags": [], "allergen_codes": ["A1", "B"], "translations": { "en": { "name": "Spaghetti with Garlic and Prawns", "beschreibung": "Prawns and olive oil (spicy)" }, "it": { "name": "Spaghetti Aglio e Scampi", "beschreibung": "Gamberi e olio d'oliva (piccante)" } } },
+        { "nr": 277, "name": "Spaghetti Mare", "beschreibung": "Mit Meeresfrüchten & Tomatensauce (pikant)", "preis": 13.80, "tags": [], "allergen_codes": ["A1", "B"], "translations": { "en": { "name": "Spaghetti Mare", "beschreibung": "With seafood and tomato sauce (spicy)" }, "it": { "name": "Spaghetti al Mare", "beschreibung": "Con frutti di mare e salsa di pomodoro (piccante)" } } },
+        { "nr": 28, "name": "Spaghetti Bolognese", "beschreibung": "In Tomaten-Hackfleischsauce (100% Rindfleisch)", "preis": 12.80, "tags": [], "allergen_codes": ["A1"], "translations": { "en": { "name": "Spaghetti Bolognese", "beschreibung": "In tomato meat sauce (100% beef)" }, "it": { "name": "Spaghetti alla Bolognese", "beschreibung": "In ragù di pomodoro (100% manzo)" } } },
+        { "nr": 29, "name": "Spaghetti Carbonara", "beschreibung": "Nach italienischer Art mit Ei & Speck (viel Pfeffer)", "preis": 13.80, "tags": [], "allergen_codes": ["A1", "C", "G"], "translations": { "en": { "name": "Spaghetti Carbonara", "beschreibung": "Italian style with egg and bacon (lots of pepper)" }, "it": { "name": "Spaghetti alla Carbonara", "beschreibung": "Alla maniera italiana con uova e pancetta (molto pepe)" } } },
+        { "nr": 30, "name": "Penne Vegetaria", "beschreibung": "In Tomaten-Sahnesauce mit verschiedenen frischen Gemüse", "preis": 14.70, "tags": ["vegetarisch"], "allergen_codes": ["A1", "G"], "translations": { "en": { "name": "Penne Vegetaria", "beschreibung": "In tomato cream sauce with various fresh vegetables" }, "it": { "name": "Penne Vegetaria", "beschreibung": "In salsa cremosa al pomodoro con verdure fresche miste" } } },
+        { "nr": 31, "name": "Penne Pollo", "beschreibung": "Mit Hähnchenbrustfilet & Pilzen in feiner Sahnesauce", "preis": 15.80, "tags": [], "allergen_codes": ["A1", "G"], "translations": { "en": { "name": "Penne with Chicken", "beschreibung": "With chicken breast fillet and mushrooms in fine cream sauce" }, "it": { "name": "Penne al Pollo", "beschreibung": "Con petto di pollo e funghi in salsa di panna" } } },
+        { "nr": 34, "name": "Penne Scampi e Rucola", "beschreibung": "Mit Garnelen, Rucola & Kirschtomaten (pikant)", "preis": 16.40, "tags": [], "allergen_codes": ["A1", "B"], "translations": { "en": { "name": "Penne with Prawns and Rocket", "beschreibung": "With prawns, rocket and cherry tomatoes (spicy)" }, "it": { "name": "Penne Scampi e Rucola", "beschreibung": "Con gamberi, rucola e pomodorini (piccante)" } } }
+      ]
+    },
+    "tortellini": {
+      "hinweis": "Selbstgemacht, mit Fleisch gefüllt",
+      "gerichte": [
+        { "nr": 170, "name": "Tortellini", "beschreibung": "In Butter-Salbei-Soße", "preis": 18.90, "tags": [], "allergen_codes": ["A1", "C", "G"], "translations": { "en": { "name": "Tortellini", "beschreibung": "In butter-sage sauce" }, "it": { "name": "Tortellini", "beschreibung": "Al burro e salvia" } } },
+        { "nr": 171, "name": "Tortellini Panna e Prosciutto", "beschreibung": "In Schinken-Sahnesauce", "preis": 18.90, "tags": [], "allergen_codes": ["A1", "C", "G"], "translations": { "en": { "name": "Tortellini with Cream and Ham", "beschreibung": "In ham cream sauce" }, "it": { "name": "Tortellini Panna e Prosciutto", "beschreibung": "In salsa di panna e prosciutto" } } },
+        { "nr": 172, "name": "Tortellini Rosa", "beschreibung": "In Tomaten-Sahnesauce", "preis": 18.90, "tags": [], "allergen_codes": ["A1", "C", "G"], "translations": { "en": { "name": "Tortellini Rosa", "beschreibung": "In tomato cream sauce" }, "it": { "name": "Tortellini Rosa", "beschreibung": "In salsa rosa" } } }
+      ]
+    },
+    "campanelle": {
+      "hinweis": "Selbstgemacht",
+      "gerichte": [
+        { "nr": 180, "name": "Campanelle Scampi", "beschreibung": "Mit Brokkoli und Garnelen in feiner Sahnesauce", "preis": 18.80, "tags": [], "allergen_codes": ["A1", "B", "G"], "translations": { "en": { "name": "Campanelle with Prawns", "beschreibung": "With broccoli and prawns in fine cream sauce" }, "it": { "name": "Campanelle Scampi", "beschreibung": "Con broccoli e gamberi in salsa di panna" } } },
+        { "nr": 181, "name": "Campanelle Speck", "beschreibung": "Mit Speck & Brokkoli in feiner Sahnesauce", "preis": 18.80, "tags": [], "allergen_codes": ["A1", "G"], "translations": { "en": { "name": "Campanelle with Bacon", "beschreibung": "With bacon and broccoli in fine cream sauce" }, "it": { "name": "Campanelle allo Speck", "beschreibung": "Con speck e broccoli in salsa di panna" } } },
+        { "nr": 182, "name": "Campanelle Lachs", "beschreibung": "Mit Zucchini, Lachs in Tomaten-Sahnesauce", "preis": 18.80, "tags": [], "allergen_codes": ["A1", "B", "D", "G"], "translations": { "en": { "name": "Campanelle with Salmon", "beschreibung": "With zucchini and salmon in tomato cream sauce" }, "it": { "name": "Campanelle al Salmone", "beschreibung": "Con zucchine e salmone in salsa cremosa al pomodoro" } } }
+      ]
+    },
+    "gnocchi": {
+      "hinweis": "Kleine italienische Kartoffelklößchen",
+      "gerichte": [
+        { "nr": 117, "name": "Gnocchi ai Spinaci", "beschreibung": "Mit Spinat-Butter-Parmesan-Soße und Pinienkernen", "preis": 16.80, "tags": ["vegetarisch"], "allergen_codes": ["C", "G", "H"], "translations": { "en": { "name": "Gnocchi with Spinach", "beschreibung": "With spinach butter parmesan sauce and pine nuts" }, "it": { "name": "Gnocchi agli Spinaci", "beschreibung": "Con salsa di spinaci, burro, parmigiano e pinoli" } } },
+        { "nr": 118, "name": "Gnocchi Kalb", "beschreibung": "Mit Kalbfleisch in Butter-Salbei-Soße", "preis": 18.90, "tags": [], "allergen_codes": ["C", "G"], "translations": { "en": { "name": "Gnocchi with Veal", "beschreibung": "With veal in butter-sage sauce" }, "it": { "name": "Gnocchi al Vitello", "beschreibung": "Con vitello al burro e salvia" } } },
+        { "nr": 119, "name": "Gnocchi Zola", "beschreibung": "In Gorgonzolasauce", "preis": 16.80, "tags": ["vegetarisch"], "allergen_codes": ["C", "G"], "translations": { "en": { "name": "Gnocchi with Gorgonzola", "beschreibung": "In gorgonzola sauce" }, "it": { "name": "Gnocchi al Gorgonzola", "beschreibung": "In salsa al gorgonzola" } } }
+      ]
+    },
+    "ravioli": {
+      "hinweis": "Selbstgemacht, gefüllt mit Ricotta und Spinat",
+      "gerichte": [
+        { "nr": 37, "name": "Ravioli Bosco", "beschreibung": "In Waldpilzsoße", "preis": 23.00, "tags": ["vegetarisch"], "allergen_codes": ["A1", "C"], "translations": { "en": { "name": "Ravioli Bosco", "beschreibung": "In wild mushroom sauce" }, "it": { "name": "Ravioli al Bosco", "beschreibung": "In salsa ai funghi di bosco" } } },
+        { "nr": 38, "name": "Ravioli Burro e Salvia", "beschreibung": "In Butter-Salbei-Soße", "preis": 23.00, "tags": ["vegetarisch"], "allergen_codes": ["A1", "C", "G"], "translations": { "en": { "name": "Ravioli with Butter and Sage", "beschreibung": "In butter-sage sauce" }, "it": { "name": "Ravioli Burro e Salvia", "beschreibung": "Al burro e salvia" } } },
+        { "nr": 39, "name": "Ravioli Tartufati", "beschreibung": "In Zucchini-Sahne-Trüffelsoße, Rucola, Parmesan", "preis": 23.00, "tags": ["vegetarisch"], "allergen_codes": ["A1", "C", "G"], "translations": { "en": { "name": "Ravioli Tartufati", "beschreibung": "In zucchini cream truffle sauce, rocket, parmesan" }, "it": { "name": "Ravioli Tartufati", "beschreibung": "In salsa di zucchine, panna e tartufo, rucola, parmigiano" } } },
+        { "nr": 40, "name": "Ravioli Mare e Monti", "beschreibung": "Mit Waldpilzen und Garnelen", "preis": 23.00, "tags": [], "allergen_codes": ["A1", "B", "C"], "translations": { "en": { "name": "Ravioli Mare e Monti", "beschreibung": "With wild mushrooms and prawns" }, "it": { "name": "Ravioli Mare e Monti", "beschreibung": "Con funghi di bosco e gamberi" } } },
+        { "nr": 400, "name": "Ravioli Noci", "beschreibung": "Mit Walnüssen und Rucola in Gorgonzolasauce", "preis": 23.00, "tags": ["vegetarisch"], "allergen_codes": ["A1", "C", "G", "H"], "translations": { "en": { "name": "Ravioli with Walnuts", "beschreibung": "With walnuts and rocket in gorgonzola sauce" }, "it": { "name": "Ravioli alle Noci", "beschreibung": "Con noci e rucola in salsa al gorgonzola" } } },
+        { "nr": 401, "name": "Ravioli Orange", "beschreibung": "In Orangensauce, Rucola, Pinienkerne & Parmesan", "preis": 23.00, "tags": ["vegetarisch"], "allergen_codes": ["A1", "C", "G", "H"], "translations": { "en": { "name": "Ravioli with Orange", "beschreibung": "In orange sauce with rocket, pine nuts and parmesan" }, "it": { "name": "Ravioli all'Arancia", "beschreibung": "In salsa all'arancia con rucola, pinoli e parmigiano" } } },
+        { "nr": 402, "name": "Ravioli al Salmone", "beschreibung": "In rosa Soße mit Lachs und Zucchini", "preis": 23.00, "tags": [], "allergen_codes": ["A1", "C", "D", "G"], "translations": { "en": { "name": "Ravioli with Salmon", "beschreibung": "In pink sauce with salmon and zucchini" }, "it": { "name": "Ravioli al Salmone", "beschreibung": "In salsa rosa con salmone e zucchine" } } }
+      ]
+    },
+    "bandnudeln": {
+      "hinweis": "Selbstgemachte Bandnudeln",
+      "gerichte": [
+        { "nr": 230, "name": "Tagliatelle Parma", "beschreibung": "Bandnudeln mit Parmaschinken, Pinienkernen, Rucola & Parmesan", "preis": 23.00, "tags": [], "allergen_codes": ["A1", "C", "G", "H"], "translations": { "en": { "name": "Tagliatelle Parma", "beschreibung": "Tagliatelle with Parma ham, pine nuts, rocket and parmesan" }, "it": { "name": "Tagliatelle alla Parma", "beschreibung": "Con prosciutto di Parma, pinoli, rucola e parmigiano" } } },
+        { "nr": 231, "name": "Tagliatelle Pesto e Pollo", "beschreibung": "Bandnudeln mit selbstgemachtem Basilikumpesto, Pinienkerne und Hähnchenstreifen", "preis": 23.00, "tags": [], "allergen_codes": ["A1", "C", "G", "H"], "translations": { "en": { "name": "Tagliatelle Pesto and Chicken", "beschreibung": "Tagliatelle with homemade basil pesto, pine nuts and chicken strips" }, "it": { "name": "Tagliatelle Pesto e Pollo", "beschreibung": "Con pesto di basilico fatto in casa, pinoli e strisce di pollo" } } },
+        { "nr": 232, "name": "Tagliatelle Scampi", "beschreibung": "Bandnudeln mit Garnelen in Tomatensauce", "preis": 23.00, "tags": [], "allergen_codes": ["A1", "B", "C"], "translations": { "en": { "name": "Tagliatelle with Prawns", "beschreibung": "Tagliatelle with prawns in tomato sauce" }, "it": { "name": "Tagliatelle agli Scampi", "beschreibung": "Con gamberi in salsa di pomodoro" } } },
+        { "nr": 233, "name": "Tagliatelle Capra", "beschreibung": "Bandnudeln mit Ziegenkäsesauce, Parmaschinken, Rucola", "preis": 23.00, "tags": [], "allergen_codes": ["A1", "C", "G"], "translations": { "en": { "name": "Tagliatelle with Goat Cheese", "beschreibung": "Tagliatelle with goat cheese sauce, Parma ham and rocket" }, "it": { "name": "Tagliatelle alla Capra", "beschreibung": "Con salsa al formaggio di capra, prosciutto di Parma e rucola" } } },
+        { "nr": 234, "name": "Tagliatelle Bologna", "beschreibung": "Bandnudeln mit Rinderbolognese", "preis": 23.00, "tags": [], "allergen_codes": ["A1", "C"], "translations": { "en": { "name": "Tagliatelle Bolognese", "beschreibung": "Tagliatelle with beef bolognese" }, "it": { "name": "Tagliatelle alla Bolognese", "beschreibung": "Con ragù di manzo" } } },
+        { "nr": 235, "name": "Tagliatelle Anatra", "beschreibung": "Bandnudeln mit Entenstreifen in Trüffelsoße, Rucola und Pinienkernen", "preis": 23.00, "tags": [], "allergen_codes": ["A1", "C", "H"], "translations": { "en": { "name": "Tagliatelle with Duck", "beschreibung": "Tagliatelle with duck strips in truffle sauce, rocket and pine nuts" }, "it": { "name": "Tagliatelle all'Anatra", "beschreibung": "Con strisce di anatra in salsa al tartufo, rucola e pinoli" } } }
+      ]
+    },
+    "pasteforno": {
+      "hinweis": "Überbackene selbstgemachte Nudeln",
+      "gerichte": [
+        { "nr": 19, "name": "Lasagna Bolognese", "beschreibung": "Mit Tomaten-Hackfleischsauce & Käse (100% Rindfleisch)", "preis": 17.90, "tags": [], "allergen_codes": ["A1", "C", "G", "I"], "translations": { "en": { "name": "Lasagna Bolognese", "beschreibung": "With tomato meat sauce and cheese (100% beef)" }, "it": { "name": "Lasagna alla Bolognese", "beschreibung": "Con ragù di pomodoro e formaggio (100% manzo)" } } }
+      ]
+    },
     "dessert": [
       {
         "name": "Tiramisu",
