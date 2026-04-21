@@ -581,7 +581,11 @@
 
   function getName(item) {
     if (currentLang === 'de') return esc(item.name);
-    return esc((item.translations && item.translations[currentLang] && item.translations[currentLang].name) || item.name);
+    const translated = (item.translations && item.translations[currentLang] && item.translations[currentLang].name) || item.name;
+    if (currentLang === 'zh') {
+      return esc(translated) + `<span style="font-size:0.75em;opacity:0.5;font-style:normal;margin-left:6px;">(${esc(item.name)})</span>`;
+    }
+    return esc(translated);
   }
 
   function renderAllergenCodes(codes) {
