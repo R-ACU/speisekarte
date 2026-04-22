@@ -418,7 +418,13 @@
         bruschette: 'Hausgemachtes geröstetes Brot mit Knoblauch',
         fleischgerichte: 'Zu jedem Fleischgericht Kartoffeln',
         empfehlungen: 'Alle Nudeln aus eigener Nudelproduktion, frisch hergestellt',
-        mittagstisch: '11:00–14:00 Uhr'
+        mittagstisch: '11:00–14:00 Uhr',
+        ravioli: 'Selbstgemacht, gefüllt mit Ricotta und Spinat',
+        bandnudeln: 'Selbstgemachte Bandnudeln',
+        tortellini: 'Selbstgemacht, mit Fleisch gefüllt',
+        campanelle: 'Selbstgemacht',
+        gnocchi: 'Kleine italienische Kartoffelklößchen',
+        pasteforno: 'Überbackene selbstgemachte Nudeln'
       },
       pizza_note: 'Jede Pizza auch in klein für 9,90 € · Pizza Margherita klein: 5,80 €',
       mittag_senior: 'Auch als Seniorenportion erhältlich',
@@ -470,7 +476,13 @@
         bruschette: 'Homemade toasted bread with garlic',
         fleischgerichte: 'All meat dishes served with potatoes',
         empfehlungen: 'All pasta freshly made in-house',
-        mittagstisch: 'Monday–Friday, 11:00–14:00'
+        mittagstisch: 'Monday–Friday, 11:00–14:00',
+        ravioli: 'Homemade, filled with ricotta and spinach',
+        bandnudeln: 'Homemade tagliatelle',
+        tortellini: 'Homemade, filled with meat',
+        campanelle: 'Homemade',
+        gnocchi: 'Small Italian potato dumplings',
+        pasteforno: 'Baked homemade pasta'
       },
       pizza_note: 'Every pizza also available small for 9.90 € · Margherita small: 5.80 €',
       mittag_senior: 'Also available as senior portion',
@@ -522,7 +534,13 @@
         bruschette: 'Pane tostato fatto in casa con aglio',
         fleischgerichte: 'Tutte le pietanze di carne servite con patate',
         empfehlungen: 'Tutta la pasta è fatta in casa, fresca di giornata',
-        mittagstisch: 'Lunedì–Venerdì, 11:00–14:00'
+        mittagstisch: 'Lunedì–Venerdì, 11:00–14:00',
+        ravioli: 'Fatti in casa, ripieni di ricotta e spinaci',
+        bandnudeln: 'Tagliatelle fatte in casa',
+        tortellini: 'Fatti in casa, ripieni di carne',
+        campanelle: 'Fatte in casa',
+        gnocchi: 'Piccoli gnocchi di patate italiani',
+        pasteforno: 'Pasta fatta in casa al forno'
       },
       pizza_note: 'Ogni pizza anche in piccolo per 9,90 € · Margherita piccola: 5,80 €',
       mittag_senior: 'Disponibile anche come porzione senior',
@@ -574,7 +592,13 @@
         bruschette: '自制蒜香烤面包',
         fleischgerichte: '所有肉类菜肴均附土豆',
         empfehlungen: '全部意面均为店内新鲜现制',
-        mittagstisch: '周一至周五，11:00–14:00'
+        mittagstisch: '周一至周五，11:00–14:00',
+        ravioli: '自制，馅料为乳清干酪和菠菜',
+        bandnudeln: '自制宽面条',
+        tortellini: '自制，肉馅',
+        campanelle: '自制',
+        gnocchi: '意式小土豆团子',
+        pasteforno: '自制焗烤意面'
       },
       pizza_note: '每款比萨均可点小份 9,90 € · 玛格丽特小份：5,80 €',
       mittag_senior: '亦提供老年人份量',
@@ -813,32 +837,32 @@
       kat.paste.gerichte.map(renderMenuItem).join('');
 
     // Ravioli
-    document.querySelector('[data-note="ravioli"]').textContent = kat.ravioli.hinweis || '';
+    document.querySelector('[data-note="ravioli"]').textContent = ui.notes.ravioli || '';
     document.querySelector('[data-category="ravioli"]').innerHTML =
       kat.ravioli.gerichte.map(renderMenuItem).join('');
 
     // Bandnudeln
-    document.querySelector('[data-note="bandnudeln"]').textContent = kat.bandnudeln.hinweis || '';
+    document.querySelector('[data-note="bandnudeln"]').textContent = ui.notes.bandnudeln || '';
     document.querySelector('[data-category="bandnudeln"]').innerHTML =
       kat.bandnudeln.gerichte.map(renderMenuItem).join('');
 
     // Tortellini
-    document.querySelector('[data-note="tortellini"]').textContent = kat.tortellini.hinweis || '';
+    document.querySelector('[data-note="tortellini"]').textContent = ui.notes.tortellini || '';
     document.querySelector('[data-category="tortellini"]').innerHTML =
       kat.tortellini.gerichte.map(renderMenuItem).join('');
 
     // Campanelle
-    document.querySelector('[data-note="campanelle"]').textContent = kat.campanelle.hinweis || '';
+    document.querySelector('[data-note="campanelle"]').textContent = ui.notes.campanelle || '';
     document.querySelector('[data-category="campanelle"]').innerHTML =
       kat.campanelle.gerichte.map(renderMenuItem).join('');
 
     // Gnocchi
-    document.querySelector('[data-note="gnocchi"]').textContent = kat.gnocchi.hinweis || '';
+    document.querySelector('[data-note="gnocchi"]').textContent = ui.notes.gnocchi || '';
     document.querySelector('[data-category="gnocchi"]').innerHTML =
       kat.gnocchi.gerichte.map(renderMenuItem).join('');
 
     // Paste al Forno
-    document.querySelector('[data-note="pasteforno"]').textContent = kat.pasteforno.hinweis || '';
+    document.querySelector('[data-note="pasteforno"]').textContent = ui.notes.pasteforno || '';
     document.querySelector('[data-category="pasteforno"]').innerHTML =
       kat.pasteforno.gerichte.map(renderMenuItem).join('');
 
