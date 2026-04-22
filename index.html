@@ -1075,7 +1075,8 @@
 
     // Ab 21:30 Uhr: nur Salate, Bruschetta, Pizza, Dessert sichtbar
     const lateNight = t >= 1290 || t < 540; // 21:30–09:00 Uhr (Küche geschlossen)
-    ['antipasti', 'zuppe', 'fisch', 'fleisch', 'empfehlungen'].forEach(id => {
+    ['antipasti', 'zuppe', 'fisch', 'fleisch', 'empfehlungen',
+     'paste', 'ravioli', 'bandnudeln', 'tortellini', 'campanelle', 'gnocchi', 'pasteforno'].forEach(id => {
       const sec = document.getElementById(id);
       const nav = document.querySelector('[data-nav="' + id + '"]');
       if (sec) sec.style.display = lateNight ? 'none' : '';
