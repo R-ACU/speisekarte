@@ -280,7 +280,7 @@
     const translated = (currentLang !== 'de' && item.translations && item.translations[currentLang])
       ? item.translations[currentLang].name
       : item.name;
-    const nameHtml = (currentLang === 'zh' && translated !== item.name)
+    const nameHtml = (currentLang === 'zh' && translated !== item.name && !translated.startsWith(item.name))
       ? `${esc(translated)}<span style="font-size:0.75em;opacity:0.5;font-style:normal;margin-left:6px;">(${esc(item.name)})</span>`
       : esc(translated);
     return `
