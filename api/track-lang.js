@@ -8,8 +8,8 @@ export default async function handler(req, res) {
   const allowed = ['de', 'en', 'it', 'zh'];
   if (!lang || !allowed.includes(lang)) return res.status(400).json({ error: 'invalid lang' });
 
-  const url = process.env.UPSTASH_REDIS_REST_URL;
-  const token = process.env.UPSTASH_REDIS_REST_TOKEN;
+  const url = process.env.KV_REST_API_URL;
+  const token = process.env.KV_REST_API_TOKEN;
   if (!url || !token) return res.status(500).json({ error: 'Redis not configured' });
 
   await fetch(`${url}/incr/lang:${lang}`, {
