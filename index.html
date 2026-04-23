@@ -471,7 +471,8 @@
       tags: { vegan: 'Vegan', vegetarisch: 'Vegetarisch', neu: 'NEU' },
       legend: { allergens: 'Allergene', additives: 'Zusatzstoffe' },
       cta_label: 'Getränkekarte', cta_btn: 'Zur Getränkekarte',
-      tabs: { speisekarte: 'Speisekarte', getraenke: 'Getränke' }
+      tabs: { speisekarte: 'Speisekarte', getraenke: 'Getränke' },
+      saved: { list: 'Merkliste', save: 'Merken', empty: 'Noch nichts gespeichert', remove: 'Entfernen' }
     },
     en: {
       sub: {
@@ -529,7 +530,8 @@
       tags: { vegan: 'Vegan', vegetarisch: 'Vegetarian', neu: 'NEW' },
       legend: { allergens: 'Allergens', additives: 'Additives' },
       cta_label: 'Drinks Menu', cta_btn: 'View Drinks Menu',
-      tabs: { speisekarte: 'Food Menu', getraenke: 'Drinks' }
+      tabs: { speisekarte: 'Food Menu', getraenke: 'Drinks' },
+      saved: { list: 'Saved Items', save: 'Save', empty: 'Nothing saved yet', remove: 'Remove' }
     },
     it: {
       sub: {
@@ -587,7 +589,8 @@
       tags: { vegan: 'Vegano', vegetarisch: 'Vegetariano', neu: 'NUOVO' },
       legend: { allergens: 'Allergeni', additives: 'Additivi' },
       cta_label: 'Carta delle Bevande', cta_btn: 'Vai alla Carta delle Bevande',
-      tabs: { speisekarte: 'Menu', getraenke: 'Bevande' }
+      tabs: { speisekarte: 'Menu', getraenke: 'Bevande' },
+      saved: { list: 'Preferiti', save: 'Salva', empty: 'Nessun elemento salvato', remove: 'Rimuovi' }
     },
     zh: {
       sub: {
@@ -645,7 +648,8 @@
       tags: { vegan: '纯素', vegetarisch: '素食', neu: '新品' },
       legend: { allergens: '过敏原', additives: '添加剂' },
       cta_label: '饮品单', cta_btn: '查看饮品单',
-      tabs: { speisekarte: '菜单', getraenke: '饮品' }
+      tabs: { speisekarte: '菜单', getraenke: '饮品' },
+      saved: { list: '收藏夹', save: '收藏', empty: '还没有收藏项目', remove: '移除' }
     }
   };
 
@@ -688,9 +692,18 @@
     }).join('') + '</div>';
   }
 
+  function getSavedLabels() {
+    return UI[currentLang]?.saved || UI.de.saved;
+  }
+
   function saveBtn(item) {
     const saved = getSaved().some(s => s.nr === item.nr);
-    return `<button class="save-icon${saved ? ' saved' : ''}" data-nr="${item.nr}" aria-label="Merken" title="Merken">&#9646;</button>`;
+    const savedUi = getSavedLabels();
+    return `<button class="save-icon${saved ? ' saved' : ''}" data-nr="${item.nr}" aria-label="${esc(savedUi.save)}" title="${esc(savedUi.save)}" aria-pressed="${saved}">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+      </svg>
+    </button>`;
   }
 
   function renderMenuItem(item) {
@@ -700,7 +713,6 @@
     const kategorie = kat ? `<div class="kategorie-label">${kat}</div>` : '';
     return `
       <div class="menu-item">
-        ${saveBtn(item)}
         <div class="item-left">
           <div class="item-name-row">
             <span class="item-nr">${item.nr}</span>
@@ -710,7 +722,10 @@
           ${kategorie}
           <div class="item-desc">${getDesc(item)}</div>
         </div>
-        <div class="item-price">${formatPrice(item.preis)}${priceAlt}</div>
+        <div class="item-right">
+          <div class="item-price">${formatPrice(item.preis)}${priceAlt}</div>
+          ${saveBtn(item)}
+        </div>
       </div>
     `;
   }
@@ -718,7 +733,7 @@
   function renderPizzaCard(item) {
     const t = UI[currentLang].tags;
     const tags = item.tags && item.tags.length > 0
-      ? `<div class="item-tags" style="margin-top:8px">${item.tags.map(tag => {
+      ? `<div class="item-tags">${item.tags.map(tag => {
           const k = tag.toLowerCase();
           if (k === 'vegetarisch') return `<span class="tag tag-vegeta">${t.vegetarisch}</span>`;
           return '';
@@ -726,12 +741,16 @@
       : '';
     return `
       <div class="pizza-card">
-        ${saveBtn(item)}
         <span class="item-nr">${item.nr}</span>
-        <div class="item-name">${getName(item)}${renderAllergenCodes(item.allergen_codes)}</div>
+        <div class="item-name-row pizza-name-row">
+          <span class="item-name">${getName(item)}${renderAllergenCodes(item.allergen_codes)}</span>
+          ${tags}
+        </div>
         <div class="item-desc">${getDesc(item)}</div>
-        <div class="item-price">${formatPrice(item.preis)}</div>
-        ${tags}
+        <div class="pizza-actions">
+          <div class="item-price">${formatPrice(item.preis)}</div>
+          ${saveBtn(item)}
+        </div>
       </div>
     `;
   }
@@ -739,7 +758,6 @@
   function renderEmpfehlungItem(item) {
     return `
       <div class="empfehlung-item">
-        ${saveBtn(item)}
         <div class="empfehlung-id">${item.id}</div>
         <div class="item-left">
           <div class="item-name-row">
@@ -748,7 +766,10 @@
           </div>
           <div class="item-desc">${getDesc(item)}</div>
         </div>
-        <div class="item-price">${formatPrice(item.preis)}</div>
+        <div class="item-right">
+          <div class="item-price">${formatPrice(item.preis)}</div>
+          ${saveBtn(item)}
+        </div>
       </div>
     `;
   }
@@ -766,12 +787,14 @@
       : '<div style="margin-bottom:6px; height:16px;"></div>';
     return `
       <div class="mittag-card">
-        ${saveBtn(item)}
         <div class="mittag-id">${item.id}</div>
         ${tagsHtml}
         <div class="mittag-name">${getName(item)}${renderAllergenCodes(item.allergen_codes)}</div>
         <div class="mittag-desc">${getDesc(item) || '&nbsp;'}</div>
-        <div class="mittag-price">${formatPrice(item.preis)}</div>
+        <div class="mittag-actions">
+          <div class="mittag-price">${formatPrice(item.preis)}</div>
+          ${saveBtn(item)}
+        </div>
       </div>
     `;
   }
@@ -800,7 +823,6 @@
   function renderDessertCard(item) {
     return `
       <div class="menu-item">
-        ${saveBtn(item)}
         <div class="item-left">
           <div class="item-name-row">
             <span class="item-name">${getName(item)}${renderAllergenCodes(item.allergen_codes)}</span>
@@ -808,7 +830,10 @@
           </div>
           <div class="item-desc">${getDesc(item)}</div>
         </div>
-        <div class="item-price">${formatPrice(item.preis)}</div>
+        <div class="item-right">
+          <div class="item-price">${formatPrice(item.preis)}</div>
+          ${saveBtn(item)}
+        </div>
       </div>
     `;
   }
@@ -931,6 +956,15 @@
       if (ui.tabs[key]) el.textContent = ui.tabs[key];
     });
 
+    // Saved / drawer labels
+    const savedUi = getSavedLabels();
+    const savedBtn = document.getElementById('saved-btn');
+    if (savedBtn) savedBtn.setAttribute('aria-label', savedUi.list);
+    const drawerTitle = document.getElementById('drawer-title');
+    if (drawerTitle) drawerTitle.textContent = savedUi.list;
+    const drawerEmpty = document.getElementById('drawer-empty');
+    if (drawerEmpty) drawerEmpty.textContent = savedUi.empty;
+
     // Allergen legend
     document.querySelector('[data-category="allergen-legend"]').innerHTML =
       renderAllergenLegend();
@@ -1012,13 +1046,16 @@
     // update icon states
     document.querySelectorAll('.save-icon').forEach(el => {
       const nr = parseInt(el.dataset.nr);
-      el.classList.toggle('saved', saved.some(s => s.nr === nr));
+      const isSaved = saved.some(s => s.nr === nr);
+      el.classList.toggle('saved', isSaved);
+      el.setAttribute('aria-pressed', String(isSaved));
     });
     renderDrawer();
   }
 
   function renderDrawer() {
     const saved = getSaved();
+    const savedUi = getSavedLabels();
     const list = document.getElementById('drawer-list');
     const empty = document.getElementById('drawer-empty');
     if (!saved.length) {
@@ -1029,18 +1066,29 @@
     const all = getAllItems();
     list.innerHTML = saved.map(s => {
       const item = all.find(i => i.nr === s.nr);
-      if (!item) return '';
-      const name = currentLang !== 'de' && item.translations?.[currentLang]?.name
+      const source = item || s;
+      if (!source) return '';
+      const name = item && currentLang !== 'de' && item.translations?.[currentLang]?.name
         ? item.translations[currentLang].name
-        : item.name;
+        : source.name;
+      const desc = item && currentLang !== 'de' && item.translations?.[currentLang]?.beschreibung
+        ? item.translations[currentLang].beschreibung
+        : (source.beschreibung || '');
+      const tagList = item?.tags || source.tags || [];
+      const tagsHtml = renderTags(tagList);
+      const price = typeof source.preis === 'number' ? source.preis : parseFloat(source.preis);
       return `<div class="drawer-item">
-        <div>
-          <div class="drawer-item-nr">#${item.nr}</div>
-          <div class="drawer-item-name">${esc(name)}</div>
+        <div class="drawer-item-copy">
+          <div class="drawer-item-nr">#${source.nr}</div>
+          <div class="drawer-item-name-row">
+            <div class="drawer-item-name">${esc(name)}</div>
+            ${tagsHtml}
+          </div>
+          ${desc ? `<div class="drawer-item-desc">${esc(desc)}</div>` : ''}
         </div>
         <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
-          <span class="drawer-item-price">${formatPrice(item.preis)}</span>
-          <button class="drawer-item-remove" data-nr="${item.nr}" aria-label="Entfernen">&#x2715;</button>
+          <span class="drawer-item-price">${formatPrice(price)}</span>
+          <button class="drawer-item-remove" data-nr="${source.nr}" aria-label="${esc(savedUi.remove)}" title="${esc(savedUi.remove)}">&#x2715;</button>
         </div>
       </div>`;
     }).join('');
@@ -1053,13 +1101,13 @@
     });
   }
 
-  function toggleSaved(nr, name, preis) {
+  function toggleSaved(nr, name, preis, beschreibung, tags) {
     const saved = getSaved();
     const idx = saved.findIndex(s => s.nr === nr);
     if (idx >= 0) {
       saved.splice(idx, 1);
     } else {
-      saved.push({ nr, name, preis });
+      saved.push({ nr, name, preis, beschreibung, tags: Array.isArray(tags) ? tags : [] });
       fetch('/api/track-lang', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -1078,7 +1126,7 @@
     const nr = parseInt(btn.dataset.nr);
     const all = getAllItems();
     const item = all.find(i => i.nr === nr);
-    if (item) toggleSaved(nr, item.name, item.preis);
+    if (item) toggleSaved(nr, item.name, item.preis, item.beschreibung, item.tags);
   });
 
   // Drawer open/close

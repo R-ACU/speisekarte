@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Tischaufsteller – Giovanni R</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  body {
+    width: 210mm;
+    height: 297mm;
+    background: #f5f0e8;
+    font-family: 'Georgia', serif;
+    overflow: hidden;
+  }
+
+  /* A4 geteilt in zwei Hälften: oben = Vorderseite, unten = Rückseite */
+  .panel {
+    width: 210mm;
+    height: 148.5mm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10mm 20mm;
+    position: relative;
+    background: #f5f0e8;
+  }
+
+  /* Faltlinie */
+  .fold-line {
+    width: 210mm;
+    height: 0;
+    border-top: 1.5px dashed #c9b99a;
+    position: relative;
+    text-align: center;
+  }
+  .fold-line span {
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f5f0e8;
+    padding: 0 8px;
+    font-size: 8px;
+    color: #b8932a;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-family: 'Georgia', serif;
+  }
+
+  .logo-wrap {
+    margin-bottom: 6mm;
+  }
+
+  .divider {
+    width: 60mm;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #b8932a, transparent);
+    margin: 4mm auto;
+  }
+
+  .tagline {
+    font-size: 9px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #8b3a1e;
+    text-align: center;
+    margin-bottom: 6mm;
+  }
+
+  .qr-wrap {
+    margin: 3mm 0;
+  }
+
+  .qr-wrap svg {
+    width: 52mm;
+    height: 52mm;
+  }
+
+  .scan-text {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #5a4a3a;
+    text-align: center;
+    margin-top: 4mm;
+  }
+
+  .url {
+    font-size: 9px;
+    color: #b8932a;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-top: 2mm;
+    font-style: italic;
+  }
+
+  /* Rückseite ist auf dem Kopf (für Zelt-Aufsteller) */
+  .panel-back {
+    transform: rotate(180deg);
+  }
+
+  .corner-ornament {
+    position: absolute;
+    font-size: 18px;
+    color: #b8932a;
+    opacity: 0.3;
+    line-height: 1;
+  }
+  .corner-tl { top: 5mm; left: 7mm; }
+  .corner-tr { top: 5mm; right: 7mm; }
+  .corner-bl { bottom: 5mm; left: 7mm; }
+  .corner-br { bottom: 5mm; right: 7mm; }
+</style>
+</head>
+<body>
+
+<!-- VORDERSEITE (untere Hälfte beim Aufsteller) -->
+<div class="panel">
+  <span class="corner-ornament corner-tl">✦</span>
+  <span class="corner-ornament corner-tr">✦</span>
+  <span class="corner-ornament corner-bl">✦</span>
+  <span class="corner-ornament corner-br">✦</span>
+
+  <div class="logo-wrap">
+    <svg viewBox="4 94.5 195 64" xmlns="http://www.w3.org/2000/svg" width="160" height="52">
+      <path fill="#96151D" d="m166.8 98c-7.36 0-17.07 1.58-19.87 6.61-2.09 3.87-1.44 7.31-0.03 9.31 0.9 0.83 1.88 0 0.98-2.61s-0.95-5.89 2.77-7.89c3.73-2 10.2-2.36 14.55-2.36 9.71 0 28.23 5.38 29.01 15.85 0.77 9.77-11.12 14.05-21.51 13.5-1.64-0.15-2.37 0.12-2.15 2.58 0.5 5.63 7.38 17.72 13.56 17.72 2.1 0 1.9-0.6 1.9-0.6 0.63-0.32 0.1-1.95-0.91-1.28-0.78 0.53-1.26 0.58-2.67-0.21-4.79-2.71-8.2-11.5-8.42-13.31 10.19-1.4 22.93-7.4 22.93-17.41 0-10.84-14.04-19.9-30.14-19.9z"/>
+      <path fill="#96151D" d="m179.1 111.6c-6.35 9.52-18.73 25.64-18.73 31.76 0 0.72 0.4 1.29 1.28 1.29s1.27-0.67 1.27-1.76c0.73-6.23 12.85-22.29 17.4-29.68 0.95-1.61 1.3-1.93 0.62-2.45-0.73-0.63-1.21-0.21-1.84 0.84z"/>
+      <path fill="#2B2A29" d="m5.74 126c0-5.81 2.05-7.9 7.77-7.9h11.46c5.12 0 7.74 1.71 7.74 5.97v0.68h-2.68c0-3.63-1.61-4.2-6.37-4.2h-9.57c-2.96 0-5.08 0.92-5.08 5.02v7c0 4.1 2.12 5.02 5.08 5.02h10.74c3.76 0 5.09-1.24 5.09-4.48v-1.55h-11.74v-2.45h14.58v3.68c0 5.7-1.9 7.24-7.85 7.24h-11.4c-5.72 0-7.77-2.09-7.77-7.9v-6.13z"/>
+      <path fill="#2B2A29" d="m36.99 123.9h2.78v15.85h-2.78v-15.85zm0-5.71h2.78v3.07h-2.78v-3.07z"/>
+      <path fill="#2B2A29" d="m60.44 130.4c0-3.65-2.01-4.36-5-4.36h-4.27c-2.99 0-5 0.71-5 4.36v2.97c0 3.65 2.01 4.36 5 4.36h4.27c2.99 0 5-0.71 5-4.36v-2.97zm-16.83-0.16c0-4.95 3.27-6.49 8.31-6.49h2.77c5.05 0 8.31 1.54 8.31 6.49v3.29c0 4.95-3.26 6.49-8.31 6.49h-2.77c-5.04 0-8.31-1.54-8.31-6.49v-3.29z"/>
+      <path fill="#2B2A29" d="m64.91 123.9h2.88l7.12 13.46 7.12-13.46h2.88l-8.36 15.85h-3.28l-8.36-15.85z"/>
+      <path fill="#2B2A29" d="m103 134.9c0-2.26-1.66-2.61-5.5-2.61h-3.82c-3.18 0-4.11 0.51-4.11 2.46v0.52c0 1.74 0.62 2.45 3.99 2.45h3.3c4.03 0 6.14-0.39 6.14-2.51v-0.31zm0 3.18h-0.06c-0.67 1.35-1.49 1.77-5.33 1.77h-5.21c-3.89 0-5.03-1.9-5.03-4.84v-1.08c0-3.49 2.5-4.06 6.83-4.06h3.41c3.22 0 4.44 0.39 5.33 1.81h0.06v-2.84c0-2.71-1.63-3.07-5.56-3.07h-3.13c-2.99 0-3.67 0.78-3.67 2.04v0.57h-2.62v-0.78c0-2.66 1.67-3.86 6.24-3.86h3.47c4.76 0 7.88 0.83 7.88 5.19v10.87h-2.61v-1.72z"/>
+      <path fill="#2B2A29" d="m108.3 123.9h2.45v2.61h0.06c0.93-2.25 2.83-2.82 6.05-2.82h3.35c4.88 0 6.46 2.56 6.46 5.53v10.53h-2.62v-9.83c0-2.5-0.73-4.04-5.43-4.04h-0.67c-5.55 0-7.03 1.38-7.03 5.26v8.61h-2.62v-15.85z"/>
+      <path fill="#2B2A29" d="m129.3 123.9h2.45v2.61h0.06c0.93-2.25 2.83-2.82 6.05-2.82h3.35c4.88 0 6.46 2.56 6.46 5.53v10.53h-2.62v-9.83c0-2.5-0.73-4.04-5.43-4.04h-0.67c-5.55 0-7.03 1.38-7.03 5.26v8.61h-2.62v-15.85z"/>
+      <path fill="#2B2A29" d="m150.7 123.9h2.78v15.85h-2.78v-15.85zm0-5.71h2.78v3.07h-2.78v-3.07z"/>
+    </svg>
+  </div>
+
+  <div class="tagline">Cucine Italiane · Laatzen</div>
+  <div class="divider"></div>
+
+  <div class="qr-wrap">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" shape-rendering="crispEdges"><path stroke="#2B2A29" d="M1 1.5h7m2 0h1m1 0h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h1m1 0h7M1 2.5h1m5 0h1m1 0h1m4 0h1m1 0h2m1 0h1m2 0h2m3 0h1m5 0h1M1 3.5h1m1 0h3m1 0h1m1 0h1m2 0h2m1 0h2m1 0h6m1 0h1m1 0h1m1 0h3m1 0h1M1 4.5h1m1 0h3m1 0h1m1 0h3m2 0h1m3 0h3m1 0h3m2 0h1m1 0h3m1 0h1M1 5.5h1m1 0h3m1 0h1m1 0h1m1 0h2m2 0h1m2 0h1m1 0h5m2 0h1m1 0h3m1 0h1M1 6.5h1m5 0h1m1 0h5m9 0h2m2 0h1m5 0h1M1 7.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M10 8.5h1m2 0h2m3 0h4m2 0h2M3 9.5h1m2 0h4m4 0h2m1 0h1m1 0h2m4 0h2m1 0h5M1 10.5h1m4 0h1m3 0h1m1 0h1m2 0h2m1 0h1m1 0h1m3 0h5m1 0h2m1 0h1M1 11.5h2m1 0h5m4 0h2m3 0h8m1 0h3m1 0h1m1 0h1M2 12.5h2m4 0h3m5 0h2m3 0h1m1 0h3m1 0h2m1 0h1m1 0h2M3 13.5h1m2 0h2m1 0h2m2 0h3m1 0h1m1 0h1m2 0h2m1 0h1m1 0h1m1 0h2m2 0h1M2 14.5h5m1 0h1m1 0h2m4 0h1m1 0h2m2 0h4m1 0h1m5 0h1M1 15.5h2m2 0h4m3 0h1m1 0h2m2 0h2m4 0h2m3 0h1m1 0h1m1 0h1M4 16.5h2m2 0h1m1 0h3m5 0h1m1 0h1m2 0h3m1 0h1m4 0h1M4 17.5h1m2 0h1m1 0h1m1 0h2m2 0h1m2 0h4m1 0h1m3 0h2m2 0h2M2 18.5h5m1 0h1m2 0h2m1 0h3m1 0h5m1 0h1m1 0h3m2 0h1M6 19.5h2m1 0h1m1 0h4m1 0h1m1 0h1m1 0h5m4 0h3M1 20.5h5m3 0h1m1 0h1m2 0h4m1 0h2m2 0h2m2 0h2m1 0h1m2 0h1M3 21.5h1m1 0h3m1 0h1m2 0h1m1 0h4m2 0h2m2 0h1M3 22.5h1m1 0h2m1 0h3m1 0h1m1 0h3m1 0h2m1 0h1m1 0h1m4 0h1m2 0h1m1 0h1M1 23.5h3m3 0h1m2 0h4m6 0h1m1 0h1m1 0h1m1 0h2m3 0h3M3 24.5h1m2 0h1m6 0h2m1 0h1m1 0h1m1 0h2m1 0h1m4 0h3m2 0h1M1 25.5h4m2 0h1m4 0h1m3 0h1m1 0h13m1 0h2M9 26.5h1m1 0h2m2 0h3m2 0h3m2 0h1m3 0h3m1 0h1M1 27.5h7m1 0h1m1 0h3m2 0h1m1 0h3m4 0h1m1 0h1m1 0h1m1 0h1m1 0h1M1 28.5h1m5 0h1m1 0h1m1 0h1m1 0h2m1 0h2m1 0h4m2 0h1m3 0h2m1 0h2M1 29.5h1m1 0h3m1 0h1m2 0h1m2 0h1m2 0h1m1 0h1m2 0h2m1 0h7M1 30.5h1m1 0h3m1 0h1m2 0h1m1 0h2m2 0h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h5M1 31.5h1m1 0h3m1 0h1m1 0h4m1 0h1m1 0h2m2 0h1m1 0h1m2 0h1m3 0h2m1 0h2M1 32.5h1m5 0h1m2 0h1m3 0h2m1 0h1m1 0h2m4 0h1m4 0h2M1 33.5h7m5 0h3m1 0h1m1 0h1m2 0h2m1 0h1m1 0h1m1 0h3m1 0h1"/></svg>
+  </div>
+
+  <div class="scan-text">Digitale Speisekarte scannen</div>
+  <div class="url">giovannir-menu.de</div>
+
+  <div class="divider" style="margin-top: 5mm;"></div>
+</div>
+
+<!-- FALTLINIE -->
+<div class="fold-line"><span>— Hier falten —</span></div>
+
+<!-- RÜCKSEITE (auf dem Kopf, für Tischaufsteller) -->
+<div class="panel panel-back">
+  <span class="corner-ornament corner-tl">✦</span>
+  <span class="corner-ornament corner-tr">✦</span>
+  <span class="corner-ornament corner-bl">✦</span>
+  <span class="corner-ornament corner-br">✦</span>
+
+  <div class="logo-wrap">
+    <svg viewBox="4 94.5 195 64" xmlns="http://www.w3.org/2000/svg" width="160" height="52">
+      <path fill="#96151D" d="m166.8 98c-7.36 0-17.07 1.58-19.87 6.61-2.09 3.87-1.44 7.31-0.03 9.31 0.9 0.83 1.88 0 0.98-2.61s-0.95-5.89 2.77-7.89c3.73-2 10.2-2.36 14.55-2.36 9.71 0 28.23 5.38 29.01 15.85 0.77 9.77-11.12 14.05-21.51 13.5-1.64-0.15-2.37 0.12-2.15 2.58 0.5 5.63 7.38 17.72 13.56 17.72 2.1 0 1.9-0.6 1.9-0.6 0.63-0.32 0.1-1.95-0.91-1.28-0.78 0.53-1.26 0.58-2.67-0.21-4.79-2.71-8.2-11.5-8.42-13.31 10.19-1.4 22.93-7.4 22.93-17.41 0-10.84-14.04-19.9-30.14-19.9z"/>
+      <path fill="#96151D" d="m179.1 111.6c-6.35 9.52-18.73 25.64-18.73 31.76 0 0.72 0.4 1.29 1.28 1.29s1.27-0.67 1.27-1.76c0.73-6.23 12.85-22.29 17.4-29.68 0.95-1.61 1.3-1.93 0.62-2.45-0.73-0.63-1.21-0.21-1.84 0.84z"/>
+      <path fill="#2B2A29" d="m5.74 126c0-5.81 2.05-7.9 7.77-7.9h11.46c5.12 0 7.74 1.71 7.74 5.97v0.68h-2.68c0-3.63-1.61-4.2-6.37-4.2h-9.57c-2.96 0-5.08 0.92-5.08 5.02v7c0 4.1 2.12 5.02 5.08 5.02h10.74c3.76 0 5.09-1.24 5.09-4.48v-1.55h-11.74v-2.45h14.58v3.68c0 5.7-1.9 7.24-7.85 7.24h-11.4c-5.72 0-7.77-2.09-7.77-7.9v-6.13z"/>
+      <path fill="#2B2A29" d="m36.99 123.9h2.78v15.85h-2.78v-15.85zm0-5.71h2.78v3.07h-2.78v-3.07z"/>
+      <path fill="#2B2A29" d="m60.44 130.4c0-3.65-2.01-4.36-5-4.36h-4.27c-2.99 0-5 0.71-5 4.36v2.97c0 3.65 2.01 4.36 5 4.36h4.27c2.99 0 5-0.71 5-4.36v-2.97zm-16.83-0.16c0-4.95 3.27-6.49 8.31-6.49h2.77c5.05 0 8.31 1.54 8.31 6.49v3.29c0 4.95-3.26 6.49-8.31 6.49h-2.77c-5.04 0-8.31-1.54-8.31-6.49v-3.29z"/>
+      <path fill="#2B2A29" d="m64.91 123.9h2.88l7.12 13.46 7.12-13.46h2.88l-8.36 15.85h-3.28l-8.36-15.85z"/>
+      <path fill="#2B2A29" d="m103 134.9c0-2.26-1.66-2.61-5.5-2.61h-3.82c-3.18 0-4.11 0.51-4.11 2.46v0.52c0 1.74 0.62 2.45 3.99 2.45h3.3c4.03 0 6.14-0.39 6.14-2.51v-0.31zm0 3.18h-0.06c-0.67 1.35-1.49 1.77-5.33 1.77h-5.21c-3.89 0-5.03-1.9-5.03-4.84v-1.08c0-3.49 2.5-4.06 6.83-4.06h3.41c3.22 0 4.44 0.39 5.33 1.81h0.06v-2.84c0-2.71-1.63-3.07-5.56-3.07h-3.13c-2.99 0-3.67 0.78-3.67 2.04v0.57h-2.62v-0.78c0-2.66 1.67-3.86 6.24-3.86h3.47c4.76 0 7.88 0.83 7.88 5.19v10.87h-2.61v-1.72z"/>
+      <path fill="#2B2A29" d="m108.3 123.9h2.45v2.61h0.06c0.93-2.25 2.83-2.82 6.05-2.82h3.35c4.88 0 6.46 2.56 6.46 5.53v10.53h-2.62v-9.83c0-2.5-0.73-4.04-5.43-4.04h-0.67c-5.55 0-7.03 1.38-7.03 5.26v8.61h-2.62v-15.85z"/>
+      <path fill="#2B2A29" d="m129.3 123.9h2.45v2.61h0.06c0.93-2.25 2.83-2.82 6.05-2.82h3.35c4.88 0 6.46 2.56 6.46 5.53v10.53h-2.62v-9.83c0-2.5-0.73-4.04-5.43-4.04h-0.67c-5.55 0-7.03 1.38-7.03 5.26v8.61h-2.62v-15.85z"/>
+      <path fill="#2B2A29" d="m150.7 123.9h2.78v15.85h-2.78v-15.85zm0-5.71h2.78v3.07h-2.78v-3.07z"/>
+    </svg>
+  </div>
+
+  <div class="tagline">Cucine Italiane · Laatzen</div>
+  <div class="divider"></div>
+
+  <div class="qr-wrap">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" shape-rendering="crispEdges"><path stroke="#2B2A29" d="M1 1.5h7m2 0h1m1 0h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h1m1 0h7M1 2.5h1m5 0h1m1 0h1m4 0h1m1 0h2m1 0h1m2 0h2m3 0h1m5 0h1M1 3.5h1m1 0h3m1 0h1m1 0h1m2 0h2m1 0h2m1 0h6m1 0h1m1 0h1m1 0h3m1 0h1M1 4.5h1m1 0h3m1 0h1m1 0h3m2 0h1m3 0h3m1 0h3m2 0h1m1 0h3m1 0h1M1 5.5h1m1 0h3m1 0h1m1 0h1m1 0h2m2 0h1m2 0h1m1 0h5m2 0h1m1 0h3m1 0h1M1 6.5h1m5 0h1m1 0h5m9 0h2m2 0h1m5 0h1M1 7.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M10 8.5h1m2 0h2m3 0h4m2 0h2M3 9.5h1m2 0h4m4 0h2m1 0h1m1 0h2m4 0h2m1 0h5M1 10.5h1m4 0h1m3 0h1m1 0h1m2 0h2m1 0h1m1 0h1m3 0h5m1 0h2m1 0h1M1 11.5h2m1 0h5m4 0h2m3 0h8m1 0h3m1 0h1m1 0h1M2 12.5h2m4 0h3m5 0h2m3 0h1m1 0h3m1 0h2m1 0h1m1 0h2M3 13.5h1m2 0h2m1 0h2m2 0h3m1 0h1m1 0h1m2 0h2m1 0h1m1 0h1m1 0h2m2 0h1M2 14.5h5m1 0h1m1 0h2m4 0h1m1 0h2m2 0h4m1 0h1m5 0h1M1 15.5h2m2 0h4m3 0h1m1 0h2m2 0h2m4 0h2m3 0h1m1 0h1m1 0h1M4 16.5h2m2 0h1m1 0h3m5 0h1m1 0h1m2 0h3m1 0h1m4 0h1M4 17.5h1m2 0h1m1 0h1m1 0h2m2 0h1m2 0h4m1 0h1m3 0h2m2 0h2M2 18.5h5m1 0h1m2 0h2m1 0h3m1 0h5m1 0h1m1 0h3m2 0h1M6 19.5h2m1 0h1m1 0h4m1 0h1m1 0h1m1 0h5m4 0h3M1 20.5h5m3 0h1m1 0h1m2 0h4m1 0h2m2 0h2m2 0h2m1 0h1m2 0h1M3 21.5h1m1 0h3m1 0h1m2 0h1m1 0h4m2 0h2m2 0h1M3 22.5h1m1 0h2m1 0h3m1 0h1m1 0h3m1 0h2m1 0h1m1 0h1m4 0h1m2 0h1m1 0h1M1 23.5h3m3 0h1m2 0h4m6 0h1m1 0h1m1 0h1m1 0h2m3 0h3M3 24.5h1m2 0h1m6 0h2m1 0h1m1 0h1m1 0h2m1 0h1m4 0h3m2 0h1M1 25.5h4m2 0h1m4 0h1m3 0h1m1 0h13m1 0h2M9 26.5h1m1 0h2m2 0h3m2 0h3m2 0h1m3 0h3m1 0h1M1 27.5h7m1 0h1m1 0h3m2 0h1m1 0h3m4 0h1m1 0h1m1 0h1m1 0h1m1 0h1M1 28.5h1m5 0h1m1 0h1m1 0h1m1 0h2m1 0h2m1 0h4m2 0h1m3 0h2m1 0h2M1 29.5h1m1 0h3m1 0h1m2 0h1m2 0h1m2 0h1m1 0h1m2 0h2m1 0h7M1 30.5h1m1 0h3m1 0h1m2 0h1m1 0h2m2 0h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h5M1 31.5h1m1 0h3m1 0h1m1 0h4m1 0h1m1 0h2m2 0h1m1 0h1m2 0h1m3 0h2m1 0h2M1 32.5h1m5 0h1m2 0h1m3 0h2m1 0h1m1 0h2m4 0h1m4 0h2M1 33.5h7m5 0h3m1 0h1m1 0h1m2 0h2m1 0h1m1 0h1m1 0h3m1 0h1"/></svg>
+  </div>
+
+  <div class="scan-text">Digitale Speisekarte scannen</div>
+  <div class="url">giovannir-menu.de</div>
+
+  <div class="divider" style="margin-top: 5mm;"></div>
+</div>
+
+</body>
+</html>

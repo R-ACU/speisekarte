@@ -239,7 +239,7 @@ section {
 .menu-item {
   display: grid;
   grid-template-columns: 1fr auto;
-  align-items: baseline;
+  align-items: start;
   gap: 16px;
   padding: 18px 0;
   border-bottom: 1px solid rgba(201,185,154,0.4);
@@ -309,6 +309,13 @@ section {
   white-space: nowrap;
 }
 
+.item-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 7px;
+}
+
 .item-price .price-alt {
   display: block;
   font-size: 12px;
@@ -349,6 +356,10 @@ section {
 
 .pizza-card .item-name {
   font-size: 17px;
+}
+
+.pizza-card .pizza-name-row {
+  align-items: center;
   margin-bottom: 5px;
   padding-right: 24px;
 }
@@ -366,6 +377,15 @@ section {
 .pizza-card .item-price {
   font-size: 17px;
   text-align: left;
+}
+
+.pizza-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 12px;
 }
 
 /* ─── EMPFEHLUNGEN ─── */
@@ -454,6 +474,13 @@ section {
   font-size: 15px;
   letter-spacing: 0.05em;
   color: var(--ink);
+}
+
+.mittag-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
 }
 
 /* ─── DESSERTS ─── */
@@ -643,31 +670,43 @@ footer p {
 
 /* bookmark icon on items */
 .save-icon {
-  position: absolute;
-  top: 10px; right: 10px;
-  background: none;
-  border: none;
+  position: static;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: rgba(245,240,232,0.92);
+  border: 1px solid rgba(184,147,42,0.28);
   cursor: pointer;
-  padding: 4px;
-  color: rgba(184,147,42,0.3);
-  font-size: 15px;
-  line-height: 1;
-  transition: color 0.2s, opacity 0.2s;
-  opacity: 0;
+  padding: 0;
+  color: rgba(184,147,42,0.62);
+  line-height: 0;
+  transition: color 0.2s, opacity 0.2s, border-color 0.2s, background 0.2s;
+  opacity: 0.72;
 }
-.save-icon.saved { color: var(--gold); opacity: 1 !important; }
-.menu-item { position: relative; }
-.menu-item:hover .save-icon { opacity: 1; }
-.pizza-card { position: relative; }
-.pizza-card:hover .save-icon { opacity: 1; }
-.empfehlung-item { position: relative; }
-.empfehlung-item:hover .save-icon { opacity: 1; }
-.mittag-card { position: relative; }
-.mittag-card:hover .save-icon { opacity: 1; }
-@media (max-width: 768px) {
-  .save-icon { opacity: 0.5; }
-  .save-icon.saved { opacity: 1; }
+.save-icon svg {
+  width: 14px;
+  height: 14px;
+  display: block;
+  pointer-events: none;
 }
+.save-icon svg path {
+  stroke: currentColor;
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: transparent;
+}
+.save-icon.saved {
+  color: var(--gold);
+  border-color: rgba(184,147,42,0.7);
+  background: rgba(184,147,42,0.08);
+  opacity: 1 !important;
+}
+.save-icon.saved svg path { fill: rgba(184,147,42,0.2); }
+.save-icon:hover { opacity: 1; }
 
 /* drawer */
 #saved-drawer {
@@ -726,10 +765,41 @@ footer p {
   color: var(--ink);
   flex: 1;
 }
+.drawer-item-name-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.drawer-item-name-row .drawer-item-name {
+  flex: 0 1 auto;
+}
+.drawer-item-name-row .item-tags {
+  flex: 0 0 auto;
+}
+.drawer-item-copy {
+  min-width: 0;
+}
 .drawer-item-nr {
   font-size: 0.78rem;
   color: rgba(26,20,16,0.4);
   margin-bottom: 2px;
+}
+.drawer-item-desc {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.88rem;
+  line-height: 1.35;
+  color: rgba(26,20,16,0.65);
+  margin-top: 2px;
+}
+.drawer-item .item-tags {
+  margin-top: 0;
+  gap: 4px;
+}
+.drawer-item .tag {
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  padding: 1px 6px;
 }
 .drawer-item-price {
   font-family: 'EB Garamond', serif;
