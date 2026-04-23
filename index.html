@@ -1134,6 +1134,7 @@
     const btn = e.target.closest('.save-icon');
     if (!btn) return;
     e.stopPropagation();
+    if (navigator.vibrate) navigator.vibrate(12);
     const nrRaw = btn.dataset.nr;
     const nrNum = parseInt(nrRaw);
     const nrKey = isNaN(nrNum) ? nrRaw : nrNum;
