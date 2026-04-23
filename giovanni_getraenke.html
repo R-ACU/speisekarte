@@ -393,6 +393,11 @@
         currentLang = this.value;
         document.documentElement.lang = this.value;
         localStorage.setItem('giovanni_lang', this.value);
+        fetch('/api/track-lang', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ lang: this.value, type: 'selected' }),
+        }).catch(() => {});
         render();
       });
     })
