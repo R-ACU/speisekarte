@@ -909,7 +909,11 @@
   }
 
   function trackLang(lang) {
-    if (window.va) window.va('event', { name: 'Language', lang });
+    fetch('/api/track-lang', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ lang }),
+    }).catch(() => {});
   }
 
   function setLanguage(lang) {
