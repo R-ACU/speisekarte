@@ -1145,6 +1145,12 @@
 
   // Drawer open/close
   document.getElementById('saved-btn').addEventListener('click', () => {
+    // Body-lock: prevent scroll under drawer and keep iOS Safari toolbar stable
+    const scrollY = window.scrollY;
+    document.body.dataset.scrollY = scrollY;
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.width = '100%';
     document.getElementById('saved-drawer').classList.add('open');
     document.getElementById('drawer-overlay').classList.add('open');
     renderDrawer();
@@ -1152,10 +1158,12 @@
   function closeDrawer() {
     document.getElementById('saved-drawer').classList.remove('open');
     document.getElementById('drawer-overlay').classList.remove('open');
-    // iOS Safari keeps its bottom toolbar locked after a fixed overlay is dismissed.
-    // A tiny scroll nudge forces it to recalculate and auto-hide again.
-    window.scrollBy(0, 1);
-    window.scrollBy(0, -1);
+    // Restore body scroll position (body-lock release)
+    const scrollY = parseInt(document.body.dataset.scrollY || '0', 10);
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.width = '';
+    window.scrollTo(0, scrollY);
   }
   document.getElementById('drawer-close').addEventListener('click', closeDrawer);
   document.getElementById('drawer-overlay').addEventListener('click', closeDrawer);
