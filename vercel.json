@@ -1,5 +1,6 @@
 {
   "rewrites": [
+    { "source": "/stats", "destination": "/api/stats" },
     { "source": "/getraenke", "destination": "/giovanni_getraenke.html" },
     { "source": "/impressum", "destination": "/impressum.html" },
     { "source": "/datenschutz", "destination": "/datenschutz.html" }
