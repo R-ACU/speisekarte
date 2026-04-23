@@ -1075,6 +1075,7 @@
       const item = all.find(i => i.nr === s.nr || i.id === s.nr);
       const source = item || s;
       if (!source) return '';
+      const displayNr = source.id || source.nr;
       const name = item && currentLang !== 'de' && item.translations?.[currentLang]?.name
         ? item.translations[currentLang].name
         : source.name;
@@ -1086,7 +1087,7 @@
       const price = typeof source.preis === 'number' ? source.preis : parseFloat(source.preis);
       return `<div class="drawer-item">
         <div class="drawer-item-copy">
-          <div class="drawer-item-nr">#${source.nr}</div>
+          <div class="drawer-item-nr">#${displayNr}</div>
           <div class="drawer-item-name-row">
             <div class="drawer-item-name">${esc(name)}</div>
             ${tagsHtml}
@@ -1095,14 +1096,16 @@
         </div>
         <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
           <span class="drawer-item-price">${formatPrice(price)}</span>
-          <button class="drawer-item-remove" data-nr="${source.nr}" aria-label="${esc(savedUi.remove)}" title="${esc(savedUi.remove)}">&#x2715;</button>
+          <button class="drawer-item-remove" data-nr="${s.nr}" aria-label="${esc(savedUi.remove)}" title="${esc(savedUi.remove)}">&#x2715;</button>
         </div>
       </div>`;
     }).join('');
     list.querySelectorAll('.drawer-item-remove').forEach(btn => {
       btn.addEventListener('click', () => {
-        const nr = parseInt(btn.dataset.nr);
-        setSaved(getSaved().filter(s => s.nr !== nr));
+        const nrRaw = btn.dataset.nr;
+        const nrNum = parseInt(nrRaw);
+        const nrKey = isNaN(nrNum) ? nrRaw : nrNum;
+        setSaved(getSaved().filter(s => s.nr !== nrKey));
         updateSavedUI();
       });
     });
