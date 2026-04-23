@@ -1150,6 +1150,10 @@
   function closeDrawer() {
     document.getElementById('saved-drawer').classList.remove('open');
     document.getElementById('drawer-overlay').classList.remove('open');
+    // iOS Safari keeps its bottom toolbar locked after a fixed overlay is dismissed.
+    // A tiny scroll nudge forces it to recalculate and auto-hide again.
+    window.scrollBy(0, 1);
+    window.scrollBy(0, -1);
   }
   document.getElementById('drawer-close').addEventListener('click', closeDrawer);
   document.getElementById('drawer-overlay').addEventListener('click', closeDrawer);
