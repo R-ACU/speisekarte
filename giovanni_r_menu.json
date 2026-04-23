@@ -1879,6 +1879,7 @@
           "preis": 26,
           "tags": [],
           "allergen_codes": [
+            "14",
             "G"
           ],
           "translations": {
@@ -2202,7 +2203,10 @@
           "allergen_codes": [
             "A1",
             "C",
-            "G"
+            "G",
+            "2",
+            "6",
+            "H7"
           ],
           "translations": {
             "en": {
@@ -2228,7 +2232,10 @@
           "allergen_codes": [
             "A1",
             "C",
-            "G"
+            "G",
+            "2",
+            "6",
+            "H7"
           ],
           "translations": {
             "en": {
@@ -2254,7 +2261,10 @@
           "allergen_codes": [
             "A1",
             "C",
-            "G"
+            "G",
+            "2",
+            "6",
+            "H7"
           ],
           "translations": {
             "en": {
@@ -2310,7 +2320,10 @@
           "tags": [],
           "allergen_codes": [
             "A1",
-            "G"
+            "G",
+            "C",
+            "2",
+            "6"
           ],
           "translations": {
             "en": {
@@ -2448,7 +2461,7 @@
           "nr": 37,
           "name": "Ravioli Bosco",
           "beschreibung": "In Waldpilzsoße",
-          "preis": 23.0,
+          "preis": 23,
           "tags": [
             "vegetarisch"
           ],
@@ -2475,7 +2488,7 @@
           "nr": 38,
           "name": "Ravioli Burro e Salvia",
           "beschreibung": "In Butter-Salbei-Soße",
-          "preis": 23.0,
+          "preis": 23,
           "tags": [
             "vegetarisch"
           ],
@@ -2503,7 +2516,7 @@
           "nr": 39,
           "name": "Ravioli Tartufati",
           "beschreibung": "In Zucchini-Sahne-Trüffelsoße, Rucola, Parmesan",
-          "preis": 23.0,
+          "preis": 23,
           "tags": [
             "vegetarisch"
           ],
@@ -2531,7 +2544,7 @@
           "nr": 40,
           "name": "Ravioli Mare e Monti",
           "beschreibung": "Mit Waldpilzen und Garnelen",
-          "preis": 23.0,
+          "preis": 23,
           "tags": [],
           "allergen_codes": [
             "A1",
@@ -2557,7 +2570,7 @@
           "nr": 400,
           "name": "Ravioli Noci",
           "beschreibung": "Mit Walnüssen und Rucola in Gorgonzolasauce",
-          "preis": 23.0,
+          "preis": 23,
           "tags": [
             "vegetarisch"
           ],
@@ -2586,7 +2599,7 @@
           "nr": 401,
           "name": "Ravioli Orange",
           "beschreibung": "In Orangensauce, Rucola, Pinienkerne & Parmesan",
-          "preis": 23.0,
+          "preis": 23,
           "tags": [
             "vegetarisch"
           ],
@@ -2615,7 +2628,7 @@
           "nr": 402,
           "name": "Ravioli al Salmone",
           "beschreibung": "In rosa Soße mit Lachs und Zucchini",
-          "preis": 23.0,
+          "preis": 23,
           "tags": [],
           "allergen_codes": [
             "A1",
@@ -2647,7 +2660,7 @@
           "nr": 230,
           "name": "Tagliatelle Parma",
           "beschreibung": "Bandnudeln mit Parmaschinken, Pinienkernen, Rucola & Parmesan",
-          "preis": 23.0,
+          "preis": 23,
           "tags": [],
           "allergen_codes": [
             "A1",
@@ -2674,7 +2687,7 @@
           "nr": 231,
           "name": "Tagliatelle Pesto e Pollo",
           "beschreibung": "Bandnudeln mit selbstgemachtem Basilikumpesto, Pinienkerne und Hähnchenstreifen",
-          "preis": 23.0,
+          "preis": 23,
           "tags": [],
           "allergen_codes": [
             "A1",
@@ -2701,7 +2714,7 @@
           "nr": 232,
           "name": "Tagliatelle Scampi",
           "beschreibung": "Bandnudeln mit Garnelen in Tomatensauce",
-          "preis": 23.0,
+          "preis": 23,
           "tags": [],
           "allergen_codes": [
             "A1",
@@ -2727,7 +2740,7 @@
           "nr": 233,
           "name": "Tagliatelle Capra",
           "beschreibung": "Bandnudeln mit Ziegenkäsesauce, Parmaschinken, Rucola",
-          "preis": 23.0,
+          "preis": 23,
           "tags": [],
           "allergen_codes": [
             "A1",
@@ -2753,7 +2766,7 @@
           "nr": 234,
           "name": "Tagliatelle Bologna",
           "beschreibung": "Bandnudeln mit Rinderbolognese",
-          "preis": 23.0,
+          "preis": 23,
           "tags": [],
           "allergen_codes": [
             "A1",
@@ -2778,7 +2791,7 @@
           "nr": 235,
           "name": "Tagliatelle Anatra",
           "beschreibung": "Bandnudeln mit Entenstreifen in Trüffelsoße, Rucola und Pinienkernen",
-          "preis": 23.0,
+          "preis": 23,
           "tags": [],
           "allergen_codes": [
             "A1",
@@ -3270,7 +3283,7 @@
           "id": "M2",
           "name": "Tris di Pasta",
           "beschreibung": "Tortellini, Ravioli und Gnocchi in Butter-Salbei",
-          "preis": 22.0,
+          "preis": 22,
           "tags": [
             "vegetarisch"
           ],
@@ -3298,7 +3311,7 @@
           "id": "M3",
           "name": "Tris di Pasta-Fisch",
           "beschreibung": "Verschiedene Ravioli gefüllt mit Stockfisch, Lachs und Scampi in Butter-Basilikum",
-          "preis": 23.0,
+          "preis": 23,
           "tags": [],
           "allergen_codes": [
             "B",
@@ -3325,7 +3338,7 @@
           "id": "M4",
           "name": "Ravioli-Spargelfüllung",
           "beschreibung": "In Butter-Basilikum und Kirschtomaten",
-          "preis": 23.0,
+          "preis": 23,
           "tags": [
             "vegetarisch"
           ],
@@ -3353,7 +3366,7 @@
           "id": "M5",
           "name": "Ravioli-Steinpilzfüllung",
           "beschreibung": "In Butter-Salbei",
-          "preis": 23.0,
+          "preis": 23,
           "tags": [
             "vegetarisch"
           ],
@@ -3381,7 +3394,7 @@
           "id": "M6",
           "name": "Ravioli-Zitronenfüllung",
           "beschreibung": "In Orangensoße und Pinienkerne",
-          "preis": 23.0,
+          "preis": 23,
           "tags": [
             "vegetarisch"
           ],
@@ -3410,7 +3423,7 @@
           "id": "M7",
           "name": "Ravioli-Trüffelfüllung",
           "beschreibung": "Gefüllt mit Trüffel-Pilz in Sahnesoße mit Zucchinis",
-          "preis": 23.0,
+          "preis": 23,
           "tags": [
             "vegetarisch"
           ],
@@ -3464,7 +3477,7 @@
           "id": "M9",
           "name": "Lachsfilet",
           "beschreibung": "Gebratenes Lachsfilet mit Zitronensoße, und in Butter geschwenkten schwarzen Tagliolini",
-          "preis": 23.0,
+          "preis": 23,
           "tags": [],
           "allergen_codes": [
             "B",
@@ -3491,7 +3504,7 @@
           "id": "M10",
           "name": "Spargel mit Parmaschinken",
           "beschreibung": "Spargel mit Parmaschinken und Kartoffeln",
-          "preis": 24.0,
+          "preis": 24,
           "tags": [],
           "allergen_codes": [],
           "translations": {
@@ -3513,7 +3526,7 @@
           "id": "M11",
           "name": "Tagliatelle mit Spargel",
           "beschreibung": "Tagliatelle mit Spargel und Parmaschinken oder Erbsen in leichter Sahnesauce",
-          "preis": 23.0,
+          "preis": 23,
           "tags": [],
           "allergen_codes": [
             "A1",
@@ -3539,7 +3552,7 @@
           "id": "M12",
           "name": "Ravioli mit Bärlauchfüllung",
           "beschreibung": "Ravioli mit Bärlauchfüllung in Kirschtomaten-Bärlauchsauce",
-          "preis": 23.0,
+          "preis": 23,
           "tags": [
             "neu"
           ],
