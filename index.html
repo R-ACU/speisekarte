@@ -373,7 +373,21 @@
 <script>
 (function() {
   let menuData = null;
-  let currentLang = localStorage.getItem('giovanni_lang') || 'de';
+
+  function detectLang() {
+    const saved = localStorage.getItem('giovanni_lang');
+    if (saved) return saved;
+    const lang = (navigator.language || navigator.userLanguage || 'de').toLowerCase();
+    let detected = 'en';
+    if (lang.startsWith('de')) detected = 'de';
+    else if (lang.startsWith('it')) detected = 'it';
+    else if (lang.startsWith('zh')) detected = 'zh';
+    // skip walkthrough — language already matched
+    localStorage.setItem('giovanni_wt_done', '1');
+    return detected;
+  }
+
+  let currentLang = detectLang();
 
   const UI = {
     de: {
