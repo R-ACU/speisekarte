@@ -378,23 +378,21 @@
   function detectLang() {
     const saved = localStorage.getItem('giovanni_lang');
     if (saved) return saved;
-    const lang = (navigator.language || navigator.userLanguage || 'de').toLowerCase();
+    const raw = (navigator.language || navigator.userLanguage || 'de').toLowerCase();
+    // track raw browser language (2-letter) on first visit
+    const rawCode = raw.split('-')[0].slice(0, 5);
+    Promise.resolve().then(() => trackRawLang(rawCode));
     let detected = 'en';
-    if (lang.startsWith('de')) detected = 'de';
-    else if (lang.startsWith('it')) detected = 'it';
-    else if (lang.startsWith('zh')) detected = 'zh';
+    if (raw.startsWith('de')) detected = 'de';
+    else if (raw.startsWith('it')) detected = 'it';
+    else if (raw.startsWith('zh')) detected = 'zh';
     // skip walkthrough — language already matched
     localStorage.setItem('giovanni_wt_done', '1');
+    localStorage.setItem('giovanni_lang', detected);
     return detected;
   }
 
   let currentLang = detectLang();
-  // track on first visit (auto-detected, no prior localStorage)
-  if (!localStorage.getItem('giovanni_lang')) {
-    // use a microtask so trackLang is defined by the time this runs
-    Promise.resolve().then(() => trackLang(currentLang));
-  }
-  if (!localStorage.getItem('giovanni_lang')) localStorage.setItem('giovanni_lang', currentLang);
 
   const UI = {
     de: {
@@ -912,7 +910,15 @@
     fetch('/api/track-lang', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ lang }),
+      body: JSON.stringify({ lang, type: 'selected' }),
+    }).catch(() => {});
+  }
+
+  function trackRawLang(lang) {
+    fetch('/api/track-lang', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ lang, type: 'browser' }),
     }).catch(() => {});
   }
 

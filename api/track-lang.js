@@ -4,15 +4,15 @@ export default async function handler(req, res) {
   if (req.method === 'OPTIONS') return res.status(200).end();
   if (req.method !== 'POST') return res.status(405).end();
 
-  const { lang } = req.body || {};
-  const allowed = ['de', 'en', 'it', 'zh'];
-  if (!lang || !allowed.includes(lang)) return res.status(400).json({ error: 'invalid lang' });
+  const { lang, type } = req.body || {};
+  if (!lang || typeof lang !== 'string' || lang.length > 10) return res.status(400).json({ error: 'invalid lang' });
 
   const url = process.env.KV_REST_API_URL;
   const token = process.env.KV_REST_API_TOKEN;
   if (!url || !token) return res.status(500).json({ error: 'Redis not configured' });
 
-  await fetch(`${url}/incr/lang:${lang}`, {
+  const prefix = type === 'browser' ? 'browser' : 'selected';
+  await fetch(`${url}/incr/${prefix}:${lang}`, {
     method: 'POST',
     headers: { Authorization: `Bearer ${token}` },
   });
