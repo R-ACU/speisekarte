@@ -760,7 +760,7 @@
     return `
       <div class="empfehlung-item">
         <div class="empfehlung-id-wrap">
-          <button class="save-icon save-icon-empf${saved ? ' saved' : ''}" data-nr="${item.nr}" aria-label="Merken">
+          <button class="save-icon save-icon-empf${saved ? ' saved' : ''}" data-nr="${item.id}" aria-label="Merken">
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
           </button>
           <div class="empfehlung-id">${item.id}</div>
@@ -1050,8 +1050,10 @@
     }
     // update icon states
     document.querySelectorAll('.save-icon, .save-icon-empf').forEach(el => {
-      const nr = parseInt(el.dataset.nr);
-      const isSaved = saved.some(s => s.nr === nr);
+      const nrRaw = el.dataset.nr;
+      const nrNum = parseInt(nrRaw);
+      const nrKey = isNaN(nrNum) ? nrRaw : nrNum;
+      const isSaved = saved.some(s => s.nr === nrKey);
       el.classList.toggle('saved', isSaved);
       el.setAttribute('aria-pressed', String(isSaved));
     });
@@ -1070,7 +1072,7 @@
     }
     const all = getAllItems();
     list.innerHTML = saved.map(s => {
-      const item = all.find(i => i.nr === s.nr);
+      const item = all.find(i => i.nr === s.nr || i.id === s.nr);
       const source = item || s;
       if (!source) return '';
       const name = item && currentLang !== 'de' && item.translations?.[currentLang]?.name
@@ -1128,10 +1130,12 @@
     const btn = e.target.closest('.save-icon');
     if (!btn) return;
     e.stopPropagation();
-    const nr = parseInt(btn.dataset.nr);
+    const nrRaw = btn.dataset.nr;
+    const nrNum = parseInt(nrRaw);
+    const nrKey = isNaN(nrNum) ? nrRaw : nrNum;
     const all = getAllItems();
-    const item = all.find(i => i.nr === nr);
-    if (item) toggleSaved(nr, item.name, item.preis, item.beschreibung, item.tags);
+    const item = all.find(i => (i.nr !== undefined ? i.nr === nrKey : i.id === nrRaw));
+    if (item) toggleSaved(nrKey, item.name, item.preis, item.beschreibung, item.tags);
   });
 
   // Drawer open/close
