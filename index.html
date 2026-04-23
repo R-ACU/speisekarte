@@ -756,9 +756,13 @@
   }
 
   function renderEmpfehlungItem(item) {
+    const saved = getSaved().some(s => s.nr === item.nr);
     return `
       <div class="empfehlung-item">
-        <div class="empfehlung-id">${item.id}</div>
+        <div class="empfehlung-id-wrap">
+          <button class="save-icon save-icon-empf${saved ? ' saved' : ''}" data-nr="${item.nr}" aria-label="Merken">&#9646;</button>
+          <div class="empfehlung-id">${item.id}</div>
+        </div>
         <div class="item-left">
           <div class="item-name-row">
             <span class="item-name">${getName(item)}${renderAllergenCodes(item.allergen_codes)}</span>
@@ -768,7 +772,6 @@
         </div>
         <div class="item-right">
           <div class="item-price">${formatPrice(item.preis)}</div>
-          ${saveBtn(item)}
         </div>
       </div>
     `;
@@ -1044,7 +1047,7 @@
       badge.style.display = 'none';
     }
     // update icon states
-    document.querySelectorAll('.save-icon').forEach(el => {
+    document.querySelectorAll('.save-icon, .save-icon-empf').forEach(el => {
       const nr = parseInt(el.dataset.nr);
       const isSaved = saved.some(s => s.nr === nr);
       el.classList.toggle('saved', isSaved);

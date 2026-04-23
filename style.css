@@ -407,18 +407,40 @@ section {
 }
 .empfehlung-item:last-child { border-bottom: none; }
 
-.empfehlung-id {
+.empfehlung-id-wrap {
   position: absolute;
   bottom: 4px;
   right: 6px;
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  pointer-events: none;
+}
+.empfehlung-id {
   font-family: 'Playfair Display', serif;
   font-style: italic;
   font-size: 45px;
   color: var(--gold);
   opacity: 0.12;
   line-height: 1;
-  pointer-events: none;
   user-select: none;
+}
+.save-icon-empf {
+  position: static !important;
+  opacity: 0 !important;
+  pointer-events: auto;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: rgba(184,147,42,0.4);
+}
+.save-icon-empf.saved {
+  opacity: 1 !important;
+  color: var(--gold);
+}
+.empfehlung-item:hover .save-icon-empf { opacity: 0.7 !important; }
+@media (max-width: 768px) {
+  .save-icon-empf { opacity: 0.35 !important; }
+  .save-icon-empf.saved { opacity: 1 !important; }
 }
 
 /* ─── MITTAGSTISCH ─── */
