@@ -414,7 +414,6 @@ section {
   display: flex;
   align-items: flex-end;
   gap: 4px;
-  pointer-events: none;
 }
 .empfehlung-id {
   font-family: 'Playfair Display', serif;
@@ -424,14 +423,19 @@ section {
   opacity: 0.12;
   line-height: 1;
   user-select: none;
+  pointer-events: none;
 }
 .save-icon-empf {
   position: static !important;
   opacity: 0 !important;
   pointer-events: auto;
+  touch-action: manipulation;
   margin-bottom: 6px;
   font-size: 13px;
   color: rgba(184,147,42,0.4);
+  /* larger touch target */
+  min-width: 44px;
+  min-height: 44px;
 }
 .save-icon-empf.saved {
   opacity: 1 !important;
@@ -439,7 +443,7 @@ section {
 }
 .empfehlung-item:hover .save-icon-empf { opacity: 0.7 !important; }
 @media (max-width: 768px) {
-  .save-icon-empf { opacity: 0.35 !important; }
+  .save-icon-empf { opacity: 0.5 !important; }
   .save-icon-empf.saved { opacity: 1 !important; }
 }
 
@@ -707,6 +711,7 @@ footer p {
   line-height: 0;
   transition: color 0.2s, opacity 0.2s, border-color 0.2s, background 0.2s;
   opacity: 0.72;
+  touch-action: manipulation;
 }
 .save-icon svg {
   width: 14px;
