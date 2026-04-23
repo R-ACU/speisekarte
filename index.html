@@ -1160,10 +1160,12 @@
     document.getElementById('drawer-overlay').classList.remove('open');
     // Restore body scroll position (body-lock release)
     const scrollY = parseInt(document.body.dataset.scrollY || '0', 10);
+    document.documentElement.style.scrollBehavior = 'auto';
     document.body.style.position = '';
     document.body.style.top = '';
     document.body.style.width = '';
-    window.scrollTo({ top: scrollY, behavior: 'instant' });
+    window.scrollTo(0, scrollY);
+    document.documentElement.style.scrollBehavior = '';
   }
   document.getElementById('drawer-close').addEventListener('click', closeDrawer);
   document.getElementById('drawer-overlay').addEventListener('click', closeDrawer);
