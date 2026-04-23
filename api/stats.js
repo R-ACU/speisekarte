@@ -1,13 +1,13 @@
 export default async function handler(req, res) {
-  const kvUrl = process.env.KV_REST_API_URL;
-  const kvToken = process.env.KV_REST_API_TOKEN;
-  if (!kvUrl || !kvToken) return res.status(500).json({ error: 'KV not configured' });
+  const url = process.env.UPSTASH_REDIS_REST_URL;
+  const token = process.env.UPSTASH_REDIS_REST_TOKEN;
+  if (!url || !token) return res.status(500).json({ error: 'Redis not configured' });
 
   const langs = ['de', 'en', 'it', 'zh'];
   const results = await Promise.all(
     langs.map(l =>
-      fetch(`${kvUrl}/get/lang:${l}`, {
-        headers: { Authorization: `Bearer ${kvToken}` },
+      fetch(`${url}/get/lang:${l}`, {
+        headers: { Authorization: `Bearer ${token}` },
       }).then(r => r.json()).then(d => ({ lang: l, count: parseInt(d.result) || 0 }))
     )
   );

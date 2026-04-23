@@ -8,13 +8,13 @@ export default async function handler(req, res) {
   const allowed = ['de', 'en', 'it', 'zh'];
   if (!lang || !allowed.includes(lang)) return res.status(400).json({ error: 'invalid lang' });
 
-  const kvUrl = process.env.KV_REST_API_URL;
-  const kvToken = process.env.KV_REST_API_TOKEN;
-  if (!kvUrl || !kvToken) return res.status(500).json({ error: 'KV not configured' });
+  const url = process.env.UPSTASH_REDIS_REST_URL;
+  const token = process.env.UPSTASH_REDIS_REST_TOKEN;
+  if (!url || !token) return res.status(500).json({ error: 'Redis not configured' });
 
-  await fetch(`${kvUrl}/incr/lang:${lang}`, {
+  await fetch(`${url}/incr/lang:${lang}`, {
     method: 'POST',
-    headers: { Authorization: `Bearer ${kvToken}` },
+    headers: { Authorization: `Bearer ${token}` },
   });
 
   return res.status(200).json({ ok: true });
