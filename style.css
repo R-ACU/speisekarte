@@ -426,16 +426,18 @@ section {
   pointer-events: none;
 }
 .save-icon-empf {
-  position: static !important;
+  position: relative !important;
   opacity: 0 !important;
   pointer-events: auto;
   touch-action: manipulation;
   margin-bottom: 6px;
   font-size: 13px;
   color: rgba(184,147,42,0.4);
-  /* larger touch target */
-  min-width: 44px;
-  min-height: 44px;
+}
+.save-icon-empf::after {
+  content: '';
+  position: absolute;
+  inset: -10px;
 }
 .save-icon-empf.saved {
   opacity: 1 !important;
