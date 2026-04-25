@@ -1119,7 +1119,7 @@
       saved.splice(idx, 1);
     } else {
       saved.push({ nr, name, preis, beschreibung, tags: Array.isArray(tags) ? tags : [] });
-      fetch('/api/track-lang', {
+      fetch('/api/track-qr', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ lang: `item_${nr}`, type: 'saved' }),
@@ -1387,6 +1387,20 @@
   // Sofort ausführen, dann jede Minute prüfen
   applyTimeBasedVisibility();
   setInterval(applyTimeBasedVisibility, 60000);
+})();
+</script>
+
+<script>
+// QR-Code Tracking
+(function () {
+  const hash = window.location.hash.slice(1);
+  if (hash.startsWith('qr-')) {
+    fetch('/api/track-lang', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ source: hash })
+    }).catch(() => {});
+  }
 })();
 </script>
 
