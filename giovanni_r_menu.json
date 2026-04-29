@@ -2529,15 +2529,15 @@
           "translations": {
             "en": {
               "name": "Ravioli Tartufati",
-              "beschreibung": "Filled with ricotta and grilled mushrooms in zucchini cream truffle sauce"
+              "beschreibung": "Filled with ricotta and truffled mushrooms in zucchini cream truffle sauce"
             },
             "it": {
               "name": "Ravioli Tartufati",
-              "beschreibung": "Ripieni di ricotta e funghi grigliati in salsa di zucchine, panna e tartufo"
+              "beschreibung": "Ripieni di ricotta e funghi al tartufo in salsa di zucchine, panna e tartufo"
             },
             "zh": {
               "name": "松露意式馄饨",
-              "beschreibung": "里科塔奶酪与烤蘑菇馅，配西葫芦奶油松露酱"
+              "beschreibung": "里科塔奶酪与松露蘑菇馅，配西葫芦奶油松露酱"
             }
           }
         },
