@@ -3310,325 +3310,184 @@
       "gerichte": [
         {
           "id": "M1",
-          "name": "Rote Bete Carpaccio",
-          "beschreibung": "Mit Schafskäse und Sonnenblumenkerne",
-          "preis": 12.8,
-          "tags": [
-            "vegetarisch"
-          ],
-          "allergen_codes": [
-            "G"
-          ],
+          "name": "Bruschetta",
+          "beschreibung": "Mit Bärlauchpesto, Rucola und Kirschtomaten",
+          "preis": 7,
+          "tags": ["vegetarisch"],
+          "allergen_codes": ["A1"],
           "translations": {
-            "en": {
-              "name": "Beetroot Carpaccio with Sheep Cheese",
-              "beschreibung": "With sheep cheese and sunflower seeds"
-            },
-            "it": {
-              "name": "Carpaccio di Barbabietola con Pecorino",
-              "beschreibung": "Con pecorino e semi di girasole"
-            },
-            "zh": {
-              "name": "甜菜根薄片",
-              "beschreibung": "配羊奶酪和葵花籽"
-            }
+            "en": { "name": "Bruschetta", "beschreibung": "With wild garlic pesto, rocket and cherry tomatoes" },
+            "it": { "name": "Bruschetta", "beschreibung": "Con pesto di aglio orsino, rucola e pomodorini" },
+            "zh": { "name": "意式烤面包", "beschreibung": "配熊葱香蒜酱、芝麻菜和樱桃番茄" }
           }
         },
         {
           "id": "M2",
-          "name": "Tris di Pasta",
-          "beschreibung": "Tortellini, Ravioli und Gnocchi in Butter-Salbei",
-          "preis": 22,
-          "tags": [
-            "vegetarisch"
-          ],
-          "allergen_codes": [
-            "A1",
-            "C",
-            "G"
-          ],
+          "name": "Spargelcremesuppe",
+          "beschreibung": "Cremige Suppe von Spargel, mit Sahne und einem Hauch Muskat",
+          "preis": 9,
+          "tags": ["vegetarisch"],
+          "allergen_codes": ["C", "G"],
           "translations": {
-            "en": {
-              "name": "Tris di Pasta",
-              "beschreibung": "Tortellini, ravioli and gnocchi in butter-sage sauce"
-            },
-            "it": {
-              "name": "Tris di Pasta",
-              "beschreibung": "Tortellini, ravioli e gnocchi al burro e salvia"
-            },
-            "zh": {
-              "name": "Tris di Pasta",
-              "beschreibung": "Tortellini、Ravioli、Gnocchi配黄油鼠尾草酱"
-            }
+            "en": { "name": "Asparagus Cream Soup", "beschreibung": "Creamy asparagus soup with cream and a hint of nutmeg" },
+            "it": { "name": "Crema di Asparagi", "beschreibung": "Vellutata di asparagi con panna e un tocco di noce moscata" },
+            "zh": { "name": "芦笋奶油汤", "beschreibung": "奶油芦笋汤，加奶油和少许肉豆蔻" }
           }
         },
         {
           "id": "M3",
-          "name": "Tris di Pasta-Fisch",
-          "beschreibung": "Verschiedene Ravioli gefüllt mit Stockfisch, Lachs und Scampi in Butter-Basilikum",
-          "preis": 23,
+          "name": "Caprese mit Parmaschinken",
+          "beschreibung": "Mozzarella, Tomaten und Parmaschinken, Basilikum und Olivenöl",
+          "preis": 13,
           "tags": [],
-          "allergen_codes": [
-            "B",
-            "D",
-            "A1",
-            "C"
-          ],
+          "allergen_codes": ["C"],
           "translations": {
-            "en": {
-              "name": "Tris di Pasta Fish",
-              "beschreibung": "Various ravioli filled with stockfish, salmon and scampi in butter-basil sauce"
-            },
-            "it": {
-              "name": "Tris di Pasta Pesce",
-              "beschreibung": "Vari ravioli ripieni di baccalà, salmone e scampi al burro e basilico"
-            },
-            "zh": {
-              "name": "鱼馅意面三重奏",
-              "beschreibung": "多种馅料馄饨配咸鳕鱼、三文鱼和大虾，黄油罗勒酱"
-            }
+            "en": { "name": "Caprese with Parma Ham", "beschreibung": "Mozzarella, tomatoes and Parma ham, basil and olive oil" },
+            "it": { "name": "Caprese con Prosciutto di Parma", "beschreibung": "Mozzarella, pomodori e prosciutto di Parma, basilico e olio d'oliva" },
+            "zh": { "name": "卡布里沙拉配帕尔马火腿", "beschreibung": "马苏里拉奶酪、番茄和帕尔马火腿，罗勒和橄榄油" }
           }
         },
         {
           "id": "M4",
-          "name": "Ravioli-Spargelfüllung",
-          "beschreibung": "In Butter-Basilikum und Kirschtomaten",
-          "preis": 23,
-          "tags": [
-            "vegetarisch"
-          ],
-          "allergen_codes": [
-            "A1",
-            "C",
-            "G"
-          ],
+          "name": "Tris di Pasta",
+          "beschreibung": "Tortellini, Ravioli und Gnocchi in Butter-Salbei",
+          "preis": 22,
+          "tags": ["vegetarisch"],
+          "allergen_codes": ["A1", "C", "G"],
           "translations": {
-            "en": {
-              "name": "Ravioli with Asparagus Filling",
-              "beschreibung": "In butter-basil sauce with cherry tomatoes"
-            },
-            "it": {
-              "name": "Ravioli al Ripieno di Asparagi",
-              "beschreibung": "Al burro e basilico con pomodorini"
-            },
-            "zh": {
-              "name": "芦笋馅饺子",
-              "beschreibung": "配黄油罗勒酱和樱桃番茄"
-            }
+            "en": { "name": "Tris di Pasta", "beschreibung": "Tortellini, ravioli and gnocchi in butter-sage sauce" },
+            "it": { "name": "Tris di Pasta", "beschreibung": "Tortellini, ravioli e gnocchi al burro e salvia" },
+            "zh": { "name": "意面三重奏", "beschreibung": "Tortellini、Ravioli、Gnocchi配黄油鼠尾草酱" }
           }
         },
         {
           "id": "M5",
-          "name": "Ravioli-Steinpilzfüllung",
-          "beschreibung": "In Butter-Salbei",
+          "name": "Tris di Pasta/Fisch",
+          "beschreibung": "Verschiedene Ravioli gefüllt mit Stockfisch, Lachs und Scampi in Butter-Basilikum",
           "preis": 23,
-          "tags": [
-            "vegetarisch"
-          ],
-          "allergen_codes": [
-            "A1",
-            "C",
-            "G"
-          ],
+          "tags": [],
+          "allergen_codes": ["B", "D", "A1", "C"],
           "translations": {
-            "en": {
-              "name": "Ravioli with Porcini Filling",
-              "beschreibung": "In butter-sage sauce"
-            },
-            "it": {
-              "name": "Ravioli al Ripieno di Porcini",
-              "beschreibung": "Al burro e salvia"
-            },
-            "zh": {
-              "name": "牛肝菌馅饺子",
-              "beschreibung": "配黄油鼠尾草酱"
-            }
+            "en": { "name": "Tris di Pasta Fish", "beschreibung": "Various ravioli filled with stockfish, salmon and scampi in butter-basil sauce" },
+            "it": { "name": "Tris di Pasta Pesce", "beschreibung": "Vari ravioli ripieni di baccalà, salmone e scampi al burro e basilico" },
+            "zh": { "name": "鱼馅意面三重奏", "beschreibung": "多种馅料馄饨配咸鳕鱼、三文鱼和大虾，黄油罗勒酱" }
           }
         },
         {
           "id": "M6",
-          "name": "Ravioli-Zitronenfüllung",
-          "beschreibung": "In Orangensoße und Pinienkerne",
+          "name": "Tagliatelle mit Spargel",
+          "beschreibung": "Tagliatelle mit Spargel und Parmaschinken oder Erbsen in leichter Sahnesauce",
           "preis": 23,
-          "tags": [
-            "vegetarisch"
-          ],
-          "allergen_codes": [
-            "A1",
-            "C",
-            "G",
-            "H"
-          ],
+          "tags": [],
+          "allergen_codes": ["A1", "C", "G"],
           "translations": {
-            "en": {
-              "name": "Ravioli with Lemon Filling",
-              "beschreibung": "In orange sauce with pine nuts"
-            },
-            "it": {
-              "name": "Ravioli al Ripieno di Limone",
-              "beschreibung": "In salsa all'arancia con pinoli"
-            },
-            "zh": {
-              "name": "柠檬馅饺子",
-              "beschreibung": "配橙子酱和松子"
-            }
+            "en": { "name": "Tagliatelle with Asparagus", "beschreibung": "Tagliatelle with asparagus and Parma ham or peas in a light cream sauce" },
+            "it": { "name": "Tagliatelle con Asparagi", "beschreibung": "Tagliatelle con asparagi e prosciutto di Parma o piselli in salsa di panna leggera" },
+            "zh": { "name": "芦笋宽面条", "beschreibung": "芦笋宽面条配帕尔马火腿或豌豆淡奶油酱" }
           }
         },
         {
           "id": "M7",
-          "name": "Ravioli-Trüffelfüllung",
-          "beschreibung": "Gefüllt mit Trüffel-Pilz in Sahnesoße mit Zucchinis",
+          "name": "Ravioli mit Bärlauchfüllung",
+          "beschreibung": "Verschiedene Ravioli gefüllt mit Bärlauch, mit gebratener Hähnchenbrust in Sahnesauce",
           "preis": 23,
-          "tags": [
-            "vegetarisch"
-          ],
-          "allergen_codes": [
-            "A1",
-            "C",
-            "G"
-          ],
+          "tags": [],
+          "allergen_codes": ["A1", "C", "G"],
           "translations": {
-            "en": {
-              "name": "Ravioli with Truffle Filling",
-              "beschreibung": "Filled with truffle mushroom in cream sauce with zucchini"
-            },
-            "it": {
-              "name": "Ravioli al Ripieno di Tartufo",
-              "beschreibung": "Ripieni di tartufo e funghi in salsa di panna con zucchine"
-            },
-            "zh": {
-              "name": "松露馅饺子",
-              "beschreibung": "松露蘑菇馅配奶油酱和西葫芦"
-            }
+            "en": { "name": "Ravioli with Wild Garlic Filling", "beschreibung": "Various ravioli filled with wild garlic, with grilled chicken breast in cream sauce" },
+            "it": { "name": "Ravioli al Ripieno di Aglio Orsino", "beschreibung": "Vari ravioli ripieni di aglio orsino, con petto di pollo arrosto in salsa di panna" },
+            "zh": { "name": "熊葱馅馄饨", "beschreibung": "熊葱馅馄饨配烤鸡胸肉奶油酱" }
           }
         },
         {
           "id": "M8",
-          "name": "Cannelloni",
-          "beschreibung": "Gefüllt mit Ricotta und Spinat, oder Rind",
-          "preis": 18.9,
+          "name": "Kalbsschnitzel",
+          "beschreibung": "Goldbraun gebratenes Kalbsschnitzel, serviert mit Kartoffeln und dünnem frischem Spargel",
+          "preis": 24,
           "tags": [],
-          "allergen_codes": [
-            "A1",
-            "C",
-            "G"
-          ],
+          "allergen_codes": ["A1", "C", "G"],
           "translations": {
-            "en": {
-              "name": "Cannelloni",
-              "beschreibung": "Filled with ricotta and spinach, or beef"
-            },
-            "it": {
-              "name": "Cannelloni",
-              "beschreibung": "Ripieni di ricotta e spinaci, o manzo"
-            },
-            "zh": {
-              "name": "Cannelloni",
-              "beschreibung": "里科塔奶酪菠菜馅，或牛肉馅"
-            }
+            "en": { "name": "Veal Schnitzel", "beschreibung": "Golden-fried veal schnitzel, served with potatoes and thin fresh asparagus" },
+            "it": { "name": "Cotoletta di Vitello", "beschreibung": "Cotoletta di vitello dorata, servita con patate e asparagi freschi sottili" },
+            "zh": { "name": "小牛排", "beschreibung": "金黄煎小牛排，配土豆和细嫩鲜芦笋" }
           }
         },
         {
           "id": "M9",
-          "name": "Lachsfilet",
-          "beschreibung": "Gebratenes Lachsfilet mit Zitronensoße, und in Butter geschwenkten schwarzen Tagliolini",
-          "preis": 23,
-          "tags": [],
-          "allergen_codes": [
-            "B",
-            "D",
-            "A1",
-            "C"
-          ],
-          "translations": {
-            "en": {
-              "name": "Salmon Fillet",
-              "beschreibung": "Pan-fried salmon fillet with lemon sauce and black tagliolini tossed in butter"
-            },
-            "it": {
-              "name": "Filetto di Salmone",
-              "beschreibung": "Filetto di salmone fritto con salsa al limone e tagliolini neri al burro"
-            },
-            "zh": {
-              "name": "三文鱼排",
-              "beschreibung": "煎三文鱼排配柠檬酱和黄油黑意面"
-            }
-          }
-        },
-        {
-          "id": "M10",
           "name": "Spargel mit Parmaschinken",
           "beschreibung": "Spargel mit Parmaschinken und Kartoffeln",
           "preis": 24,
           "tags": [],
           "allergen_codes": [],
           "translations": {
-            "en": {
-              "name": "Asparagus with Parma Ham",
-              "beschreibung": "Asparagus with Parma ham and potatoes"
-            },
-            "it": {
-              "name": "Asparagi con Prosciutto di Parma",
-              "beschreibung": "Asparagi con prosciutto di Parma e patate"
-            },
-            "zh": {
-              "name": "芦笋配帕尔马火腿",
-              "beschreibung": "芦笋配帕尔马火腿和土豆"
-            }
+            "en": { "name": "Asparagus with Parma Ham", "beschreibung": "Asparagus with Parma ham and potatoes" },
+            "it": { "name": "Asparagi con Prosciutto di Parma", "beschreibung": "Asparagi con prosciutto di Parma e patate" },
+            "zh": { "name": "芦笋配帕尔马火腿", "beschreibung": "芦笋配帕尔马火腿和土豆" }
+          }
+        },
+        {
+          "id": "M10",
+          "name": "Lachsfilet",
+          "beschreibung": "Gebratenes Lachsfilet mit Zitronensauce, in Butter geschwenkte schwarze Tagliolini",
+          "preis": 24,
+          "tags": [],
+          "allergen_codes": ["B", "D", "A1", "C"],
+          "translations": {
+            "en": { "name": "Salmon Fillet", "beschreibung": "Pan-fried salmon fillet with lemon sauce and black tagliolini tossed in butter" },
+            "it": { "name": "Filetto di Salmone", "beschreibung": "Filetto di salmone fritto con salsa al limone e tagliolini neri al burro" },
+            "zh": { "name": "三文鱼排", "beschreibung": "煎三文鱼排配柠檬酱和黄油黑意面" }
           }
         },
         {
           "id": "M11",
-          "name": "Tagliatelle mit Spargel",
-          "beschreibung": "Tagliatelle mit Spargel und Parmaschinken oder Erbsen in leichter Sahnesauce",
-          "preis": 23,
+          "name": "Dorade",
+          "beschreibung": "Linsen, Spargel und Kartoffeln",
+          "preis": 26,
           "tags": [],
-          "allergen_codes": [
-            "A1",
-            "C",
-            "G"
-          ],
+          "allergen_codes": ["B"],
           "translations": {
-            "en": {
-              "name": "Tagliatelle with Asparagus",
-              "beschreibung": "Tagliatelle with asparagus and Parma ham or peas in a light cream sauce"
-            },
-            "it": {
-              "name": "Tagliatelle con Asparagi",
-              "beschreibung": "Tagliatelle con asparagi e prosciutto di Parma o piselli in salsa di panna leggera"
-            },
-            "zh": {
-              "name": "芦笋宽面条",
-              "beschreibung": "芦笋宽面条配帕尔马火腿或豌豆淡奶油酱"
-            }
+            "en": { "name": "Sea Bream", "beschreibung": "Lentils, asparagus and potatoes" },
+            "it": { "name": "Orata", "beschreibung": "Lenticchie, asparagi e patate" },
+            "zh": { "name": "鲷鱼", "beschreibung": "扁豆、芦笋和土豆" }
           }
         },
         {
           "id": "M12",
-          "name": "Ravioli mit Bärlauchfüllung",
-          "beschreibung": "Ravioli mit Bärlauchfüllung in Kirschtomaten-Bärlauchsauce",
-          "preis": 23,
-          "tags": [
-            "neu"
-          ],
-          "allergen_codes": [
-            "A1",
-            "C",
-            "G"
-          ],
+          "name": "Panna Cotta",
+          "beschreibung": "Mit hausgemachter Erdbeersoße",
+          "preis": 6.80,
+          "tags": ["vegetarisch"],
+          "allergen_codes": ["C", "G"],
           "translations": {
-            "en": {
-              "name": "Ravioli with Wild Garlic Filling",
-              "beschreibung": "Ravioli filled with wild garlic in cherry tomato and wild garlic sauce"
-            },
-            "it": {
-              "name": "Ravioli al Ripieno di Aglio Orsino",
-              "beschreibung": "Ravioli ripieni di aglio orsino in salsa di pomodorini e aglio orsino"
-            },
-            "zh": {
-              "name": "熊葱馅馄饨",
-              "beschreibung": "熊葱馅馄饨配樱桃番茄熊葱酱"
-            }
+            "en": { "name": "Panna Cotta", "beschreibung": "With homemade strawberry sauce" },
+            "it": { "name": "Panna Cotta", "beschreibung": "Con salsa di fragole fatta in casa" },
+            "zh": { "name": "意式奶冻", "beschreibung": "配自制草莓酱" }
+          }
+        },
+        {
+          "id": "M13",
+          "name": "Vanilleeis",
+          "beschreibung": "Mit heißen Himbeeren",
+          "preis": 6.80,
+          "tags": ["vegetarisch"],
+          "allergen_codes": ["C", "G"],
+          "translations": {
+            "en": { "name": "Vanilla Ice Cream", "beschreibung": "With warm raspberries" },
+            "it": { "name": "Gelato alla Vaniglia", "beschreibung": "Con lamponi caldi" },
+            "zh": { "name": "香草冰淇淋", "beschreibung": "配热覆盆子" }
+          }
+        },
+        {
+          "id": "M14",
+          "name": "Crème Brûlée",
+          "beschreibung": "Mit Vanilleeis",
+          "preis": 8.60,
+          "tags": ["vegetarisch"],
+          "allergen_codes": ["C", "G"],
+          "translations": {
+            "en": { "name": "Crème Brûlée", "beschreibung": "With vanilla ice cream" },
+            "it": { "name": "Crème Brûlée", "beschreibung": "Con gelato alla vaniglia" },
+            "zh": { "name": "法式焦糖布丁", "beschreibung": "配香草冰淇淋" }
           }
         }
       ]
