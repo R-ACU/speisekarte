@@ -3441,14 +3441,14 @@
         {
           "id": "M11",
           "name": "Dorade",
-          "beschreibung": "Linsen, Spargel und Kartoffeln",
+          "beschreibung": "Grüner Spargel und Kartoffeln",
           "preis": 26,
           "tags": [],
           "allergen_codes": ["B"],
           "translations": {
-            "en": { "name": "Sea Bream", "beschreibung": "Lentils, asparagus and potatoes" },
-            "it": { "name": "Orata", "beschreibung": "Lenticchie, asparagi e patate" },
-            "zh": { "name": "鲷鱼", "beschreibung": "扁豆、芦笋和土豆" }
+            "en": { "name": "Sea Bream", "beschreibung": "Green asparagus and potatoes" },
+            "it": { "name": "Orata", "beschreibung": "Asparagi verdi e patate" },
+            "zh": { "name": "鲷鱼", "beschreibung": "绿芦笋和土豆" }
           }
         },
         {
@@ -3481,7 +3481,7 @@
           "id": "M14",
           "name": "Crème Brûlée",
           "beschreibung": "Mit Vanilleeis",
-          "preis": 8.60,
+          "preis": 8.40,
           "tags": ["vegetarisch"],
           "allergen_codes": ["C", "G"],
           "translations": {
